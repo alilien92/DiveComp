@@ -33,6 +33,7 @@ namespace DiveCompAPI
             //Choose which architecture to implement
             //Either database architecture or runtime repository
             services.AddTransient<IDiverRepository, DiverDatabase>();
+            services.AddTransient<IJudgeRepository, JudgeDatabase>();
 
             services.AddControllers();
 
@@ -40,7 +41,7 @@ namespace DiveCompAPI
 
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 24));
 
-            services.AddDbContextPool<DiverContext>(
+            services.AddDbContextPool<ModelContext>(
                 DbContextOptions => DbContextOptions
                     .UseMySql(connection, serverVersion)
                     .EnableSensitiveDataLogging() //these two used for debugging, will not be in final version
@@ -52,8 +53,8 @@ namespace DiveCompAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DiveCompAPI v1"));
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DiveCompAPI v1"));
             }
 
             app.UseHttpsRedirection();
@@ -68,7 +69,7 @@ namespace DiveCompAPI
 
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetRequiredService<DiverContext>();
+                var context = serviceScope.ServiceProvider.GetRequiredService<ModelContext>();
                 context.Database.EnsureCreated();
             }
         }

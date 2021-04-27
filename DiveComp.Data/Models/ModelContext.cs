@@ -5,14 +5,17 @@ using System.Text;
 
 namespace DiveComp.Data.Models
 {
-    public class DiverContext : DbContext
+    public class ModelContext : DbContext
     {
-        public DiverContext(DbContextOptions<DiverContext> options)
+        public ModelContext(DbContextOptions<ModelContext> options)
             : base(options)
         {
 
         }
 
         public DbSet<DiveModel> divers { get; set; }
+
+        public DbSet<JudgeModel> judges { get; set; }
+
     }
 }

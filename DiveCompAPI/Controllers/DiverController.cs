@@ -22,7 +22,6 @@ namespace DiveCompAPI.Controllers
         }
 
         [HttpGet("{id}")]
-
         public ActionResult<DiveModel> GetDiver(int id)
         {
             var diver = divers.Get1Diver(id);

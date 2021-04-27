@@ -5,19 +5,23 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using DiveComp.Data.Helpers;
 
 namespace DiveComp.Data.Repository
 {
     public class DiverDatabase : IDiverRepository
     {
         //database context
-        private DiverContext db;
+        private ModelContext db;
 
-        public DiverDatabase(DiverContext _db)
+        
+
+        public DiverDatabase(ModelContext _db)
         {
             this.db = _db;
         }
 
+        
         public List<DiveModel> GetAllDivers()
         {
             return db.divers.ToList();
