@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveCompAPI", "DiveCompAPI\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveCompUI", "DiveCompApp\DiveCompUI.csproj", "{A3788C84-15AB-41FA-9FB6-0FF6F8BAEBCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveComp.Data", "DiveComp.Data\DiveComp.Data.csproj", "{6D2EC6D9-8094-458F-8B31-A43FACDC5D82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{A3788C84-15AB-41FA-9FB6-0FF6F8BAEBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3788C84-15AB-41FA-9FB6-0FF6F8BAEBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3788C84-15AB-41FA-9FB6-0FF6F8BAEBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D2EC6D9-8094-458F-8B31-A43FACDC5D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2EC6D9-8094-458F-8B31-A43FACDC5D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2EC6D9-8094-458F-8B31-A43FACDC5D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2EC6D9-8094-458F-8B31-A43FACDC5D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{786B7730-15DC-466A-AE44-D10EA1E71C91} = {1535A9F2-8CB2-401F-91D8-A8D5C33D87E7}
 		{A3788C84-15AB-41FA-9FB6-0FF6F8BAEBCA} = {713DCC77-876B-41E3-8BBA-6B53A9E0E092}
+		{6D2EC6D9-8094-458F-8B31-A43FACDC5D82} = {1535A9F2-8CB2-401F-91D8-A8D5C33D87E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5E060C8-C3C1-4680-9FE2-CF3660CD90F9}
