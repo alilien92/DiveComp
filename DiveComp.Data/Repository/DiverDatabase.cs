@@ -6,16 +6,12 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-
 namespace DiveComp.Data.Repository
 {
     public class DiverDatabase : IDiverRepository
     {
         //database context
         private ModelContext db;
-
-        
-
         public DiverDatabase(ModelContext _db)
         {
             this.db = _db;

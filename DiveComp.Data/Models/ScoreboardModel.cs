@@ -9,5 +9,7 @@ namespace DiveComp.Data.Models
         public int Id { get; set; }
         
         public List<DiveModel> divelist { get; set; }
+
+        public List<JudgeModel> judgelist { get; set; }
     }
 }

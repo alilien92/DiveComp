@@ -21,6 +21,12 @@ namespace DiveCompAPI.Controllers
             this.judges = _judges;
         }
 
+        [HttpGet]
+        public ActionResult<List<JudgeModel>> GetAllJudges()
+        {
+            return judges.GetAllJudges();
+        }
+
         [HttpGet("{id}")]
         public ActionResult<JudgeModel> GetJudge(int id)
         {
@@ -63,10 +69,6 @@ namespace DiveCompAPI.Controllers
             return NotFound();
         }
 
-        [HttpGet]
-        public ActionResult<List<JudgeModel>> GetAlljudges()
-        {
-            return judges.GetAllJudges();
-        }
+        
     }
 }
