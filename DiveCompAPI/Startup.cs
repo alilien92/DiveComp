@@ -34,6 +34,7 @@ namespace DiveCompAPI
             //Either database architecture or runtime repository
             services.AddTransient<IDiverRepository, DiverDatabase>();
             services.AddTransient<IJudgeRepository, JudgeDatabase>();
+            services.AddTransient<IDiveVariationRepository, DiveVariationDatabase>();
 
             services.AddControllers();
 
@@ -44,8 +45,8 @@ namespace DiveCompAPI
             services.AddDbContextPool<ModelContext>(
                 DbContextOptions => DbContextOptions
                     .UseMySql(connection, serverVersion)
-                    .EnableSensitiveDataLogging() //these two used for debugging, will not be in final version
-                    .EnableDetailedErrors()
+                    //.EnableSensitiveDataLogging() //these two used for debugging, will not be in final version
+                    //.EnableDetailedErrors()
             );
         }
 
@@ -70,6 +71,7 @@ namespace DiveCompAPI
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<ModelContext>();
+                context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
             }
         }

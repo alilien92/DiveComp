@@ -16,6 +16,8 @@ namespace DiveComp.Data.Models
         public DbSet<DiveModel> divers { get; set; }
 
         public DbSet<JudgeModel> judges { get; set; }
+        
+        public DbSet<DiveVariationModel> diveVariations { get; set; }
 
     }
 }
