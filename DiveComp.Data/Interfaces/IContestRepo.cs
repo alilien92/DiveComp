@@ -8,7 +8,7 @@ namespace DiveComp.Data.Interfaces
     public interface IContestRepo
     {
 
-        bool CreateNewContest(ContestModel contest);
+        bool CreateNewContest(ClubModel Club);
 
         ContestModel Get1Contest(int id);
 

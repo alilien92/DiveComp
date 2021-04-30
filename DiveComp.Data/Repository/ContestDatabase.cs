@@ -15,11 +15,13 @@ namespace DiveComp.Data.Repository
         {
             this.db = _db;
         }
-        public bool CreateNewContest(ContestModel contest)
+        public bool CreateNewContest(ClubModel club)
         {
-            db.contests.Add(contest);
+            ContestModel entry = new ContestModel();
+            entry.Club = club;
+            db.contests.Add(entry);
             db.SaveChanges();
-            if(db.contests.Contains(contest))
+            if (db.contests.Contains(entry))
             {
                 return true;
             }
