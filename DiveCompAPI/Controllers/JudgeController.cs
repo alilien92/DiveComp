@@ -14,9 +14,9 @@ namespace DiveCompAPI.Controllers
     public class JudgeController : ControllerBase
     {
 
-        private IJudgeRepository judges;
+        private IJudgeRepo judges;
 
-        public JudgeController(IJudgeRepository _judges)
+        public JudgeController(IJudgeRepo _judges)
         {
             this.judges = _judges;
         }

@@ -7,6 +7,7 @@ namespace DiveComp.Data.Models
     public class ParticipantsModel
     {
         public int Id { get; set; }
+
         public int contestId { get; set; }
 
         public int diverId { get; set; }

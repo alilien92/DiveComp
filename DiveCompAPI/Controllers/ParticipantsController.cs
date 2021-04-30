@@ -14,12 +14,12 @@ namespace DiveCompAPI.Controllers
     public class ParticipantsController : ControllerBase
     {
 
-        private IParticipantsRepo participants;
+        private IParticipantRepo participants;
         //Access to other tables
         private IDiverRepo divers;
         private IContestRepo contests;
 
-        public ParticipantsController(IParticipantsRepo _participants, IDiverRepo _divers, IContestRepo _contests)
+        public ParticipantsController(IParticipantRepo _participants, IDiverRepo _divers, IContestRepo _contests)
         {
             this.participants = _participants;
             this.divers = _divers;

@@ -5,14 +5,14 @@ using System.Text;
 
 namespace DiveComp.Data.Interfaces
 {
-    public interface IJudgeRepository
+    public interface IJudgeRepo
     {
 
         List<JudgeModel> GetAllJudges();
 
         JudgeModel Get1Judge(int id);
 
-        bool AddJudge(JudgeModel newDiver);
+        bool AddJudge(JudgeModel newJudge);
 
         bool RemoveJudge(int id);
 

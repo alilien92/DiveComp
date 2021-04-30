@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DiveComp.Data.Interfaces
 {
-    public interface IParticipantsRepo
+    public interface IParticipantRepo
     {
         bool CreateNewParticipant(ContestModel contest, DiverModel diver);
 

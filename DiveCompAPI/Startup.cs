@@ -34,7 +34,9 @@ namespace DiveCompAPI
             //Either database architecture or runtime repository
             services.AddTransient<IContestRepo, ContestDatabase>();
             services.AddTransient<IDiverRepo, DiverDatabase>();
-            services.AddTransient<IParticipantsRepo, ParticipantsDatabase>();
+            services.AddTransient<IParticipantRepo, ParticipantsDatabase>();
+            services.AddTransient<IJudgeRepo, JudgeDatabase>();
+            services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
 
 
             services.AddControllers();

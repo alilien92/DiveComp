@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace DiveComp.Data.Repository
 {
-    public class JudgeDatabase : IJudgeRepository
+    public class JudgeDatabase : IJudgeRepo
     {
         private ModelContext db;
 

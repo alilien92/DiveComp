@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace DiveComp.Data.Repository
 {
-    public class ParticipantsDatabase : IParticipantsRepo
+    public class ParticipantsDatabase : IParticipantRepo
     {
         private ModelContext db;
 
