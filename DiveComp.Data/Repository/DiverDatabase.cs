@@ -16,11 +16,13 @@ namespace DiveComp.Data.Repository
             this.db = _db;
         }
 
-        public bool CreateDiver(DiverModel diver)
+        public bool CreateDiver(ClubModel club)
         {
-            db.divers.Add(diver);
+            DiverModel entry = new DiverModel();
+            entry.Club = club;
+            db.divers.Add(entry);
             db.SaveChanges();
-            if(db.divers.Contains(diver))
+            if(db.divers.Contains(entry))
             {
                 return true;
             }

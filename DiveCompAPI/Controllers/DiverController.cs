@@ -16,15 +16,18 @@ namespace DiveCompAPI.Controllers
     {
         private IDiverRepo divers;
 
-        public DiverController(IDiverRepo _divers)
+        private IClubRepo clubs;
+
+        public DiverController(IDiverRepo _divers, IClubRepo _clubs)
         {
             this.divers = _divers;
+            this.clubs = _clubs;
         }
 
         [HttpPost]
         public ActionResult<DiverModel> PostDiver(DiverModel diver)
         {
-            if(divers.CreateDiver(diver))
+            if(divers.CreateDiver(clubs.Get1Club(diver.clubId)))
             {
                 return diver;
             }

@@ -8,7 +8,7 @@ namespace DiveComp.Data.Interfaces
     public interface IDiverRepo
     {
 
-        bool CreateDiver(DiverModel diver);
+        bool CreateDiver(ClubModel Club);
 
         DiverModel Get1Diver(int id);
 
