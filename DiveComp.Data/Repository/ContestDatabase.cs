@@ -7,29 +7,28 @@ using System.Linq;
 
 namespace DiveComp.Data.Repository
 {
-    public class DiverDatabase : IDiverRepo
+    public class ContestDatabase : IContestRepo
     {
         private ModelContext db;
 
-        public DiverDatabase(ModelContext _db)
+        public ContestDatabase(ModelContext _db)
         {
             this.db = _db;
         }
-
-        public bool CreateDiver(DiverModel diver)
+        public bool CreateNewContest(ContestModel contest)
         {
-            db.divers.Add(diver);
+            db.contests.Add(contest);
             db.SaveChanges();
-            if(db.divers.Contains(diver))
+            if(db.contests.Contains(contest))
             {
                 return true;
             }
             return false;
         }
 
-        public DiverModel Get1Diver(int id)
+        public ContestModel Get1Contest(int id)
         {
-            return db.divers.FirstOrDefault(x => x.Id == id);
+            return db.contests.FirstOrDefault(x => x.Id == id);
         }
     }
 }

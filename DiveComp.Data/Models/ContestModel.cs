@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace DiveComp.Data.Models
 {
     public class ContestModel
     {
-        public int contestId { get; set; }
+        public int Id { get; set; }
 
-        public ScoreboardModel scoreboard { get; set; }
-
+        public string Name { get; set; }
     }
 }

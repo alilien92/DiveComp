@@ -32,9 +32,10 @@ namespace DiveCompAPI
             //Dependency Injection:
             //Choose which architecture to implement
             //Either database architecture or runtime repository
-            services.AddTransient<IDiverRepository, DiverDatabase>();
-            services.AddTransient<IJudgeRepository, JudgeDatabase>();
-            services.AddTransient<IDiveVariationRepository, DiveVariationDatabase>();
+            services.AddTransient<IContestRepo, ContestDatabase>();
+            services.AddTransient<IDiverRepo, DiverDatabase>();
+            services.AddTransient<IParticipantsRepo, ParticipantsDatabase>();
+
 
             services.AddControllers();
 

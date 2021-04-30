@@ -12,32 +12,32 @@ namespace DiveCompAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DiverController : ControllerBase
+    public class ContestController : ControllerBase
     {
-        private IDiverRepo divers;
+        private IContestRepo contests;
 
-        public DiverController(IDiverRepo _divers)
+        public ContestController(IContestRepo _contests)
         {
-            this.divers = _divers;
+            this.contests = _contests;
         }
 
         [HttpPost]
-        public ActionResult<DiverModel> PostDiver(DiverModel diver)
+        public ActionResult<ContestModel> PostContest(ContestModel contest)
         {
-            if(divers.CreateDiver(diver))
+            if(contests.CreateNewContest(contest))
             {
-                return diver;
+                return contest;
             }
             return BadRequest();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<DiverModel> GetDiver(int id)
+        public ActionResult<ContestModel> GetContest(int id)
         {
-            DiverModel diver = divers.Get1Diver(id);
-            if(diver != null)
+            ContestModel contest = contests.Get1Contest(id);
+            if(contest != null)
             {
-                return diver;
+                return contest;
             }
             return NotFound();
         }
