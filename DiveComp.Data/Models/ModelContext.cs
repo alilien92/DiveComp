@@ -27,5 +27,7 @@ namespace DiveComp.Data.Models
 
         public DbSet<ClubModel> clubs { get; set; }
 
+        public DbSet<FinaDifficultyModel> difficultyMods { get; set; }
+
     }
 }

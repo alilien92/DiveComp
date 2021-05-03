@@ -37,7 +37,7 @@ namespace DiveCompAPI
             services.AddTransient<IParticipantRepo, ParticipantsDatabase>();
             services.AddTransient<IJudgeRepo, JudgeDatabase>();
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
-
+            services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
 
             services.AddControllers();
 
