@@ -12,7 +12,7 @@ namespace DiveComp.Data.Models
 
         public int diverId { get; set; }
 
-        public float? Score { get; set; }
+        public float Score { get; set; }
 
         //foreign keys
         public virtual ContestModel Contest { get; set; } 

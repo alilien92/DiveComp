@@ -11,9 +11,8 @@ namespace DiveComp.Data.Models
 
         public string Name { get; set; }
 
-        public int clubId { get; set; }
+        public string Club { get; set; }
 
-        //foreign keys
-        public virtual ClubModel Club { get; set; }
+        
     }
 }

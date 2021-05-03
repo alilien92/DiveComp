@@ -6,6 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data;
+using System.Configuration;
+using MySqlConnector;
+
 
 namespace DiveCompAPI.Controllers
 {
@@ -29,6 +33,7 @@ namespace DiveCompAPI.Controllers
         [HttpPost]
         public ActionResult<ParticipantsModel> AddParticipant(ParticipantsModel participant)
         {
+
             if (participants.CreateNewParticipant(contests.Get1Contest(participant.contestId), divers.Get1Diver(participant.diverId)))
             {
                 return Ok();
@@ -36,13 +41,20 @@ namespace DiveCompAPI.Controllers
             return BadRequest();
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<ParticipantsModel> Get1Participant(int id)
+        [HttpGet("{contestid}")]
+        public ActionResult<List<DiverBoardModel>> GetParticipants(int contestid)
         {
-            ParticipantsModel participant = participants.Get1Participant(id);
-            if(participant != null)
+            var result = participants.GetAllParticipants(contestid);
+            return result;
+        }
+
+        [HttpPut]
+
+        public ActionResult<ParticipantsModel> UpdateDiverScore(int diverId, float newscore)
+        {
+            if(participants.UpdateScore(diverId, newscore))
             {
-                return participant;
+                return Ok();
             }
             return NotFound();
         }
