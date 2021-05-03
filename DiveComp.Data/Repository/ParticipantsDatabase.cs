@@ -5,7 +5,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using Pomelo.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using MySqlConnector;
+using System.Data;
+using DiveComp.Data.Helpers;
 
 namespace DiveComp.Data.Repository
 {
@@ -22,7 +26,7 @@ namespace DiveComp.Data.Repository
             ParticipantsModel entry = new ParticipantsModel();
             entry.Contest = contest; //Foreign key
             entry.Diver = diver;    //Foreign key
-            entry.Score = null;
+            entry.Score = 0;
             db.participants.Add(entry);
             db.SaveChanges();
             if(db.participants.Contains(entry))
@@ -32,9 +36,23 @@ namespace DiveComp.Data.Repository
             return false;
         }
 
-        public ParticipantsModel Get1Participant(int id)
+        public bool UpdateScore(int diverId, float newscore)
         {
-            return db.participants.FirstOrDefault(x => x.contestId == id);
+            db.participants.FirstOrDefault(x => x.diverId == diverId).Score += newscore;
+            db.SaveChanges();
+            ParticipantsModel entry = db.participants.FirstOrDefault(x => x.diverId == diverId);
+            if(entry.Score == newscore)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public List<DiverBoardModel> GetAllParticipants(int contestid)
+        {
+            ProcedureHelper procedure = new ProcedureHelper(db);
+            return procedure.spGetAllDivers(contestid);
+
         }
 
         

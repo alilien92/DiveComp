@@ -16,18 +16,16 @@ namespace DiveCompAPI.Controllers
     {
         private IContestRepo contests;
 
-        private IClubRepo clubs;
 
-        public ContestController(IContestRepo _contests, IClubRepo _clubs)
+        public ContestController(IContestRepo _contests)
         {
             this.contests = _contests;
-            this.clubs = _clubs;
         }
 
         [HttpPost]
         public ActionResult<ContestModel> PostContest(ContestModel contest)
         {
-            if(contests.CreateNewContest(clubs.Get1Club(contest.clubId)))
+            if(contests.CreateNewContest(contest))
             {
                 return contest;
             }

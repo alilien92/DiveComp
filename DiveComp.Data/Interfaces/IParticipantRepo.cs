@@ -9,6 +9,8 @@ namespace DiveComp.Data.Interfaces
     {
         bool CreateNewParticipant(ContestModel contest, DiverModel diver);
 
-        ParticipantsModel Get1Participant(int id);
+        bool UpdateScore(int diverId, float newscore);
+
+        List<DiverBoardModel> GetAllParticipants(int contestid);
     }
 }

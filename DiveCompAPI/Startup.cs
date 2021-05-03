@@ -37,6 +37,8 @@ namespace DiveCompAPI
             services.AddTransient<IParticipantRepo, ParticipantsDatabase>();
             services.AddTransient<IJudgeRepo, JudgeDatabase>();
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
+            services.AddTransient<ITowerRepo, TowerTypeDatabase>();
+
             services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
 
             services.AddControllers();
@@ -50,6 +52,8 @@ namespace DiveCompAPI
                     .UseMySql(connection, serverVersion)
                     //.EnableSensitiveDataLogging() //these two used for debugging, will not be in final version
                     //.EnableDetailedErrors()
+
+            
             );
         }
 
@@ -72,7 +76,7 @@ namespace DiveCompAPI
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<ModelContext>();
-                context.Database.EnsureDeleted();
+                //context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
             }
         }
