@@ -19,10 +19,10 @@ namespace DiveComp.Data.Helpers
             this.db = _db;
         }
 
-        //GetCurrentDiverList procedure, returns a list of all divers in current contest id.
-        public List<DiverBoardModel> spGetAllDivers(int contestid)
+        //GetCurrentDiverList procedure, returns a list of all divers and their score with given contest id.
+        public List<LeaderBoardModel> spGetAllDivers(int eventid)
         {
-            List<DiverBoardModel> diverlist = new List<DiverBoardModel>();
+            List<LeaderBoardModel> diverlist = new List<LeaderBoardModel>();
 
             using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
             {
@@ -30,16 +30,16 @@ namespace DiveComp.Data.Helpers
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "GetCurrentDiverList"; // The name of the Stored Proc
-                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Proc
+                    cmd.CommandText = "GetCurrentDiverList"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@Id", contestid);
+                    cmd.Parameters.AddWithValue("@Id", eventid);
 
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            diverlist.Add(new DiverBoardModel()
+                            diverlist.Add(new LeaderBoardModel()
                             {
                                 FirstName = reader["FirstName"].ToString(),
                                 LastName = reader["LastName"].ToString(),

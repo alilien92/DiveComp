@@ -21,30 +21,30 @@ namespace DiveCompAPI.Controllers
         private IParticipantRepo participants;
         //Access to other tables
         private IDiverRepo divers;
-        private IContestRepo contests;
+        private IEventsRepo events;
 
-        public ParticipantsController(IParticipantRepo _participants, IDiverRepo _divers, IContestRepo _contests)
+        public ParticipantsController(IParticipantRepo _participants, IDiverRepo _divers, IEventsRepo _evt)
         {
             this.participants = _participants;
             this.divers = _divers;
-            this.contests = _contests;
+            this.events = _evt;
         }
 
         [HttpPost]
         public ActionResult<ParticipantsModel> AddParticipant(ParticipantsModel participant)
         {
 
-            if (participants.CreateNewParticipant(contests.Get1Contest(participant.contestId), divers.Get1Diver(participant.diverId)))
+            if (participants.CreateNewParticipant(events.GetEvent(participant.eventId), divers.Get1Diver(participant.diverId)))
             {
                 return Ok();
             }
             return BadRequest();
         }
 
-        [HttpGet("{contestid}")]
-        public ActionResult<List<DiverBoardModel>> GetParticipants(int contestid)
+        [HttpGet("{eventid}")]
+        public ActionResult<List<LeaderBoardModel>> GetParticipants(int eventid)
         {
-            var result = participants.GetAllParticipants(contestid);
+            var result = participants.GetAllParticipants(eventid);
             return result;
         }
 
@@ -53,6 +53,17 @@ namespace DiveCompAPI.Controllers
         public ActionResult<ParticipantsModel> UpdateDiverScore(int diverId, float newscore)
         {
             if(participants.UpdateScore(diverId, newscore))
+            {
+                return Ok();
+            }
+            return NotFound();
+        }
+
+        [HttpDelete("{diverid}")]
+
+        public ActionResult<ParticipantsModel> RemoveParticipant(int diverid)
+        {
+            if(participants.DeleteParticipant(diverid))
             {
                 return Ok();
             }

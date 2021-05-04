@@ -29,5 +29,7 @@ namespace DiveComp.Data.Models
 
         public DbSet<FinaDifficultyModel> difficultyMods { get; set; }
 
+        public DbSet<EventsModel> events { get; set; }
+
     }
 }

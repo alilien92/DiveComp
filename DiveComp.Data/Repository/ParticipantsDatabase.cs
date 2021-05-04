@@ -21,10 +21,10 @@ namespace DiveComp.Data.Repository
         {
             this.db = _db;
         }
-        public bool CreateNewParticipant(ContestModel contest, DiverModel diver)
+        public bool CreateNewParticipant(EventsModel evt, DiverModel diver)
         {
             ParticipantsModel entry = new ParticipantsModel();
-            entry.Contest = contest; //Foreign key
+            entry.Event = evt; //Foreign key
             entry.Diver = diver;    //Foreign key
             entry.Score = 0;
             db.participants.Add(entry);
@@ -38,21 +38,38 @@ namespace DiveComp.Data.Repository
 
         public bool UpdateScore(int diverId, float newscore)
         {
-            db.participants.FirstOrDefault(x => x.diverId == diverId).Score += newscore;
-            db.SaveChanges();
             ParticipantsModel entry = db.participants.FirstOrDefault(x => x.diverId == diverId);
+
+            entry.Score = newscore;
             if(entry.Score == newscore)
             {
+                
                 return true;
             }
             return false;
         }
 
-        public List<DiverBoardModel> GetAllParticipants(int contestid)
+        public List<LeaderBoardModel> GetAllParticipants(int eventid)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
-            return procedure.spGetAllDivers(contestid);
+            return procedure.spGetAllDivers(eventid);
 
+        }
+
+        public ParticipantsModel Get1Participant(int diverid)
+        {
+            return db.participants.FirstOrDefault(x => x.diverId == diverid);
+        }
+
+        public bool DeleteParticipant(int id)
+        {
+            db.participants.Remove(Get1Participant(id));
+            db.SaveChanges();
+            if(db.participants.Contains(Get1Participant(id)))
+            {
+                return false;
+            }
+            return true;
         }
 
         

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DiveComp.Data.Models
 {
-    public class DiverBoardModel
+    public class LeaderBoardModel
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

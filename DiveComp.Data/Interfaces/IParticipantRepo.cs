@@ -7,10 +7,12 @@ namespace DiveComp.Data.Interfaces
 {
     public interface IParticipantRepo
     {
-        bool CreateNewParticipant(ContestModel contest, DiverModel diver);
+        bool CreateNewParticipant(EventsModel evt, DiverModel diver);
 
         bool UpdateScore(int diverId, float newscore);
 
-        List<DiverBoardModel> GetAllParticipants(int contestid);
+        List<LeaderBoardModel> GetAllParticipants(int eventId);
+
+        bool DeleteParticipant(int id);
     }
 }
