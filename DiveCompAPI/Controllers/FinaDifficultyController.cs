@@ -29,10 +29,15 @@ namespace DiveCompAPI.Controllers
             }
 
             [HttpPost]
-            public ActionResult<FinaDifficultyModel> PostFinaDifficulty(FinaDifficultyModel finaDifficultys) {
-                if (finaDifficulty.AddFinaDifficulty(finaDifficultys)) {
-                    return finaDifficultys;
+            public ActionResult<FinaDifficultyModel> PostFinaDifficulty(List<FinaDifficultyModel> finaDifficultys) {
+            if (finaDifficultys.Count >= 2) {
+                for (int i = 0; i < finaDifficultys.Count; i++) {
+                    FinaDifficultyModel item = finaDifficultys[i];
+                    finaDifficulty.AddFinaDifficulty(item);
                 }
+                return Ok();
+            }
+            
                 return BadRequest();
             }
 
@@ -50,6 +55,7 @@ namespace DiveCompAPI.Controllers
                 if (finaDifficultys != null) {
                     return finaDifficultys;
                 }
+
                 return NotFound();
             }
 
