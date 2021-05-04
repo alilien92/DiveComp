@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using DiveComp.Data.Helpers;
 namespace DiveComp.Data.Repository
 {
     public class FinaDifficultyDatabase : IFinaDifficultyRepo
@@ -22,6 +23,12 @@ namespace DiveComp.Data.Repository
 
         public FinaDifficultyModel Get1Difficulty(int id) {
             return db.difficultyMods.FirstOrDefault(x => x.Id == id);
+        }
+        
+        public List<FinaDifficultyModel> GetHeightDifficulty(float height) {
+            var pHelper = new ProcedureHelper(db);
+
+            return pHelper.spGetAllDifficulties(height);
         }
 
         public bool AddFinaDifficulty(FinaDifficultyModel newDifficulty) {

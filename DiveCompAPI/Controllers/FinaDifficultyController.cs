@@ -27,8 +27,17 @@ namespace DiveCompAPI.Controllers
                 }
                 return finaDifficultys;
             }
+            [HttpGet("all/{height}")]
+            public ActionResult <List<FinaDifficultyModel>> GetFinaDifficulty(float height) {
 
-            [HttpPost]
+            var finaDifficultys = finaDifficulty.GetHeightDifficulty(height);
+            if (finaDifficultys == null) {
+                return NotFound();
+            }
+            return finaDifficultys;
+            }
+
+        [HttpPost]
             public ActionResult<FinaDifficultyModel> PostFinaDifficulty(List<FinaDifficultyModel> finaDifficultys) {
             if (finaDifficultys.Count >= 2) {
                 for (int i = 0; i < finaDifficultys.Count; i++) {

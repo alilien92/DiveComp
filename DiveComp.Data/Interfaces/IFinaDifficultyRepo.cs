@@ -10,6 +10,8 @@ namespace DiveComp.Data.Interfaces
         List<FinaDifficultyModel> GetAllFinaDifficulty();
 
         FinaDifficultyModel Get1Difficulty(int id);
+        
+        List<FinaDifficultyModel> GetHeightDifficulty(float height);
 
         bool AddFinaDifficulty(FinaDifficultyModel newDifficulty);
 
