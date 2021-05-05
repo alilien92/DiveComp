@@ -83,6 +83,26 @@ namespace DiveComp.Data.Helpers
             return difficultylist;
         }
 
+        public void spUpdateScore(int diverid, float newscore)
+        {
+            
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "UpdateScore"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@id", diverid);
+                    cmd.Parameters.AddWithValue("@newscore", newscore);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
 
     }
 }

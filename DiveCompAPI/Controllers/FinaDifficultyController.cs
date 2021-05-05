@@ -24,6 +24,17 @@ namespace DiveCompAPI.Controllers
             public ActionResult<FinaDifficultyModel> GetFinaDifficulty(int id) {
                 throw new NotImplementedException();
             }
+
+        [HttpGet("dives/{height}")]
+        public ActionResult<List<FinaDifficultyModel>> GetDivesFromHeight(float height)
+        {
+            var divelist = finaDifficulty.GetHeightDifficulty(height);
+            if(divelist != null)
+            {
+                return divelist;
+            }
+            return NotFound();
+        }
         
 
         [HttpPost]
