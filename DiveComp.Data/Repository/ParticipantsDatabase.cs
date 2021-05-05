@@ -36,10 +36,10 @@ namespace DiveComp.Data.Repository
             return false;
         }
         
-        public bool UpdateScore(int diverId, float newscore)
+        public void UpdateScore(int diverId, float newscore)
         {
-            //Lagrad procedur Uppdatera Score
-            throw new NotImplementedException();
+            ProcedureHelper procedure = new ProcedureHelper(db);
+            procedure.spUpdateScore(diverId, newscore);
         }
         
 

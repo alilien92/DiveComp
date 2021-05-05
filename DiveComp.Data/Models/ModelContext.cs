@@ -25,8 +25,6 @@ namespace DiveComp.Data.Models
         public DbSet<JudgeParticipantModel> judgeParticipant { get; set; }
 
 
-        public DbSet<TowerTypeModel> Towers { get; set; }
-
         public DbSet<FinaDifficultyModel> difficultyMods { get; set; }
 
         public DbSet<EventsModel> events { get; set; }

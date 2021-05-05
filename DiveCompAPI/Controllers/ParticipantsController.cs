@@ -48,11 +48,12 @@ namespace DiveCompAPI.Controllers
             return result;
         }
 
-        [HttpPut]
+        [HttpPut("{diverid}/{newscore}")]
         //Lagrad Procedur behövs
         public ActionResult<ParticipantsModel> UpdateDiverScore(int diverId, float newscore)
         {
-            throw new NotImplementedException();
+            participants.UpdateScore(diverId, newscore);
+            return Ok();
         }
 
         [HttpDelete("{diverid}")]
