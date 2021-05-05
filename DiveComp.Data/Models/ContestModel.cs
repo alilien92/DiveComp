@@ -13,6 +13,5 @@ namespace DiveComp.Data.Models
 
         public string Club { get; set; }
 
-        
     }
 }

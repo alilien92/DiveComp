@@ -22,7 +22,5 @@ namespace DiveComp.Data.Models
         
         public float Free { get; set; }
 
-        
     }
-    
 }

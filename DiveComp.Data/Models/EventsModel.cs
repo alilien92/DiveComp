@@ -8,11 +8,12 @@ namespace DiveComp.Data.Models
     {
         public int Id { get; set; }
 
-        public int contestId { get; set; }
+        public int ContestId { get; set; }
 
         public string Name { get; set; }
 
         //foreign key
         public virtual ContestModel Contest { get; set; }
+
     }
 }

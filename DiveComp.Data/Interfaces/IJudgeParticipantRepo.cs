@@ -10,5 +10,6 @@ namespace DiveComp.Data.Interfaces
         bool CreateNewJudgeParticipant(ContestModel contest, JudgeModel judge);
 
         JudgeParticipantModel Get1JudgeParticipant(int id);
+
     }
 }
