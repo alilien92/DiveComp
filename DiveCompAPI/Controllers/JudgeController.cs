@@ -58,17 +58,6 @@ namespace DiveCompAPI.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}")]
-        public ActionResult<IEnumerable<JudgeModel>> Updatejudge(int id, JudgeModel updatedJudge)
-        {
-            var judge = judges.UpdateJudge(id, updatedJudge);
-            if (judge != null)
-            {
-                return judge;
-            }
-            return NotFound();
-        }
-
         
     }
 }

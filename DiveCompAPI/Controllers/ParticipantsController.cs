@@ -49,14 +49,10 @@ namespace DiveCompAPI.Controllers
         }
 
         [HttpPut]
-
+        //Lagrad Procedur behövs
         public ActionResult<ParticipantsModel> UpdateDiverScore(int diverId, float newscore)
         {
-            if(participants.UpdateScore(diverId, newscore))
-            {
-                return Ok();
-            }
-            return NotFound();
+            throw new NotImplementedException();
         }
 
         [HttpDelete("{diverid}")]

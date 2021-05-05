@@ -1,0 +1,5420 @@
+     
+	  [
+        {
+            "DiveCodeNumber": 101,
+            "Height": 1,
+            "DiveVariation": "Forward Dive",
+            "STR": 1.4,
+            "Pike": 1.3,
+            "Tuck": 1.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 102,
+            "Height": 1,
+            "DiveVariation": "Forward Somersault",
+            "STR": 1.6,
+            "Pike": 1.5,
+            "Tuck": 1.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 103,
+            "Height": 1,
+            "DiveVariation": "Forward 1 ½ Somersaults",
+            "STR": 2,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 104,
+            "Height": 1,
+            "DiveVariation": "Forward 2 Somersaults",
+            "STR": 2.6,
+            "Pike": 2.3,
+            "Tuck": 2.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 105,
+            "Height": 1,
+            "DiveVariation": "Forward 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.6,
+            "Tuck": 2.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 106,
+            "Height": 1,
+            "DiveVariation": "Forward 3 Somersaults",
+            "STR": 0,
+            "Pike": 3.2,
+            "Tuck": 2.9,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 107,
+            "Height": 1,
+            "DiveVariation": "Forward 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.3,
+            "Tuck": 3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 108,
+            "Height": 1,
+            "DiveVariation": "Forward 4 Somersaults ",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 109,
+            "Height": 1,
+            "DiveVariation": "Forward 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 4.3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 112,
+            "Height": 1,
+            "DiveVariation": "Forward Flying Somersault",
+            "STR": 0,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 113,
+            "Height": 1,
+            "DiveVariation": "Forward Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 115,
+            "Height": 1,
+            "DiveVariation": "Forward Flying 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        
+        {
+            "DiveCodeNumber": 101,
+            "Height": 3,
+            "DiveVariation": "Forward Dive",
+            "Str": 1.6,
+            "Pike": 1.5,
+            "Tuck": 1.4,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 102,
+            "Height": 3,
+            "DiveVariation": "Forward Somersault",
+            "Str": 1.7,
+            "Pike": 1.6,
+            "Tuck": 1.5,
+	 	 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 103,
+            "Height": 3,
+            "DiveVariation": "Forward 1 ½ Somersaults",
+            "Str": 1.9,
+            "Pike": 1.6,
+            "Tuck": 1.5,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 104,
+            "Height": 3,
+            "DiveVariation": "Forward 2 Somersaults",
+            "Str": 2.4,
+            "Pike": 2.1,
+            "Tuck": 2,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 105,
+            "Height": 3,
+            "DiveVariation": "Forward 2 ½ Somersaults",
+            "Str": 2.8,
+            "Pike": 2.4,
+            "Tuck": 2.2,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 106,
+            "Height": 3,
+            "DiveVariation": "Forward 3 Somersaults",
+            "Str": 0,
+            "Pike": 2.8,
+            "Tuck": 2.5,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 107,
+            "Height": 3,
+            "DiveVariation": "Forward 3 ½ Somersaults",
+            "Str": 0,
+            "Pike": 3.1,
+            "Tuck": 2.8,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 108,
+            "Height": 3,
+            "DiveVariation": "Forward 4 Somersaults ",
+            "Str": 0,
+            "Pike": 3.8,
+            "Tuck": 3.4,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 109,
+            "Height": 3,
+            "DiveVariation": "Forward 4 ½ Somersaults",
+            "Str": 0,
+            "Pike": 4.2,
+            "Tuck": 3.8,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 112,
+            "Height": 3,
+            "DiveVariation": "Forward Flying Somersault",
+            "Str": 0,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 113,
+            "Height": 3,
+            "DiveVariation": "Forward Flying 1 ½ Somersaults",
+            "Str": 0,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+		 "Free": 0
+        },
+        {
+            "DiveCodeNumber": 115,
+            "Height": 3,
+            "DiveVariation": "Forward Flying 2 ½ Somersaults",
+            "Str": 0,
+            "Pike": 2.7,
+            "Tuck": 2.5,
+            "Free": 0
+        },
+    {
+        "DiveCodeNumber": 101,
+        "Height": 5,
+        "DiveVariation": "Forward Dive",
+        "STR": 1.4,
+        "Pike": 1.3,
+        "Tuck": 1.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 102,
+        "Height": 5,
+        "DiveVariation": "Forward 1 Somersault",
+        "STR": 1.6,
+        "Pike": 1.5,
+        "Tuck": 1.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 103,
+        "Height": 5,
+        "DiveVariation": "Forward 1 ½ Somersaults",
+        "STR": 2,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 104,
+        "Height": 5,
+        "DiveVariation": "Forward 2 Somersaults",
+        "STR": 2.6,
+        "Pike": 2.3,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 105,
+        "Height": 5,
+        "DiveVariation": "Forward 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 106,
+        "Height": 5,
+        "DiveVariation": "Forward 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 2.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 107,
+        "Height": 5,
+        "DiveVariation": "Forward 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 108,
+        "Height": 5,
+        "DiveVariation": "Forward 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 109,
+        "Height": 5,
+        "DiveVariation": "Forward 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 1011,
+        "Height": 5,
+        "DiveVariation": "Forward 5 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 112,
+        "Height": 5,
+        "DiveVariation": "Forward Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 113,
+        "Height": 5,
+        "DiveVariation": "Forward Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 114,
+        "Height": 5,
+        "DiveVariation": "Forward Flying 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 115,
+        "Height": 5,
+        "DiveVariation": "Forward Flying 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 101,
+        "Height": 7.5,
+        "DiveVariation": "Forward Dive",
+        "STR": 1.6,
+        "Pike": 1.5,
+        "Tuck": 1.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 102,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 Somersault",
+        "STR": 1.7,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 103,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 ½ Somersaults",
+        "STR": 1.9,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 104,
+        "Height": 7.5,
+        "DiveVariation": "Forward 2 Somersaults",
+        "STR": 2.4,
+        "Pike": 2.1,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 105,
+        "Height": 7.5,
+        "DiveVariation": "Forward 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 106,
+        "Height": 7.5,
+        "DiveVariation": "Forward 3 Somersaults",
+        "STR": 0,
+        "Pike": 2.8,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 107,
+        "Height": 7.5,
+        "DiveVariation": "Forward 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.1,
+        "Tuck": 2.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 108,
+        "Height": 7.5,
+        "DiveVariation": "Forward 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 109,
+        "Height": 7.5,
+        "DiveVariation": "Forward 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 1011,
+        "Height": 7.5,
+        "DiveVariation": "Forward 5 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 112,
+        "Height": 7.5,
+        "DiveVariation": "Forward Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 113,
+        "Height": 7.5,
+        "DiveVariation": "Forward Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 114,
+        "Height": 7.5,
+        "DiveVariation": "Forward Flying 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.3,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 115,
+        "Height": 7.5,
+        "DiveVariation": "Forward Flying 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 101,
+        "Height": 10,
+        "DiveVariation": "Forward Dive",
+        "STR": 1.6,
+        "Pike": 1.5,
+        "Tuck": 1.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 102,
+        "Height": 10,
+        "DiveVariation": "Forward 1 Somersault",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 103,
+        "Height": 10,
+        "DiveVariation": "Forward 1 ½ Somersaults",
+        "STR": 1.9,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 104,
+        "Height": 10,
+        "DiveVariation": "Forward 2 Somersaults",
+        "STR": 2.5,
+        "Pike": 2.2,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 105,
+        "Height": 10,
+        "DiveVariation": "Forward 2 ½ Somersaults",
+        "STR": 2.7,
+        "Pike": 2.3,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 106,
+        "Height": 10,
+        "DiveVariation": "Forward 3 Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 107,
+        "Height": 10,
+        "DiveVariation": "Forward 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 108,
+        "Height": 10,
+        "DiveVariation": "Forward 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.2,
+        "Tuck": 3.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 109,
+        "Height": 10,
+        "DiveVariation": "Forward 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 4.1,
+        "Tuck": 3.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 1011,
+        "Height": 10,
+        "DiveVariation": "Forward 5 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 4.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 112,
+        "Height": 10,
+        "DiveVariation": "Forward Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 113,
+        "Height": 10,
+        "DiveVariation": "Forward Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 114,
+        "Height": 10,
+        "DiveVariation": "Forward Flying 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 115,
+        "Height": 10,
+        "DiveVariation": "Forward Flying 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+
+    {
+            "DiveCodeNumber": 201,
+            "Height": 1,
+            "DiveVariation": "Back Dive",
+            "STR": 1.7,
+            "Pike": 1.6,
+            "Tuck": 1.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 202,
+            "Height": 1,
+            "DiveVariation": "Back Somersault",
+            "STR": 1.7,
+            "Pike": 1.6,
+            "Tuck": 1.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 203,
+            "Height": 1,
+            "DiveVariation": "Back 1 ½ Somersaults",
+            "STR": 2.5,
+            "Pike": 2.3,
+            "Tuck": 2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 204,
+            "Height": 1,
+            "DiveVariation": "Back 2 Somersaults",
+            "STR": 0,
+            "Pike": 2.5,
+            "Tuck": 2.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 205,
+            "Height": 1,
+            "DiveVariation": "Back 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.2,
+            "Tuck": 3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 206,
+            "Height": 1,
+            "DiveVariation": "Back 3 Somersaults",
+            "STR": 0,
+            "Pike": 3.2,
+            "Tuck": 2.9,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 207,
+            "Height": 1,
+            "DiveVariation": "Back 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 208,
+            "Height": 1,
+            "DiveVariation": "Back 4 Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 209,
+            "Height": 1,
+            "DiveVariation": "Back 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 212,
+            "Height": 1,
+            "DiveVariation": "Back Flying Somersault",
+            "STR": 0,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 213,
+            "Height": 1,
+            "DiveVariation": "Back Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 215,
+            "Height": 1,
+            "DiveVariation": "Back Flying 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        
+
+
+
+	   {
+            "DiveCodeNumber": 201,
+            "Height": 3,
+            "DiveVariation": "Back Dive",
+            "STR": 1.9,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 202,
+            "Height": 3,
+            "DiveVariation": "Back Somersault",
+            "STR": 1.8,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 203,
+            "Height": 3,
+            "DiveVariation": "Back 1 ½ Somersaults",
+            "STR": 2.4,
+            "Pike": 2.2,
+            "Tuck": 1.9,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 204,
+            "Height": 3,
+            "DiveVariation": "Back 2 Somersaults",
+            "STR": 2.5,
+            "Pike": 2.3,
+            "Tuck": 2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 205,
+            "Height": 3,
+            "DiveVariation": "Back 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3,
+            "Tuck": 2.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 206,
+            "Height": 3,
+            "DiveVariation": "Back 3 Somersaults",
+            "STR": 0,
+            "Pike": 2.8,
+            "Tuck": 2.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 207,
+            "Height": 3,
+            "DiveVariation": "Back 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.9,
+            "Tuck": 3.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 208,
+            "Height": 3,
+            "DiveVariation": "Back 4 Somersaults",
+            "STR": 0,
+            "Pike": 3.7,
+            "Tuck": 3.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 209,
+            "Height": 3,
+            "DiveVariation": "Back 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 4.8,
+            "Tuck": 4.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 212,
+            "Height": 3,
+            "DiveVariation": "Back Flying Somersault",
+            "STR": 0,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 213,
+            "Height": 3,
+            "DiveVariation": "Back Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.4,
+            "Tuck": 2.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 215,
+            "Height": 3,
+            "DiveVariation": "Back Flying 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.3,
+            "Tuck": 3.1,
+            "Free": 0
+        },
+    {
+        "DiveCodeNumber": 201,
+        "Height": 5,
+        "DiveVariation": "Back Dive",
+        "STR": 1.7,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 202,
+        "Height": 5,
+        "DiveVariation": "Back 1 Somersault",
+        "STR": 1.7,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 203,
+        "Height": 5,
+        "DiveVariation": "Back 1 ½ Somersaults",
+        "STR": 2.5,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 204,
+        "Height": 5,
+        "DiveVariation": "Back 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 205,
+        "Height": 5,
+        "DiveVariation": "Back 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 206,
+        "Height": 5,
+        "DiveVariation": "Back 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 2.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 207,
+        "Height": 5,
+        "DiveVariation": "Back 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 208,
+        "Height": 5,
+        "DiveVariation": "Back 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.4,
+        "Tuck": 4.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 209,
+        "Height": 5,
+        "DiveVariation": "Back 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 212,
+        "Height": 5,
+        "DiveVariation": "Back Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 213,
+        "Height": 5,
+        "DiveVariation": "Back Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 214,
+        "Height": 5,
+        "DiveVariation": "Back Flying 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 201,
+        "Height": 7.5,
+        "DiveVariation": "Back Dive",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 202,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 Somersault",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 203,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 ½ Somersaults",
+        "STR": 2.4,
+        "Pike": 2.2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 204,
+        "Height": 7.5,
+        "DiveVariation": "Back 2 Somersaults",
+        "STR": 2.5,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 205,
+        "Height": 7.5,
+        "DiveVariation": "Back 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 206,
+        "Height": 7.5,
+        "DiveVariation": "Back 3 Somersaults",
+        "STR": 0,
+        "Pike": 2.8,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 207,
+        "Height": 7.5,
+        "DiveVariation": "Back 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 208,
+        "Height": 7.5,
+        "DiveVariation": "Back 4 Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 3.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 209,
+        "Height": 7.5,
+        "DiveVariation": "Back 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 212,
+        "Height": 7.5,
+        "DiveVariation": "Back Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 213,
+        "Height": 7.5,
+        "DiveVariation": "Back Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 214,
+        "Height": 7.5,
+        "DiveVariation": "Back Flying 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 201,
+        "Height": 10,
+        "DiveVariation": "Back Dive",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 202,
+        "Height": 10,
+        "DiveVariation": "Back 1 Somersault",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 203,
+        "Height": 10,
+        "DiveVariation": "Back 1 ½ Somersaults",
+        "STR": 2.4,
+        "Pike": 2.2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 204,
+        "Height": 10,
+        "DiveVariation": "Back 2 Somersaults",
+        "STR": 2.6,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 205,
+        "Height": 10,
+        "DiveVariation": "Back 2 ½ Somersaults",
+        "STR": 3.3,
+        "Pike": 2.9,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 206,
+        "Height": 10,
+        "DiveVariation": "Back 3 Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 207,
+        "Height": 10,
+        "DiveVariation": "Back 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.6,
+        "Tuck": 3.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 208,
+        "Height": 10,
+        "DiveVariation": "Back 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.1,
+        "Tuck": 3.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 209,
+        "Height": 10,
+        "DiveVariation": "Back 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 4.5,
+        "Tuck": 4.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 212,
+        "Height": 10,
+        "DiveVariation": "Back Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 213,
+        "Height": 10,
+        "DiveVariation": "Back Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 214,
+        "Height": 10,
+        "DiveVariation": "Back Flying 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 3,
+        "Free": 0
+    },
+        {
+            "DiveCodeNumber": 301,
+            "Height": 1,
+            "DiveVariation": "Reverse Dive",
+            "STR": 1.8,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 302,
+            "Height": 1,
+            "DiveVariation": "Reverse Somersault",
+            "STR": 1.8,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 303,
+            "Height": 1,
+            "DiveVariation": "Reverse 1 ½ Somersaults",
+            "STR": 2.7,
+            "Pike": 2.4,
+            "Tuck": 2.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 304,
+            "Height": 1,
+            "DiveVariation": "Reverse 2 Somersaults",
+            "STR": 2.9,
+            "Pike": 2.6,
+            "Tuck": 2.3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 305,
+            "Height": 1,
+            "DiveVariation": "Reverse 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.2,
+            "Tuck": 3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 306,
+            "Height": 1,
+            "DiveVariation": "Reverse 3 Somersaults",
+            "STR": 0,
+            "Pike": 3.3,
+            "Tuck": 3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 307,
+            "Height": 1,
+            "DiveVariation": "Reverse 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 308,
+            "Height": 1,
+            "DiveVariation": "Reverse 4 Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 309,
+            "Height": 1,
+            "DiveVariation": "Reverse 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 312,
+            "Height": 1,
+            "DiveVariation": "Reverse Flying Somersault",
+            "STR": 0,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 313,
+            "Height": 1,
+            "DiveVariation": "Reverse Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.6,
+            "Tuck": 2.3,
+            "Free": 0
+        },
+
+
+
+
+
+        {
+            "DiveCodeNumber": 301,
+            "Height": 3,
+            "DiveVariation": "Reverse Dive",
+            "STR": 2,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 302,
+            "Height": 3,
+            "DiveVariation": "Reverse Somersault",
+            "STR": 1.9,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 303,
+            "Height": 3,
+            "DiveVariation": "Reverse 1 ½ Somersaults",
+            "STR": 2.6,
+            "Pike": 2.3,
+            "Tuck": 2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 304,
+            "Height": 3,
+            "DiveVariation": "Reverse 2 Somersaults",
+            "STR": 2.7,
+            "Pike": 2.4,
+            "Tuck": 2.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 305,
+            "Height": 3,
+            "DiveVariation": "Reverse 2 ½ Somersaults",
+            "STR": 3.4,
+            "Pike": 3,
+            "Tuck": 2.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 306,
+            "Height": 3,
+            "DiveVariation": "Reverse 3 Somersaults",
+            "STR": 0,
+            "Pike": 2.9,
+            "Tuck": 2.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 307,
+            "Height": 3,
+            "DiveVariation": "Reverse 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.8,
+            "Tuck": 3.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 308,
+            "Height": 3,
+            "DiveVariation": "Reverse 4 Somersaults",
+            "STR": 0,
+            "Pike": 3.7,
+            "Tuck": 3.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 309,
+            "Height": 3,
+            "DiveVariation": "Reverse 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 4.7,
+            "Tuck": 4.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 312,
+            "Height": 3,
+            "DiveVariation": "Reverse Flying Somersault",
+            "STR": 0,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 313,
+            "Height": 3,
+            "DiveVariation": "Reverse Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.5,
+            "Tuck": 2.2,
+            "Free": 0
+        },
+    {
+        "DiveCodeNumber": 301,
+        "Height": 5,
+        "DiveVariation": "Reverse Dive",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 302,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 Somersault",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 303,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 ½ Somersaults",
+        "STR": 2.7,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 304,
+        "Height": 5,
+        "DiveVariation": "Reverse 2 Somersaults",
+        "STR": 2.9,
+        "Pike": 2.6,
+        "Tuck": 2.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 305,
+        "Height": 5,
+        "DiveVariation": "Reverse 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 306,
+        "Height": 5,
+        "DiveVariation": "Reverse 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.4,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 307,
+        "Height": 5,
+        "DiveVariation": "Reverse 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 308,
+        "Height": 5,
+        "DiveVariation": "Reverse 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 309,
+        "Height": 5,
+        "DiveVariation": "Reverse 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 312,
+        "Height": 5,
+        "DiveVariation": "Reverse Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 313,
+        "Height": 5,
+        "DiveVariation": "Reverse Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 301,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Dive",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 302,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 Somersault",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 303,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 ½ Somersaults",
+        "STR": 2.6,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 304,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 2 Somersaults",
+        "STR": 2.7,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 305,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 2 ½ Somersaults",
+        "STR": 3.5,
+        "Pike": 3.1,
+        "Tuck": 2.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 306,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 3 Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 307,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 308,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.5,
+        "Tuck": 4.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 309,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 312,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 313,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 301,
+        "Height": 10,
+        "DiveVariation": "Reverse Dive",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 302,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 Somersault",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 303,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 ½ Somersaults",
+        "STR": 2.6,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 304,
+        "Height": 10,
+        "DiveVariation": "Reverse 2 Somersaults",
+        "STR": 2.8,
+        "Pike": 2.5,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 305,
+        "Height": 10,
+        "DiveVariation": "Reverse 2 ½ Somersaults",
+        "STR": 3.4,
+        "Pike": 3,
+        "Tuck": 2.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 306,
+        "Height": 10,
+        "DiveVariation": "Reverse 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 2.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 307,
+        "Height": 10,
+        "DiveVariation": "Reverse 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.7,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 308,
+        "Height": 10,
+        "DiveVariation": "Reverse 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.4,
+        "Tuck": 4.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 309,
+        "Height": 10,
+        "DiveVariation": "Reverse 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 4.8,
+        "Tuck": 4.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 312,
+        "Height": 10,
+        "DiveVariation": "Reverse Flying Somersaults",
+        "STR": 0,
+        "Pike": 2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 313,
+        "Height": 10,
+        "DiveVariation": "Reverse Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+        {
+            "DiveCodeNumber": 401,
+            "Height": 1,
+            "DiveVariation": "Inward Dive",
+            "STR": 1.8,
+            "Pike": 1.5,
+            "Tuck": 1.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 402,
+            "Height": 1,
+            "DiveVariation": "Inward Somersault",
+            "STR": 2,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 403,
+            "Height": 1,
+            "DiveVariation": "Inward 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.4,
+            "Tuck": 2.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 404,
+            "Height": 1,
+            "DiveVariation": "Inward 2 Somersaults",
+            "STR": 0,
+            "Pike": 3,
+            "Tuck": 2.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 405,
+            "Height": 1,
+            "DiveVariation": "Inward 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.4,
+            "Tuck": 3.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 407,
+            "Height": 1,
+            "DiveVariation": "Inward 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 409,
+            "Height": 1,
+            "DiveVariation": "Inward 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 412,
+            "Height": 1,
+            "DiveVariation": "Inward Flying Somersault",
+            "STR": 0,
+            "Pike": 2.1,
+            "Tuck": 2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 413,
+            "Height": 1,
+            "DiveVariation": "Inward Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.9,
+            "Tuck": 2.7,
+            "Free": 0
+        },
+
+
+
+
+        {
+            "DiveCodeNumber": 401,
+            "Height": 3,
+            "DiveVariation": "Inward Dive",
+            "STR": 1.7,
+            "Pike": 1.4,
+            "Tuck": 1.3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 402,
+            "Height": 3,
+            "DiveVariation": "Inward Somersault",
+            "STR": 1.8,
+            "Pike": 1.5,
+            "Tuck": 1.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 403,
+            "Height": 3,
+            "DiveVariation": "Inward 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.1,
+            "Tuck": 1.9,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 404,
+            "Height": 3,
+            "DiveVariation": "Inward 2 Somersaults",
+            "STR": 0,
+            "Pike": 2.6,
+            "Tuck": 2.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 405,
+            "Height": 3,
+            "DiveVariation": "Inward 2 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3,
+            "Tuck": 2.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 407,
+            "Height": 3,
+            "DiveVariation": "Inward 3 ½ Somersaults",
+            "STR": 0,
+            "Pike": 3.7,
+            "Tuck": 3.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 409,
+            "Height": 3,
+            "DiveVariation": "Inward 4 ½ Somersaults",
+            "STR": 0,
+            "Pike": 4.6,
+            "Tuck": 4.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 412,
+            "Height": 3,
+            "DiveVariation": "Inward Flying Somersault",
+            "STR": 0,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 413,
+            "Height": 3,
+            "DiveVariation": "Inward Flying 1 ½ Somersaults",
+            "STR": 0,
+            "Pike": 2.6,
+            "Tuck": 2.4,
+            "Free": 0
+        },
+    {
+        "DiveCodeNumber": 401,
+        "Height": 5,
+        "DiveVariation": "Inward Dive",
+        "STR": 1.8,
+        "Pike": 1.5,
+        "Tuck": 1.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 402,
+        "Height": 5,
+        "DiveVariation": "Inward 1 Somersault",
+        "STR": 2,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 403,
+        "Height": 5,
+        "DiveVariation": "Inward 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 404,
+        "Height": 5,
+        "DiveVariation": "Inward 2 Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 405,
+        "Height": 5,
+        "DiveVariation": "Inward 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.4,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 406,
+        "Height": 5,
+        "DiveVariation": "Inward 3 Somersaults",
+        "STR": 0,
+        "Pike": 4,
+        "Tuck": 3.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 407,
+        "Height": 5,
+        "DiveVariation": "Inward 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 408,
+        "Height": 5,
+        "DiveVariation": "Inward 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 409,
+        "Height": 5,
+        "DiveVariation": "Inward 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 412,
+        "Height": 5,
+        "DiveVariation": "Inward Flying Somersaults",
+        "STR": 0,
+        "Pike": 2.1,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 413,
+        "Height": 5,
+        "DiveVariation": "Inward Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.9,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 401,
+        "Height": 7.5,
+        "DiveVariation": "Inward Dive",
+        "STR": 1.7,
+        "Pike": 1.4,
+        "Tuck": 1.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 402,
+        "Height": 7.5,
+        "DiveVariation": "Inward 1 Somersault",
+        "STR": 1.8,
+        "Pike": 1.5,
+        "Tuck": 1.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 403,
+        "Height": 7.5,
+        "DiveVariation": "Inward 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.1,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 404,
+        "Height": 7.5,
+        "DiveVariation": "Inward 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 405,
+        "Height": 7.5,
+        "DiveVariation": "Inward 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 406,
+        "Height": 7.5,
+        "DiveVariation": "Inward 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.4,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 407,
+        "Height": 7.5,
+        "DiveVariation": "Inward 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 408,
+        "Height": 7.5,
+        "DiveVariation": "Inward 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 409,
+        "Height": 7.5,
+        "DiveVariation": "Inward 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 412,
+        "Height": 7.5,
+        "DiveVariation": "Inward Flying Somersaults",
+        "STR": 0,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 413,
+        "Height": 7.5,
+        "DiveVariation": "Inward Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 401,
+        "Height": 10,
+        "DiveVariation": "Inward Dive",
+        "STR": 0,
+        "Pike": 1.4,
+        "Tuck": 1.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 402,
+        "Height": 10,
+        "DiveVariation": "Inward 1 Somersault",
+        "STR": 0,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 403,
+        "Height": 10,
+        "DiveVariation": "Inward 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 404,
+        "Height": 10,
+        "DiveVariation": "Inward 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 405,
+        "Height": 10,
+        "DiveVariation": "Inward 2 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.8,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 406,
+        "Height": 10,
+        "DiveVariation": "Inward 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.5,
+        "Tuck": 3.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 407,
+        "Height": 10,
+        "DiveVariation": "Inward 3 ½ Somersaults",
+        "STR": 0,
+        "Pike": 3.5,
+        "Tuck": 3.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 408,
+        "Height": 10,
+        "DiveVariation": "Inward 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.4,
+        "Tuck": 4.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 409,
+        "Height": 10,
+        "DiveVariation": "Inward 4 ½ Somersaults",
+        "STR": 0,
+        "Pike": 4.4,
+        "Tuck": 4.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 412,
+        "Height": 10,
+        "DiveVariation": "Inward Flying Somersaults",
+        "STR": 0,
+        "Pike": 2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 413,
+        "Height": 10,
+        "DiveVariation": "Inward Flying 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5111,
+        "Height": 5,
+        "DiveVariation": "Forward Dive ½ Twist",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5112,
+        "Height": 5,
+        "DiveVariation": "Forward Dive 1 Twist",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5121,
+        "Height": 5,
+        "DiveVariation": "Forward Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.7
+    },
+    {
+        "DiveCodeNumber": 5122,
+        "Height": 5,
+        "DiveVariation": "Forward Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5124,
+        "Height": 5,
+        "DiveVariation": "Forward Somersault 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.3
+    },
+    {
+        "DiveCodeNumber": 5131,
+        "Height": 5,
+        "DiveVariation": "Forward 1 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5132,
+        "Height": 5,
+        "DiveVariation": "Forward 1 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.2
+    },
+    {
+        "DiveCodeNumber": 5134,
+        "Height": 5,
+        "DiveVariation": "Forward 1 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.6
+    },
+    {
+        "DiveCodeNumber": 5136,
+        "Height": 5,
+        "DiveVariation": "Forward 1 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.1
+    },
+    {
+        "DiveCodeNumber": 5138,
+        "Height": 5,
+        "DiveVariation": "Forward 1 ½ Somersaults 4 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.5
+    },
+    {
+        "DiveCodeNumber": 5152,
+        "Height": 5,
+        "DiveVariation": "Forward 2 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5154,
+        "Height": 5,
+        "DiveVariation": "Forward 2 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 3.6,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5156,
+        "Height": 5,
+        "DiveVariation": "Forward 2 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5172,
+        "Height": 5,
+        "DiveVariation": "Forward 3 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5111,
+        "Height": 7.5,
+        "DiveVariation": "Forward Dive ½ Twist",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5112,
+        "Height": 7.5,
+        "DiveVariation": "Forward Dive 1 Twist",
+        "STR": 2.2,
+        "Pike": 2.1,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5121,
+        "Height": 7.5,
+        "DiveVariation": "Forward Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.8
+    },
+    {
+        "DiveCodeNumber": 5122,
+        "Height": 7.5,
+        "DiveVariation": "Forward Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5124,
+        "Height": 7.5,
+        "DiveVariation": "Forward Somersault 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 5131,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5132,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5134,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5136,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3
+    },
+    {
+        "DiveCodeNumber": 5138,
+        "Height": 7.5,
+        "DiveVariation": "Forward 1 ½ Somersaults 4 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 5152,
+        "Height": 7.5,
+        "DiveVariation": "Forward 2 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5154,
+        "Height": 7.5,
+        "DiveVariation": "Forward 2 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 3.4,
+        "Tuck": 3.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5156,
+        "Height": 7.5,
+        "DiveVariation": "Forward 2 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5172,
+        "Height": 7.5,
+        "DiveVariation": "Forward 3 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 3.7,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5111,
+        "Height": 10,
+        "DiveVariation": "Forward Dive ½ Twist",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5112,
+        "Height": 10,
+        "DiveVariation": "Forward Dive 1 Twist",
+        "STR": 2.2,
+        "Pike": 2.1,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5121,
+        "Height": 10,
+        "DiveVariation": "Forward Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5122,
+        "Height": 10,
+        "DiveVariation": "Forward Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5124,
+        "Height": 10,
+        "DiveVariation": "Forward Somersault 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5131,
+        "Height": 10,
+        "DiveVariation": "Forward 1 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5132,
+        "Height": 10,
+        "DiveVariation": "Forward 1 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5134,
+        "Height": 10,
+        "DiveVariation": "Forward 1 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5136,
+        "Height": 10,
+        "DiveVariation": "Forward 1 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3
+    },
+    {
+        "DiveCodeNumber": 5138,
+        "Height": 10,
+        "DiveVariation": "Forward 1 ½ Somersaults 4 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 5152,
+        "Height": 10,
+        "DiveVariation": "Forward 2 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 2.9,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5154,
+        "Height": 10,
+        "DiveVariation": "Forward 2 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5156,
+        "Height": 10,
+        "DiveVariation": "Forward 2 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 3.8,
+        "Tuck": 3.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5172,
+        "Height": 10,
+        "DiveVariation": "Forward 3 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 3.6,
+        "Tuck": 3.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5211,
+        "Height": 5,
+        "DiveVariation": "Back Dive ½ Twist",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5212,
+        "Height": 5,
+        "DiveVariation": "Back Dive 1 Twist",
+        "STR": 2,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5221,
+        "Height": 5,
+        "DiveVariation": "Back Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.7
+    },
+    {
+        "DiveCodeNumber": 5222,
+        "Height": 5,
+        "DiveVariation": "Back Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5223,
+        "Height": 5,
+        "DiveVariation": "Back Somersault 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.3
+    },
+    {
+        "DiveCodeNumber": 5225,
+        "Height": 5,
+        "DiveVariation": "Back Somersault 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.7
+    },
+    {
+        "DiveCodeNumber": 5231,
+        "Height": 5,
+        "DiveVariation": "Back 1 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5233,
+        "Height": 5,
+        "DiveVariation": "Back 1 ½ Somersaults 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5235,
+        "Height": 5,
+        "DiveVariation": "Back 1 ½ Somersaults 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 5237,
+        "Height": 5,
+        "DiveVariation": "Back 1 ½ Somersaults 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 5239,
+        "Height": 5,
+        "DiveVariation": "Back 1 ½ Somersaults 4 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.8
+    },
+    {
+        "DiveCodeNumber": 5251,
+        "Height": 5,
+        "DiveVariation": "Back 2 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 2.9,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5253,
+        "Height": 5,
+        "DiveVariation": "Back 2 ½ Somersaults 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5255,
+        "Height": 5,
+        "DiveVariation": "Back 2 ½ Somersaults 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5257,
+        "Height": 5,
+        "DiveVariation": "Back 2 ½ Somersaults 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5271,
+        "Height": 5,
+        "DiveVariation": "Back 3 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5273,
+        "Height": 5,
+        "DiveVariation": "Back 3 ½ Somersaults 1 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5275,
+        "Height": 5,
+        "DiveVariation": "Back 3 ½ Somersaults 2 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5211,
+        "Height": 7.5,
+        "DiveVariation": "Back Dive ½ Twist",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5212,
+        "Height": 7.5,
+        "DiveVariation": "Back Dive 1 Twist",
+        "STR": 2.2,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5221,
+        "Height": 7.5,
+        "DiveVariation": "Back Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.8
+    },
+    {
+        "DiveCodeNumber": 5222,
+        "Height": 7.5,
+        "DiveVariation": "Back Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5223,
+        "Height": 7.5,
+        "DiveVariation": "Back Somersault 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 5225,
+        "Height": 7.5,
+        "DiveVariation": "Back Somersault 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.8
+    },
+    {
+        "DiveCodeNumber": 5231,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 5233,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 ½ Somersaults 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 5235,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 ½ Somersaults 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.8
+    },
+    {
+        "DiveCodeNumber": 5237,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 ½ Somersaults 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.3
+    },
+    {
+        "DiveCodeNumber": 5239,
+        "Height": 7.5,
+        "DiveVariation": "Back 1 ½ Somersaults 4 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.7
+    },
+    {
+        "DiveCodeNumber": 5251,
+        "Height": 7.5,
+        "DiveVariation": "Back 2 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 2.7,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5253,
+        "Height": 7.5,
+        "DiveVariation": "Back 2 ½ Somersaults 1 ½ Twists",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5255,
+        "Height": 7.5,
+        "DiveVariation": "Back 2 ½ Somersaults 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5257,
+        "Height": 7.5,
+        "DiveVariation": "Back 2 ½ Somersaults 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5271,
+        "Height": 7.5,
+        "DiveVariation": "Back 3 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5273,
+        "Height": 7.5,
+        "DiveVariation": "Back 3 ½ Somersaults 1 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5275,
+        "Height": 7.5,
+        "DiveVariation": "Back 3 ½ Somersaults 2 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5211,
+        "Height": 10,
+        "DiveVariation": "Back Dive ½ Twist",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5212,
+        "Height": 10,
+        "DiveVariation": "Back Dive 1 Twist",
+        "STR": 2.2,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5221,
+        "Height": 10,
+        "DiveVariation": "Back Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5222,
+        "Height": 10,
+        "DiveVariation": "Back Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5223,
+        "Height": 10,
+        "DiveVariation": "Back Somersault 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5225,
+        "Height": 10,
+        "DiveVariation": "Back Somersault 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 5231,
+        "Height": 10,
+        "DiveVariation": "Back 1 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5233,
+        "Height": 10,
+        "DiveVariation": "Back 1 ½ Somersaults 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 5235,
+        "Height": 10,
+        "DiveVariation": "Back 1 ½ Somersaults 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.8
+    },
+    {
+        "DiveCodeNumber": 5237,
+        "Height": 10,
+        "DiveVariation": "Back 1 ½ Somersaults 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.3
+    },
+    {
+        "DiveCodeNumber": 5239,
+        "Height": 10,
+        "DiveVariation": "Back 1 ½ Somersaults 4 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.7
+    },
+    {
+        "DiveCodeNumber": 5251,
+        "Height": 10,
+        "DiveVariation": "Back 2 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5253,
+        "Height": 10,
+        "DiveVariation": "Back 2 ½ Somersaults 1 ½ Twists",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5255,
+        "Height": 10,
+        "DiveVariation": "Back 2 ½ Somersaults 2 ½ Twists",
+        "STR": 0,
+        "Pike": 3.6,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5257,
+        "Height": 10,
+        "DiveVariation": "Back 2 ½ Somersaults 3 ½ Twists",
+        "STR": 0,
+        "Pike": 4.1,
+        "Tuck": 3.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5271,
+        "Height": 10,
+        "DiveVariation": "Back 3 ½ Somersaults ½ Twist",
+        "STR": 0,
+        "Pike": 3.2,
+        "Tuck": 2.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5273,
+        "Height": 10,
+        "DiveVariation": "Back 3 ½ Somersaults 1 ½ Twist",
+        "STR": 0,
+        "Pike": 3.8,
+        "Tuck": 3.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5275,
+        "Height": 10,
+        "DiveVariation": "Back 3 ½ Somersaults 2 ½ Twist",
+        "STR": 0,
+        "Pike": 4.2,
+        "Tuck": 3.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5311,
+        "Height": 5,
+        "DiveVariation": "Reverse Dive ½ Twist",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5312,
+        "Height": 5,
+        "DiveVariation": "Reverse Dive 1 Twist",
+        "STR": 2.1,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5321,
+        "Height": 5,
+        "DiveVariation": "Reverse Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.8
+    },
+    {
+        "DiveCodeNumber": 5322,
+        "Height": 5,
+        "DiveVariation": "Reverse Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5323,
+        "Height": 5,
+        "DiveVariation": "Reverse Somersault 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 5325,
+        "Height": 5,
+        "DiveVariation": "Reverse Somersault 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.8
+    },
+    {
+        "DiveCodeNumber": 5331,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.2
+    },
+    {
+        "DiveCodeNumber": 5333,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.6
+    },
+    {
+        "DiveCodeNumber": 5335,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3
+    },
+    {
+        "DiveCodeNumber": 5337,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.5
+    },
+    {
+        "DiveCodeNumber": 5339,
+        "Height": 5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 4 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5351,
+        "Height": 5,
+        "DiveVariation": "Reverse 2 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 2.9,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5353,
+        "Height": 5,
+        "DiveVariation": "Reverse 2 ½ Somersaults. 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5355,
+        "Height": 5,
+        "DiveVariation": "Reverse 2 ½ Somersaults. 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5371,
+        "Height": 5,
+        "DiveVariation": "Reverse 3 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5373,
+        "Height": 5,
+        "DiveVariation": "Reverse 3 ½ Somersaults. 1 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5375,
+        "Height": 5,
+        "DiveVariation": "Reverse 3 ½ Somersaults. 2 ½ Twist ",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5311,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Dive ½ Twist",
+        "STR": 2.1,
+        "Pike": 2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5312,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Dive 1 Twist",
+        "STR": 2.3,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5321,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5322,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5323,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Somersault 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5325,
+        "Height": 7.5,
+        "DiveVariation": "Reverse Somersault 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 5331,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5333,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5335,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 5337,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 5339,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 4 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.8
+    },
+    {
+        "DiveCodeNumber": 5351,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 2 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 2.7,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5353,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 2 ½ Somersaults. 1 ½ Twists",
+        "STR": 0,
+        "Pike": 3.4,
+        "Tuck": 3.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5355,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 2 ½ Somersaults. 2 ½ Twists",
+        "STR": 0,
+        "Pike": 3.8,
+        "Tuck": 3.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5371,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 3 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5373,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 3 ½ Somersaults. 1 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5375,
+        "Height": 7.5,
+        "DiveVariation": "Reverse 3 ½ Somersaults. 2 ½ Twist ",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5311,
+        "Height": 10,
+        "DiveVariation": "Reverse Dive ½ Twist",
+        "STR": 2.1,
+        "Pike": 2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5312,
+        "Height": 10,
+        "DiveVariation": "Reverse Dive 1 Twist",
+        "STR": 2.3,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5321,
+        "Height": 10,
+        "DiveVariation": "Reverse Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5322,
+        "Height": 10,
+        "DiveVariation": "Reverse Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.2
+    },
+    {
+        "DiveCodeNumber": 5323,
+        "Height": 10,
+        "DiveVariation": "Reverse Somersault 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.6
+    },
+    {
+        "DiveCodeNumber": 5325,
+        "Height": 10,
+        "DiveVariation": "Reverse Somersault 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3
+    },
+    {
+        "DiveCodeNumber": 5331,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5333,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 5335,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 5337,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 5339,
+        "Height": 10,
+        "DiveVariation": "Reverse 1 ½ Somersaults. 4 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.8
+    },
+    {
+        "DiveCodeNumber": 5351,
+        "Height": 10,
+        "DiveVariation": "Reverse 2 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5353,
+        "Height": 10,
+        "DiveVariation": "Reverse 2 ½ Somersaults. 1 ½ Twists",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5355,
+        "Height": 10,
+        "DiveVariation": "Reverse 2 ½ Somersaults. 2 ½ Twists",
+        "STR": 0,
+        "Pike": 3.7,
+        "Tuck": 3.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5371,
+        "Height": 10,
+        "DiveVariation": "Reverse 3 ½ Somersaults. ½ Twists",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5373,
+        "Height": 10,
+        "DiveVariation": "Reverse 3 ½ Somersaults. 1 ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5375,
+        "Height": 10,
+        "DiveVariation": "Reverse 3 ½ Somersaults. 2 ½ Twist ",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 4,
+        "Free": 0
+    },
+
+    {
+        "DiveCodeNumber": 5411,
+        "Height": 5,
+        "DiveVariation": "Inward Dive ½ Twist",
+        "STR": 2,
+        "Pike": 1.7,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5412,
+        "Height": 5,
+        "DiveVariation": "Inward Dive 1 Twist",
+        "STR": 2.2,
+        "Pike": 1.9,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5421,
+        "Height": 5,
+        "DiveVariation": "Inward Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5422,
+        "Height": 5,
+        "DiveVariation": "Inward Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.1
+    },
+    {
+        "DiveCodeNumber": 5432,
+        "Height": 5,
+        "DiveVariation": "Inward 1 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.7
+    },
+    {
+        "DiveCodeNumber": 5434,
+        "Height": 5,
+        "DiveVariation": "Inward 1 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.1
+    },
+    {
+        "DiveCodeNumber": 5436,
+        "Height": 5,
+        "DiveVariation": "Inward 1 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5411,
+        "Height": 7.5,
+        "DiveVariation": "Inward Dive ½ Twist",
+        "STR": 1.9,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5412,
+        "Height": 7.5,
+        "DiveVariation": "Inward Dive 1 Twist",
+        "STR": 2.1,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5421,
+        "Height": 7.5,
+        "DiveVariation": "Inward Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.7
+    },
+    {
+        "DiveCodeNumber": 5422,
+        "Height": 7.5,
+        "DiveVariation": "Inward Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.9
+    },
+    {
+        "DiveCodeNumber": 5432,
+        "Height": 7.5,
+        "DiveVariation": "Inward 1 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 5434,
+        "Height": 7.5,
+        "DiveVariation": "Inward 1 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.8
+    },
+    {
+        "DiveCodeNumber": 5436,
+        "Height": 7.5,
+        "DiveVariation": "Inward 1 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5411,
+        "Height": 10,
+        "DiveVariation": "Inward Dive ½ Twist",
+        "STR": 1.9,
+        "Pike": 1.6,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5412,
+        "Height": 10,
+        "DiveVariation": "Inward Dive 1 Twist",
+        "STR": 2.1,
+        "Pike": 1.8,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 5421,
+        "Height": 10,
+        "DiveVariation": "Inward Somersault ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.8
+    },
+    {
+        "DiveCodeNumber": 5422,
+        "Height": 10,
+        "DiveVariation": "Inward Somersault 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2
+    },
+    {
+        "DiveCodeNumber": 5432,
+        "Height": 10,
+        "DiveVariation": "Inward 1 ½ Somersaults 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.3
+    },
+    {
+        "DiveCodeNumber": 5434,
+        "Height": 10,
+        "DiveVariation": "Inward 1 ½ Somersaults 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.7
+    },
+    {
+        "DiveCodeNumber": 5436,
+        "Height": 10,
+        "DiveVariation": "Inward 1 ½ Somersaults 3 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 600,
+        "Height": 5,
+        "DiveVariation": "Armstand Dive",
+        "STR": 1.5,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 611,
+        "Height": 5,
+        "DiveVariation": "Armstand Forward ½ Somersault",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 612,
+        "Height": 5,
+        "DiveVariation": "Armstand Forward 1 Somersault",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 614,
+        "Height": 5,
+        "DiveVariation": "Armstand Forward 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.5,
+        "Tuck": 2.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 616,
+        "Height": 5,
+        "DiveVariation": "Armstand Forward 3 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 621,
+        "Height": 5,
+        "DiveVariation": "Armstand Back ½ Somersault",
+        "STR": 1.7,
+        "Pike": 1.6,
+        "Tuck": 1.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 622,
+        "Height": 5,
+        "DiveVariation": "Armstand Back Somersault",
+        "STR": 2.1,
+        "Pike": 2,
+        "Tuck": 1.8,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 623,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 624,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 2 Somersaults",
+        "STR": 3.1,
+        "Pike": 2.9,
+        "Tuck": 2.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 626,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 3 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 628,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 631,
+        "Height": 5,
+        "DiveVariation": "Armstand Reverse ½ Somersault",
+        "STR": 1.8,
+        "Pike": 1.7,
+        "Tuck": 1.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 632,
+        "Height": 5,
+        "DiveVariation": "Armstand Reverse 1 Somersault",
+        "STR": 0,
+        "Pike": 2.1,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 633,
+        "Height": 5,
+        "DiveVariation": "Armstand Reverse 1 ½ Soms.",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 634,
+        "Height": 5,
+        "DiveVariation": "Armstand Reverse 2 Soms",
+        "STR": 0,
+        "Pike": 3,
+        "Tuck": 2.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 636,
+        "Height": 5,
+        "DiveVariation": "Armstand Reverse 3 Soms.",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 638,
+        "Height": 5,
+        "DiveVariation": "Armstand Reverse 4 Soms",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6122,
+        "Height": 5,
+        "DiveVariation": "Armstand Fwd Som. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.4
+    },
+    {
+        "DiveCodeNumber": 6124,
+        "Height": 5,
+        "DiveVariation": "Armstand Fwd Som. 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.7
+    },
+    {
+        "DiveCodeNumber": 6142,
+        "Height": 5,
+        "DiveVariation": "Armstand Fwd 2 Soms. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.2
+    },
+    {
+        "DiveCodeNumber": 6144,
+        "Height": 5,
+        "DiveVariation": "Armstand Fwd 2 Soms. 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.5
+    },
+    {
+        "DiveCodeNumber": 6162,
+        "Height": 5,
+        "DiveVariation": "Armstand Fwd 3 Soms. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6221,
+        "Height": 5,
+        "DiveVariation": "Armstand Back Som. ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.6
+    },
+    {
+        "DiveCodeNumber": 6241,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 2 Soms. ½ Twist",
+        "STR": 0,
+        "Pike": 2.8,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6243,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 2 Soms 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.3
+    },
+    {
+        "DiveCodeNumber": 6245,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 2 Soms 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.7
+    },
+    {
+        "DiveCodeNumber": 6247,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 2 Soms 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6261,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 3 Soms. ½ Twist",
+        "STR": 0,
+        "Pike": 3.7,
+        "Tuck": 3.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6263,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 3 Soms 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6265,
+        "Height": 5,
+        "DiveVariation": "Armstand Back 3 Soms 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 600,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Dive",
+        "STR": 1.6,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 611,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Forward ½ Somersault",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 612,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Forward 1 Somersault",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 614,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Forward 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 616,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Forward 3 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 621,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back ½ Somersault",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 622,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back Somersault",
+        "STR": 2.2,
+        "Pike": 2.1,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 623,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 624,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 2 Somersaults",
+        "STR": 2.9,
+        "Pike": 2.7,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 626,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 628,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 4 Somersaults",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 631,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Reverse ½ Somersault",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 632,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Reverse 1 Somersault",
+        "STR": 0,
+        "Pike": 2.2,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 633,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Reverse 1 ½ Soms.",
+        "STR": 0,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 634,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Reverse 2 Soms",
+        "STR": 0,
+        "Pike": 2.8,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 636,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Reverse 3 Soms.",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 638,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Reverse 4 Soms",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6122,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Fwd Som. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.5
+    },
+    {
+        "DiveCodeNumber": 6124,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Fwd Som. 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.8
+    },
+    {
+        "DiveCodeNumber": 6142,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Fwd 2 Soms. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3
+    },
+    {
+        "DiveCodeNumber": 6144,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Fwd 2 Soms. 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.3
+    },
+    {
+        "DiveCodeNumber": 6162,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Fwd 3 Soms. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6221,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back Som. ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.7
+    },
+    {
+        "DiveCodeNumber": 6241,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 2 Soms. ½ Twist",
+        "STR": 0,
+        "Pike": 2.6,
+        "Tuck": 2.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6243,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 2 Soms 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.1
+    },
+    {
+        "DiveCodeNumber": 6245,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 2 Soms 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.5
+    },
+    {
+        "DiveCodeNumber": 6247,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 2 Soms 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6261,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 3 Soms. ½ Twist",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6263,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 3 Soms 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6265,
+        "Height": 7.5,
+        "DiveVariation": "Armstand Back 3 Soms 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 600,
+        "Height": 10,
+        "DiveVariation": "Armstand Dive",
+        "STR": 1.6,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 611,
+        "Height": 10,
+        "DiveVariation": "Armstand Forward ½ Somersault",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 612,
+        "Height": 10,
+        "DiveVariation": "Armstand Forward 1 Somersault",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 614,
+        "Height": 10,
+        "DiveVariation": "Armstand Forward 2 Somersaults",
+        "STR": 0,
+        "Pike": 2.4,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 616,
+        "Height": 10,
+        "DiveVariation": "Armstand Forward 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.3,
+        "Tuck": 3.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 621,
+        "Height": 10,
+        "DiveVariation": "Armstand Back ½ Somersault",
+        "STR": 1.9,
+        "Pike": 1.8,
+        "Tuck": 1.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 622,
+        "Height": 10,
+        "DiveVariation": "Armstand Back Somersault",
+        "STR": 2.3,
+        "Pike": 2.2,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 623,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 1 ½ Somersaults",
+        "STR": 0,
+        "Pike": 2.2,
+        "Tuck": 1.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 624,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 2 Somersaults",
+        "STR": 3,
+        "Pike": 2.8,
+        "Tuck": 2.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 626,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 3 Somersaults",
+        "STR": 0,
+        "Pike": 3.5,
+        "Tuck": 3.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 628,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 4 Somersaults",
+        "STR": 0,
+        "Pike": 4.7,
+        "Tuck": 4.5,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 631,
+        "Height": 10,
+        "DiveVariation": "Armstand Reverse ½ Somersault",
+        "STR": 2,
+        "Pike": 1.9,
+        "Tuck": 1.7,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 632,
+        "Height": 10,
+        "DiveVariation": "Armstand Reverse 1 Somersault",
+        "STR": 0,
+        "Pike": 2.3,
+        "Tuck": 2.1,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 633,
+        "Height": 10,
+        "DiveVariation": "Armstand Reverse 1 ½ Soms.",
+        "STR": 0,
+        "Pike": 2.3,
+        "Tuck": 2,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 634,
+        "Height": 10,
+        "DiveVariation": "Armstand Reverse 2 Soms",
+        "STR": 0,
+        "Pike": 2.9,
+        "Tuck": 2.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 636,
+        "Height": 10,
+        "DiveVariation": "Armstand Reverse 3 Soms.",
+        "STR": 0,
+        "Pike": 3.6,
+        "Tuck": 3.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 638,
+        "Height": 10,
+        "DiveVariation": "Armstand Reverse 4 Soms",
+        "STR": 0,
+        "Pike": 4.8,
+        "Tuck": 4.6,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6122,
+        "Height": 10,
+        "DiveVariation": "Armstand Fwd Som. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.6
+    },
+    {
+        "DiveCodeNumber": 6124,
+        "Height": 10,
+        "DiveVariation": "Armstand Fwd Som. 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 2.9
+    },
+    {
+        "DiveCodeNumber": 6142,
+        "Height": 10,
+        "DiveVariation": "Armstand Fwd 2 Soms. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.1
+    },
+    {
+        "DiveCodeNumber": 6144,
+        "Height": 10,
+        "DiveVariation": "Armstand Fwd 2 Soms. 2 Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.4
+    },
+    {
+        "DiveCodeNumber": 6162,
+        "Height": 10,
+        "DiveVariation": "Armstand Fwd 3 Soms. 1 Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 3.9,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6221,
+        "Height": 10,
+        "DiveVariation": "Armstand Back Som. ½ Twist",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 1.8
+    },
+    {
+        "DiveCodeNumber": 6241,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 2 Soms. ½ Twist",
+        "STR": 0,
+        "Pike": 2.7,
+        "Tuck": 2.4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6243,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 2 Soms 1 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.2
+    },
+    {
+        "DiveCodeNumber": 6245,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 2 Soms 2 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 3.6
+    },
+    {
+        "DiveCodeNumber": 6247,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 2 Soms 3 ½ Twists",
+        "STR": 0,
+        "Pike": 0,
+        "Tuck": 0,
+        "Free": 4
+    },
+    {
+        "DiveCodeNumber": 6261,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 3 Soms. ½ Twist",
+        "STR": 0,
+        "Pike": 3.5,
+        "Tuck": 3.3,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6263,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 3 Soms 1 ½ Twists",
+        "STR": 0,
+        "Pike": 4.2,
+        "Tuck": 4,
+        "Free": 0
+    },
+    {
+        "DiveCodeNumber": 6265,
+        "Height": 10,
+        "DiveVariation": "Armstand Back 3 Soms 2 ½ Twists",
+        "STR": 0,
+        "Pike": 4.7,
+        "Tuck": 4.4,
+        "Free": 0
+    },
+        {
+            "DiveCodeNumber": 5111,
+            "Height": 1,
+            "DiveVariation": "Forward Dive ½ Twist",
+            "STR": 1.8,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5112,
+            "Height": 1,
+            "DiveVariation": "Forward Dive 1 Twist",
+            "STR": 2,
+            "Pike": 1.9,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5121,
+            "Height": 1,
+            "DiveVariation": "Forward Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.7
+        },
+        {
+            "DiveCodeNumber": 5122,
+            "Height": 1,
+            "DiveVariation": "Forward Somersault 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.9
+        },
+        {
+            "DiveCodeNumber": 5124,
+            "Height": 1,
+            "DiveVariation": "Forward Somersault 2 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.3
+        },
+        {
+            "DiveCodeNumber": 5126,
+            "Height": 1,
+            "DiveVariation": "Forward Somersault 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.8
+        },
+        {
+            "DiveCodeNumber": 5131,
+            "Height": 1,
+            "DiveVariation": "Forward 1 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2
+        },
+        {
+            "DiveCodeNumber": 5132,
+            "Height": 1,
+            "DiveVariation": "Forward 1 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.2
+        },
+        {
+            "DiveCodeNumber": 5134,
+            "Height": 1,
+            "DiveVariation": "Forward 1 ½ Somersaults 2 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.6
+        },
+        {
+            "DiveCodeNumber": 5136,
+            "Height": 1,
+            "DiveVariation": "Forward 1 ½ Somersaults 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.1
+        },
+        {
+            "DiveCodeNumber": 5138,
+            "Height": 1,
+            "DiveVariation": "Forward 1 ½ Somersaults 4 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.5
+        },
+        {
+            "DiveCodeNumber": 5151,
+            "Height": 1,
+            "DiveVariation": "Forward 2 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 3,
+            "Tuck": 2.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5152,
+            "Height": 1,
+            "DiveVariation": "Forward 2 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 3.2,
+            "Tuck": 3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5154,
+            "Height": 1,
+            "DiveVariation": "Forward 2 ½ Somersaults 2 Twists",
+            "STR": 0,
+            "Pike": 3.6,
+            "Tuck": 3.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5156,
+            "Height": 1,
+            "DiveVariation": "Forward 2 ½ Somersaults 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5211,
+            "Height": 1,
+            "DiveVariation": "Back Dive ½ Twist",
+            "STR": 1.8,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5212,
+            "Height": 1,
+            "DiveVariation": "Back Dive 1 Twist",
+            "STR": 2,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5221,
+            "Height": 1,
+            "DiveVariation": "Back Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.8
+        },
+        {
+            "DiveCodeNumber": 5222,
+            "Height": 1,
+            "DiveVariation": "Back Somersault 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2
+        },
+        {
+            "DiveCodeNumber": 5223,
+            "Height": 1,
+            "DiveVariation": "Back Somersault 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.4
+        },
+        {
+            "DiveCodeNumber": 5225,
+            "Height": 1,
+            "DiveVariation": "Back Somersault 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.8
+        },
+        {
+            "DiveCodeNumber": 5227,
+            "Height": 1,
+            "DiveVariation": "Back Somersault 3 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.2
+        },
+        {
+            "DiveCodeNumber": 5231,
+            "Height": 1,
+            "DiveVariation": "Back 1 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.6
+        },
+        {
+            "DiveCodeNumber": 5233,
+            "Height": 1,
+            "DiveVariation": "Back 1 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3
+        },
+        {
+            "DiveCodeNumber": 5235,
+            "Height": 1,
+            "DiveVariation": "Back 1 ½ Somersaults 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.6
+        },
+        {
+            "DiveCodeNumber": 5237,
+            "Height": 1,
+            "DiveVariation": "Back 1 ½ Somersaults 3 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5239,
+            "Height": 1,
+            "DiveVariation": "Back 1 ½ Somersaults 4 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5251,
+            "Height": 1,
+            "DiveVariation": "Back 2 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 2.9,
+            "Tuck": 2.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5253,
+            "Height": 1,
+            "DiveVariation": "Back 2 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5255,
+            "Height": 1,
+            "DiveVariation": "Back 2 ½ Somersaults 2 ½  Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5311,
+            "Height": 1,
+            "DiveVariation": "Reverse Dive ½ Twist",
+            "STR": 1.9,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5312,
+            "Height": 1,
+            "DiveVariation": "Reverse Dive 1 Twist",
+            "STR": 2.1,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5321,
+            "Height": 1,
+            "DiveVariation": "Reverse Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5322,
+            "Height": 1,
+            "DiveVariation": "Reverse Somersault 1Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5323,
+            "Height": 1,
+            "DiveVariation": "Reverse Somersault 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5325,
+            "Height": 1,
+            "DiveVariation": "Reverse Somersault 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5331,
+            "Height": 1,
+            "DiveVariation": "Reverse 1 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5333,
+            "Height": 1,
+            "DiveVariation": "Reverse 1 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5335,
+            "Height": 1,
+            "DiveVariation": "Reverse 1 ½ Somersaults 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5337,
+            "Height": 1,
+            "DiveVariation": "Reverse 1 ½ Somersaults 3 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5339,
+            "Height": 1,
+            "DiveVariation": "Reverse 1 ½ Somersaults 4 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5351,
+            "Height": 1,
+            "DiveVariation": "Reverse 2 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 2.9,
+            "Tuck": 2.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5353,
+            "Height": 1,
+            "DiveVariation": "Reverse 2 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 3.5,
+            "Tuck": 3.3,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5355,
+            "Height": 1,
+            "DiveVariation": "Reverse 2 ½ Somersaults 2 ½ Twists",
+            "STR": 0,
+            "Pike": 3.9,
+            "Tuck": 3.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5371,
+            "Height": 1,
+            "DiveVariation": "Reverse 3 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5373,
+            "Height": 1,
+            "DiveVariation": "Reverse 3 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5375,
+            "Height": 1,
+            "DiveVariation": "Reverse 3 ½ Somersaults2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5411,
+            "Height": 1,
+            "DiveVariation": "Inward Dive ½ Twist",
+            "STR": 2,
+            "Pike": 1.7,
+            "Tuck": 1.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5412,
+            "Height": 1,
+            "DiveVariation": "Inward Dive 1 Twist",
+            "STR": 2.2,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5421,
+            "Height": 1,
+            "DiveVariation": "Inward Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.9
+        },
+        {
+            "DiveCodeNumber": 5422,
+            "Height": 1,
+            "DiveVariation": "Inward Somersault 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.1
+        },
+        {
+            "DiveCodeNumber": 5432,
+            "Height": 1,
+            "DiveVariation": "Inward 1 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.7
+        },
+        {
+            "DiveCodeNumber": 5434,
+            "Height": 1,
+            "DiveVariation": "Inward 1 ½ Somersaults 2 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.1
+        },
+        {
+            "DiveCodeNumber": 5436,
+            "Height": 1,
+            "DiveVariation": "Inward 1 ½ Somersaults 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+
+	   {
+            "DiveCodeNumber": 5172,
+            "Height": 1,
+            "DiveVariation": "Forward 3 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5111,
+            "Height": 3,
+            "DiveVariation": "Forward Dive ½ Twist",
+            "STR": 2,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5112,
+            "Height": 3,
+            "DiveVariation": "Forward Dive 1 Twist",
+            "STR": 2.2,
+            "Pike": 2.1,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5121,
+            "Height": 3,
+            "DiveVariation": "Forward Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.8
+        },
+        {
+            "DiveCodeNumber": 5122,
+            "Height": 3,
+            "DiveVariation": "Forward Somersault 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2
+        },
+        {
+            "DiveCodeNumber": 5124,
+            "Height": 3,
+            "DiveVariation": "Forward Somersault 2 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.4
+        },
+        {
+            "DiveCodeNumber": 5126,
+            "Height": 3,
+            "DiveVariation": "Forward Somersault 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.9
+        },
+        {
+            "DiveCodeNumber": 5131,
+            "Height": 3,
+            "DiveVariation": "Forward 1 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.9
+        },
+        {
+            "DiveCodeNumber": 5132,
+            "Height": 3,
+            "DiveVariation": "Forward 1 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.1
+        },
+        {
+            "DiveCodeNumber": 5134,
+            "Height": 3,
+            "DiveVariation": "Forward 1 ½ Somersaults 2 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.5
+        },
+        {
+            "DiveCodeNumber": 5136,
+            "Height": 3,
+            "DiveVariation": "Forward 1 ½ Somersaults 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3
+        },
+        {
+            "DiveCodeNumber": 5138,
+            "Height": 3,
+            "DiveVariation": "Forward 1 ½ Somersaults 4 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.4
+        },
+        {
+            "DiveCodeNumber": 5151,
+            "Height": 3,
+            "DiveVariation": "Forward 2 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 2.8,
+            "Tuck": 2.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5152,
+            "Height": 3,
+            "DiveVariation": "Forward 2 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 3,
+            "Tuck": 2.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5154,
+            "Height": 3,
+            "DiveVariation": "Forward 2 ½ Somersaults 2 Twists",
+            "STR": 0,
+            "Pike": 3.4,
+            "Tuck": 3.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5156,
+            "Height": 3,
+            "DiveVariation": "Forward 2 ½ Somersaults 3 Twists",
+            "STR": 0,
+            "Pike": 3.9,
+            "Tuck": 3.7,
+            "Free": 0
+        },
+	   {
+            "DiveCodeNumber": 5172,
+            "Height": 3,
+            "DiveVariation": "Forward 3 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 3.7,
+            "Tuck": 3.4,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5211,
+            "Height": 3,
+            "DiveVariation": "Back Dive ½ Twist",
+            "STR": 2,
+            "Pike": 1.9,
+            "Tuck": 1.8,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5212,
+            "Height": 3,
+            "DiveVariation": "Back Dive 1 Twist",
+            "STR": 2.2,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5221,
+            "Height": 3,
+            "DiveVariation": "Back Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.8
+        },
+        {
+            "DiveCodeNumber": 5222,
+            "Height": 3,
+            "DiveVariation": "Back Somersault 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2
+        },
+        {
+            "DiveCodeNumber": 5223,
+            "Height": 3,
+            "DiveVariation": "Back Somersault 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.4
+        },
+        {
+            "DiveCodeNumber": 5225,
+            "Height": 3,
+            "DiveVariation": "Back Somersault 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.8
+        },
+        {
+            "DiveCodeNumber": 5227,
+            "Height": 3,
+            "DiveVariation": "Back Somersault 3 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.3
+        },
+        {
+            "DiveCodeNumber": 5231,
+            "Height": 3,
+            "DiveVariation": "Back 1 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2
+        },
+        {
+            "DiveCodeNumber": 5233,
+            "Height": 3,
+            "DiveVariation": "Back 1 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.4
+        },
+        {
+            "DiveCodeNumber": 5235,
+            "Height": 3,
+            "DiveVariation": "Back 1 ½ Somersaults 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.8
+        },
+        {
+            "DiveCodeNumber": 5237,
+            "Height": 3,
+            "DiveVariation": "Back 1 ½ Somersaults 3 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.3
+        },
+        {
+            "DiveCodeNumber": 5239,
+            "Height": 3,
+            "DiveVariation": "Back 1 ½ Somersaults 4 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.7
+        },
+        {
+            "DiveCodeNumber": 5251,
+            "Height": 3,
+            "DiveVariation": "Back 2 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 2.7,
+            "Tuck": 2.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5253,
+            "Height": 3,
+            "DiveVariation": "Back 2 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 3.4,
+            "Tuck": 3.2,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5255,
+            "Height": 3,
+            "DiveVariation": "Back 2 ½ Somersaults 2 ½  Twists",
+            "STR": 0,
+            "Pike": 3.8,
+            "Tuck": 3.6,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5311,
+            "Height": 3,
+            "DiveVariation": "Reverse Dive ½ Twist",
+            "STR": 2.1,
+            "Pike": 2,
+            "Tuck": 1.9,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5312,
+            "Height": 3,
+            "DiveVariation": "Reverse Dive 1 Twist",
+            "STR": 2.3,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5321,
+            "Height": 3,
+            "DiveVariation": "Reverse Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.9
+        },
+        {
+            "DiveCodeNumber": 5322,
+            "Height": 3,
+            "DiveVariation": "Reverse Somersault 1Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.1
+        },
+        {
+            "DiveCodeNumber": 5323,
+            "Height": 3,
+            "DiveVariation": "Reverse Somersault 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.5
+        },
+        {
+            "DiveCodeNumber": 5325,
+            "Height": 3,
+            "DiveVariation": "Reverse Somersault 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.9
+        },
+        {
+            "DiveCodeNumber": 5331,
+            "Height": 3,
+            "DiveVariation": "Reverse 1 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.1
+        },
+        {
+            "DiveCodeNumber": 5333,
+            "Height": 3,
+            "DiveVariation": "Reverse 1 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.5
+        },
+        {
+            "DiveCodeNumber": 5335,
+            "Height": 3,
+            "DiveVariation": "Reverse 1 ½ Somersaults 2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.9
+        },
+        {
+            "DiveCodeNumber": 5337,
+            "Height": 3,
+            "DiveVariation": "Reverse 1 ½ Somersaults 3 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.5
+        },
+        {
+            "DiveCodeNumber": 5339,
+            "Height": 3,
+            "DiveVariation": "Reverse 1 ½ Somersaults 4 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.8
+        },
+        {
+            "DiveCodeNumber": 5351,
+            "Height": 3,
+            "DiveVariation": "Reverse 2 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 2.7,
+            "Tuck": 2.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5353,
+            "Height": 3,
+            "DiveVariation": "Reverse 2 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 3.3,
+            "Tuck": 3.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5355,
+            "Height": 3,
+            "DiveVariation": "Reverse 2 ½ Somersaults 2 ½ Twists",
+            "STR": 0,
+            "Pike": 3.7,
+            "Tuck": 3.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5371,
+            "Height": 3,
+            "DiveVariation": "Reverse 3 ½ Somersaults ½ Twist",
+            "STR": 0,
+            "Pike": 3.4,
+            "Tuck": 3.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5373,
+            "Height": 3,
+            "DiveVariation": "Reverse 3 ½ Somersaults 1 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 3.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5375,
+            "Height": 3,
+            "DiveVariation": "Reverse 3 ½ Somersaults2 ½ Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 4.1,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5411,
+            "Height": 3,
+            "DiveVariation": "Inward Dive ½ Twist",
+            "STR": 1.9,
+            "Pike": 1.6,
+            "Tuck": 1.5,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5412,
+            "Height": 3,
+            "DiveVariation": "Inward Dive 1 Twist",
+            "STR": 2.1,
+            "Pike": 1.8,
+            "Tuck": 1.7,
+            "Free": 0
+        },
+        {
+            "DiveCodeNumber": 5421,
+            "Height": 3,
+            "DiveVariation": "Inward Somersault ½ Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.7
+        },
+        {
+            "DiveCodeNumber": 5422,
+            "Height": 3,
+            "DiveVariation": "Inward Somersault 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 1.9
+        },
+        {
+            "DiveCodeNumber": 5432,
+            "Height": 3,
+            "DiveVariation": "Inward 1 ½ Somersaults 1 Twist",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.4
+        },
+        {
+            "DiveCodeNumber": 5434,
+            "Height": 3,
+            "DiveVariation": "Inward 1 ½ Somersaults 2 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 2.8
+        },
+        {
+            "DiveCodeNumber": 5436,
+            "Height": 3,
+            "DiveVariation": "Inward 1 ½ Somersaults 3 Twists",
+            "STR": 0,
+            "Pike": 0,
+            "Tuck": 0,
+            "Free": 3.5
+        }
+    ]

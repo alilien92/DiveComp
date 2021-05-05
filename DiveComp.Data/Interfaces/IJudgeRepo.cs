@@ -16,6 +16,5 @@ namespace DiveComp.Data.Interfaces
 
         bool RemoveJudge(int id);
 
-        List<JudgeModel> UpdateJudge(int id, JudgeModel updatedJudge);
     }
 }

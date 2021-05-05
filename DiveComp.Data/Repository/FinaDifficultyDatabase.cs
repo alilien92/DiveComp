@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.IO;
+using Newtonsoft.Json;
+
 namespace DiveComp.Data.Repository
 {
     public class FinaDifficultyDatabase : IFinaDifficultyRepo
@@ -16,12 +19,10 @@ namespace DiveComp.Data.Repository
             this.db = _db;
         }
 
-        public List<FinaDifficultyModel> GetAllFinaDifficulty() {
-            return db.difficultyMods.ToList();
-        }
 
         public FinaDifficultyModel Get1Difficulty(int id) {
-            return db.difficultyMods.FirstOrDefault(x => x.Id == id);
+            //Kalla lagrad procedur
+            throw new NotImplementedException();
         }
 
         public bool AddFinaDifficulty(FinaDifficultyModel newDifficulty) {
@@ -31,23 +32,21 @@ namespace DiveComp.Data.Repository
             return true;
         }
 
-        public bool RemoveFinaDifficulty(int id) {
-            var dMod = Get1Difficulty(id);
-            if (dMod == null) {
-                return false;
+        public bool InsertFinaTable()
+        {
+            var finaList = new List<FinaDifficultyModel>();
+
+            using (StreamReader r = new StreamReader(@"C:\Users\pontu\Desktop\SoP\DiveComp\DiveComp.Data\Helpers\FinaTable.json"))
+            {
+                string json = r.ReadToEnd();
+                finaList = JsonConvert.DeserializeObject<List<FinaDifficultyModel>>(json);
             }
-            db.difficultyMods.Remove(dMod);
+
+            foreach (var diveobject in finaList)
+                db.Add(diveobject);
+
             db.SaveChanges();
             return true;
-        }
-
-        public List<FinaDifficultyModel> UpdateFinaDifficulty(int id, FinaDifficultyModel updatedFinaDifficulty) {
-            if (this.RemoveFinaDifficulty(id)) {
-                this.AddFinaDifficulty(updatedFinaDifficulty);
-                db.SaveChanges();
-                return db.difficultyMods.ToList();
-            }
-            return db.difficultyMods.ToList();
         }
     }
 }

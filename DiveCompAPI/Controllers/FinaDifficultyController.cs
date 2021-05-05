@@ -20,48 +20,21 @@ namespace DiveCompAPI.Controllers
             }
 
             [HttpGet("{id}")]
+            //Lagrad Procedur: Hämta specifik difficulty
             public ActionResult<FinaDifficultyModel> GetFinaDifficulty(int id) {
-                var finaDifficultys = finaDifficulty.Get1Difficulty(id);
-                if (finaDifficultys == null) {
-                    return NotFound();
-                }
-                return finaDifficultys;
+                throw new NotImplementedException();
             }
+        
 
-            [HttpPost]
-            public ActionResult<FinaDifficultyModel> PostFinaDifficulty(List<FinaDifficultyModel> finaDifficultys) {
-            if (finaDifficultys.Count >= 2) {
-                for (int i = 0; i < finaDifficultys.Count; i++) {
-                    FinaDifficultyModel item = finaDifficultys[i];
-                    finaDifficulty.AddFinaDifficulty(item);
-                }
+        [HttpPost]
+            public ActionResult<FinaDifficultyModel> PostFinaDifficulty()
+            {
+                if(finaDifficulty.InsertFinaTable())
+                {
                 return Ok();
-            }
-            
+                }
                 return BadRequest();
-            }
-
-            [HttpDelete("{id}")]
-            public ActionResult<List<FinaDifficultyModel>> DeleteFinaDifficulty(int id) {
-                if (finaDifficulty.RemoveFinaDifficulty(id)) {
-                    return finaDifficulty.GetAllFinaDifficulty();
-                }
-                return NotFound();
-            }
-
-            [HttpPut("{id}")]
-            public ActionResult<IEnumerable<FinaDifficultyModel>> UpdateDiver(int id, FinaDifficultyModel updatedFinaDifficulty) {
-                var finaDifficultys = finaDifficulty.UpdateFinaDifficulty(id, updatedFinaDifficulty);
-                if (finaDifficultys != null) {
-                    return finaDifficultys;
-                }
-
-                return NotFound();
-            }
-
-            [HttpGet]
-            public ActionResult<List<FinaDifficultyModel>> GetAllFinaDifficulty() {
-                return finaDifficulty.GetAllFinaDifficulty();
+                
             }
         }
     

@@ -35,19 +35,13 @@ namespace DiveComp.Data.Repository
             }
             return false;
         }
-
+        
         public bool UpdateScore(int diverId, float newscore)
         {
-            ParticipantsModel entry = db.participants.FirstOrDefault(x => x.diverId == diverId);
-
-            entry.Score = newscore;
-            if(entry.Score == newscore)
-            {
-                
-                return true;
-            }
-            return false;
+            //Lagrad procedur Uppdatera Score
+            throw new NotImplementedException();
         }
+        
 
         public List<LeaderBoardModel> GetAllParticipants(int eventid)
         {

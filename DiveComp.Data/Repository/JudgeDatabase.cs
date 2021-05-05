@@ -43,16 +43,5 @@ namespace DiveComp.Data.Repository
             db.SaveChanges();
             return true;
         }
-
-        public List<JudgeModel> UpdateJudge(int id, JudgeModel updatedJudge)
-        {
-            if (this.RemoveJudge(id))
-            {
-                this.AddJudge(updatedJudge);
-                db.SaveChanges();
-                return db.judges.ToList();
-            }
-            return db.judges.ToList();
-        }
     }
 }
