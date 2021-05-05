@@ -52,6 +52,37 @@ namespace DiveComp.Data.Helpers
             }
             return diverlist;
         }
+        public List<FinaDifficultyModel> spGetAllDifficulties(float height) {
+            List<FinaDifficultyModel> difficultylist = new List<FinaDifficultyModel>();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString)) {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand()) {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetDifficultyMod"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@H", height);
+
+                    using (var reader = cmd.ExecuteReader()) {
+                        while (reader.Read()) {
+                            difficultylist.Add(new FinaDifficultyModel() {
+                                Id = (int)reader["Id"],
+                                DiveCodeNumber = (int)reader["DiveCodeNumber"],
+                                Height = (float)reader["Height"],
+                                DiveVariation = reader["DiveVariation"].ToString(),
+                                STR = (float)reader["STR"],
+                                Pike = (float)reader["Pike"],
+                                Tuck = (float)reader["Tuck"],
+                                Free = (float)reader["Free"]
+                            }); ;
+                        }
+                    }
+                }
+            }
+            return difficultylist;
+        }
+
 
     }
 }

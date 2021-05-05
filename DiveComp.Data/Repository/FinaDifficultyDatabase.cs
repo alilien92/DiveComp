@@ -8,6 +8,7 @@ using System.Linq;
 using System.IO;
 using Newtonsoft.Json;
 
+using DiveComp.Data.Helpers;
 namespace DiveComp.Data.Repository
 {
     public class FinaDifficultyDatabase : IFinaDifficultyRepo
@@ -23,6 +24,12 @@ namespace DiveComp.Data.Repository
         public FinaDifficultyModel Get1Difficulty(int id) {
             //Kalla lagrad procedur
             throw new NotImplementedException();
+        }
+        
+        public List<FinaDifficultyModel> GetHeightDifficulty(float height) {
+            var pHelper = new ProcedureHelper(db);
+
+            return pHelper.spGetAllDifficulties(height);
         }
 
         public bool AddFinaDifficulty(FinaDifficultyModel newDifficulty) {
