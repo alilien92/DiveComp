@@ -34,7 +34,7 @@ namespace DiveCompAPI.Controllers
         public ActionResult<ParticipantsModel> AddParticipant(ParticipantsModel participant)
         {
 
-            if (participants.CreateNewParticipant(events.GetEvent(participant.eventId), divers.Get1Diver(participant.diverId)))
+            if (participants.CreateNewParticipant(events.GetEvent(participant.EventId), divers.Get1Diver(participant.DiverId)))
             {
                 return Ok();
             }

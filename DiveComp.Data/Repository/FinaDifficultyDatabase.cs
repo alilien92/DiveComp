@@ -16,11 +16,9 @@ namespace DiveComp.Data.Repository
     {
         private ModelContext db;
 
-
         public FinaDifficultyDatabase(ModelContext _db) {
             this.db = _db;
         }
-
 
         public FinaDifficultyModel Get1Difficulty(int id) {
             //Kalla lagrad procedur

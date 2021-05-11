@@ -10,5 +10,6 @@ namespace DiveComp.Data.Interfaces
         bool AddNewEvent(EventsModel evt);
 
         EventsModel GetEvent(int id);
+
     }
 }

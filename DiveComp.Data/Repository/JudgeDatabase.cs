@@ -15,6 +15,7 @@ namespace DiveComp.Data.Repository
         {
             this.db = _db;
         }
+
         public List<JudgeModel> GetAllJudges()
         {
             return db.judges.ToList();

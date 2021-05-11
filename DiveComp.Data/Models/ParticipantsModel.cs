@@ -8,9 +8,9 @@ namespace DiveComp.Data.Models
     {
         public int Id { get; set; }
 
-        public int eventId { get; set; }
+        public int EventId { get; set; }
 
-        public int diverId { get; set; }
+        public int DiverId { get; set; }
 
         public float Score { get; set; }
 

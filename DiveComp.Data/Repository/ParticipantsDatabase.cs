@@ -36,23 +36,23 @@ namespace DiveComp.Data.Repository
             return false;
         }
         
-        public void UpdateScore(int diverId, float newscore)
+        public bool UpdateScore(int diverId, float newScore)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
-            procedure.spUpdateScore(diverId, newscore);
+            procedure.spUpdateScore(diverId, newScore);
         }
         
 
-        public List<LeaderBoardModel> GetAllParticipants(int eventid)
+        public List<LeaderBoardModel> GetAllParticipants(int eventId)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
-            return procedure.spGetAllDivers(eventid);
+            return procedure.spGetAllDivers(eventId);
 
         }
 
-        public ParticipantsModel Get1Participant(int diverid)
+        public ParticipantsModel Get1Participant(int diverId)
         {
-            return db.participants.FirstOrDefault(x => x.diverId == diverid);
+            return db.participants.FirstOrDefault(x => x.DiverId == diverId);
         }
 
         public bool DeleteParticipant(int id)

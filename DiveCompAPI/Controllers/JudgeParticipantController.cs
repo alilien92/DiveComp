@@ -19,9 +19,9 @@ namespace DiveCompAPI.Controllers
         private IJudgeRepo judges;
         private IContestRepo contests;
 
-        public JudgeParticipantController(IJudgeParticipantRepo _judgeparticipant, IJudgeRepo _judges, IContestRepo _contests)
+        public JudgeParticipantController(IJudgeParticipantRepo _judgeParticipant, IJudgeRepo _judges, IContestRepo _contests)
         {
-            this.judgeParticipants = _judgeparticipant;
+            this.judgeParticipants = _judgeParticipant;
             this.judges = _judges;
             this.contests = _contests;
         }
@@ -29,7 +29,7 @@ namespace DiveCompAPI.Controllers
         [HttpPost]
         public ActionResult<JudgeParticipantModel> AddParticipant(JudgeParticipantModel judgeParticipant)
         {
-            if (judgeParticipants.CreateNewJudgeParticipant(contests.Get1Contest(judgeParticipant.contestId), judges.Get1Judge(judgeParticipant.judgeId)))
+            if (judgeParticipants.CreateNewJudgeParticipant(contests.Get1Contest(judgeParticipant.ContestId), judges.Get1Judge(judgeParticipant.JudgeId)))
             {
                 return Ok();
             }

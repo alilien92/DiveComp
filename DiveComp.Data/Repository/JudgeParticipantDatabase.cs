@@ -33,9 +33,7 @@ namespace DiveComp.Data.Repository
 
         public JudgeParticipantModel Get1JudgeParticipant(int id)
         {
-            return db.judgeParticipant.FirstOrDefault(x => x.contestId == id);
+            return db.judgeParticipant.FirstOrDefault(x => x.ContestId == id);
         }
-
-
     }
 }

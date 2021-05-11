@@ -7,7 +7,6 @@ namespace DiveComp.Data.Interfaces
 {
     public interface IJudgeRepo
     {
-
         List<JudgeModel> GetAllJudges();
 
         JudgeModel Get1Judge(int id);
