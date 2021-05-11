@@ -25,9 +25,10 @@ namespace DiveCompAPI.Controllers
         [HttpPost]
         public ActionResult<DiverModel> PostDiver(DiverModel diver)
         {
+
             if (divers.CreateDiver(diver))
             {
-                return diver;
+                return Ok();
             }
             return BadRequest();
         }

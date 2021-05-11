@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DiveComp.Data.Models.FinaDifficultyModel>
+@{
+}
+<div class="form-horizontal">
+
+    <hr />
+    <div class="form-group">
+
+
+        <table class="table table-responsive" style="width:400px">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DiveCodeNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Height)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DiveVariation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.STR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pike)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tuck)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Free)
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiveCodeNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Height)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiveVariation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pike)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tuck)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Free)
+                    </td>
+
+                </tr>
+
+            }
+
+        </table>
+    </div>
+</div>
