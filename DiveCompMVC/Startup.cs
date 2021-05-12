@@ -4,12 +4,10 @@ using DiveComp.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +25,28 @@ namespace DiveCompMVC
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
+            
+            services.AddTransient<IContestRepo, ContestDatabase>();
+            services.AddTransient<IDiverRepo, DiverDatabase>();
+            services.AddTransient<IParticipantRepo, ParticipantsDatabase>();
+            services.AddTransient<IJudgeRepo, JudgeDatabase>();
+            services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
+            services.AddTransient<IEventsRepo, EventsDatabase>();
+            services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
             services.AddControllersWithViews();
+            
+            //var connection = "password=1234; server=localhost;user id=root;database=DiveComp;";
+
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 24));
+
+            services.AddDbContextPool<ModelContext>(
+                DbContextOptions => DbContextOptions
+                    .UseMySql(Configuration.GetConnectionString("DbContextString"), serverVersion)
+            //.EnableSensitiveDataLogging() //these two used for debugging, will not be in final version
+            //.EnableDetailedErrors()
+
+
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +70,11 @@ namespace DiveCompMVC
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope()) {
+                var context = serviceScope.ServiceProvider.GetRequiredService<ModelContext>();
+                //context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
+            }
         }
     }
 }

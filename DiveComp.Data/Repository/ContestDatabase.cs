@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using DiveComp.Data.Helpers;
 namespace DiveComp.Data.Repository
 {
     public class ContestDatabase : IContestRepo
@@ -30,6 +30,11 @@ namespace DiveComp.Data.Repository
         public ContestModel Get1Contest(int id)
         {
             return db.contests.FirstOrDefault(x => x.Id == id);
+        }
+       
+        public int GetContestId(string name, string club) {
+            ProcedureHelper ph = new ProcedureHelper(db);
+            return ph.spGetContestId(name, club);
         }
     }
 }

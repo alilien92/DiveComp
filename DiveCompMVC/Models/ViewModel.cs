@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using DiveComp.Data.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DiveCompMVC.Models
 {
     public class ViewModel {
         
         // ALL MODELS FOR VIEW
+        
         public ContestModel Contests { get; set; }
         public DiverModel Divers { get; set; }
         public EventsModel Events { get; set; }
@@ -35,6 +38,8 @@ namespace DiveCompMVC.Models
         public List<LeaderBoardModel> AllLeaderBoards { get; set; }
         
         public List<ParticipantsModel> AllParticipants { get; set; }
+
+        public IEnumerable<SelectListItem> JudgesSelectList { get; set; }
 
     }
 }

@@ -8,7 +8,8 @@ namespace DiveComp.Data.Models
     public class DiverModel
     {
         public int Id { get; set; }
-
+        
+        [Required (ErrorMessage="Error!")]
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
