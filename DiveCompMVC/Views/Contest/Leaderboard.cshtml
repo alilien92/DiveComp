@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DiveComp.Data.Models.LeaderBoardModel>
+
+@{
+    ViewData["Title"] = "Leaderboard";
+}
+
+<h1>Leaderboard</h1>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Rank
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Club
+            </th>
+            <th>
+                Score
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = 0;}
+@foreach (var item in Model)
+{
+    i++;
+        <tr>
+            <td>
+                @i
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Club)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Score)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -66,6 +66,15 @@ namespace DiveComp.Data.Repository
             return true;
         }
 
-        
+        void IParticipantRepo.UpdateScore(int diverId, float newscore)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<LeaderBoardModel> GetContestResult(int contestid)
+        {
+            ProcedureHelper procedure = new ProcedureHelper(db);
+            return procedure.spGetContestResult(contestid);
+        }
     }
 }

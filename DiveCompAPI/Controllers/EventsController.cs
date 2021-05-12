@@ -24,10 +24,9 @@ namespace DiveCompAPI.Controllers
         [HttpPost]
         public ActionResult<EventsModel> AddEvent(EventsModel evt)
         {
+            events.AddNewEvent(evt);
             
-         
-                return Ok();
-         
+            return Ok();
             
         }
 

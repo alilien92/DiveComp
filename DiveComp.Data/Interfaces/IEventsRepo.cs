@@ -13,5 +13,7 @@ namespace DiveComp.Data.Interfaces
         
         int GetEventId(string name, int id);
 
+        List<EventsModel> GetAllEvents(int contestid);
+
     }
 }

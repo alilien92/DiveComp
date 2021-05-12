@@ -12,5 +12,7 @@ namespace DiveComp.Data.Interfaces
         ContestModel Get1Contest(int id);
 
         int GetContestId(string name, string club);
+
+        List<ContestModel> GetAllContests();
     }
 }

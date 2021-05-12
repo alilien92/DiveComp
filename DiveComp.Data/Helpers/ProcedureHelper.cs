@@ -52,6 +52,7 @@ namespace DiveComp.Data.Helpers
             }
             return diverlist;
         }
+
         public List<FinaDifficultyModel> spGetAllDifficulties(float height) {
             List<FinaDifficultyModel> difficultylist = new List<FinaDifficultyModel>();
 
@@ -85,7 +86,7 @@ namespace DiveComp.Data.Helpers
 
         public void spUpdateScore(int diverid, float newscore)
         {
-            
+
             using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
             {
                 conn.Open();
@@ -151,7 +152,74 @@ namespace DiveComp.Data.Helpers
             return emodel.Id;
         }
 
+        public List<EventsModel> spGetEvents(int contestid)
+        {
+            List<EventsModel> eventlist = new List<EventsModel>();
 
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetEvents"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@cid", contestid);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            eventlist.Add(new EventsModel()
+                            {
+                                Id = (int)reader["Id"],
+                                ContestId = (int)reader["ContestId"],
+                                Name = reader["Name"].ToString()
+                            }); ;
+                        }
+                    }
+                }
+            }
+            return eventlist;
+        }
+
+
+       
+
+        public List<LeaderBoardModel> spGetContestResult(int contestid)
+        {
+            List<LeaderBoardModel> resultlist = new List<LeaderBoardModel>();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetContestResult"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@contestid", contestid);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            resultlist.Add(new LeaderBoardModel()
+                            {
+                                EventName = reader["EventName"].ToString(),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString(),
+                                Club = reader["Club"].ToString(),
+                                Score = (float)reader["Score"]
+                            }); ;
+                        }
+                    }
+                }
+            }
+            return resultlist;
+        }
 
     }
 }
