@@ -7,21 +7,51 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using DiveCompMVC.Helpers;
 using DiveComp.Data.Interfaces;
+using DiveComp.Data.Models;
 
 namespace DiveCompMVC.Controllers
 {
     public class ContestController : Controller
     {
         private IContestRepo contests;
+        private IEventsRepo events;
+        private IParticipantRepo participants;
 
 
-        public ContestController(IContestRepo _contests) {
+        public ContestController(IContestRepo _contests, IEventsRepo _events, IParticipantRepo _participants) {
             this.contests = _contests;
+            this.events = _events;
+            this.participants = _participants;
         }
         
         public IActionResult NewContest() {
        
             return View("NewContest");
+        }
+
+        public IActionResult LoadContest()
+        {
+            List<ContestModel> c;
+            c = contests.GetAllContests();
+
+            return View(c);
+        }
+
+        public IActionResult OpenContest(int id)
+        {
+            List<EventsModel> evt;
+            evt = events.GetAllEvents(id);
+
+            return View(evt);
+        }
+
+        
+        public IActionResult Leaderboard(int id)
+        {
+            List<LeaderBoardModel> board = new List<LeaderBoardModel>();
+            board = participants.GetAllParticipants(id);
+
+            return View(board);
         }
         
         public IActionResult InputView(ViewModel model) {
