@@ -15,6 +15,11 @@ namespace DiveCompMVC.Controllers
     {
         private IParticipantRepo participants;
 
+        public ResultsController(IParticipantRepo _participants)
+        {
+            this.participants = _participants;
+        }
+
         public ActionResult Index()
         {
             

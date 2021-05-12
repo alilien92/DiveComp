@@ -161,27 +161,7 @@ namespace DiveComp.Data.Helpers
         }
 
 
-        public int spGetContestId(string name, string club)
-        {
-
-            int id = 0;
-            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
-            {
-                conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    cmd.Connection = conn;
-                    cmd.CommandText = "GetContestId"; // The name of the Stored Procedure
-                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
-
-                    cmd.Parameters.AddWithValue("@contestname", name);
-                    cmd.Parameters.AddWithValue("@contestclub", club);
-                    id = cmd.ExecuteNonQuery();
-                }
-            }
-
-            return id;
-        }
+       
 
         public List<LeaderBoardModel> spGetContestResult(int contestid)
         {
