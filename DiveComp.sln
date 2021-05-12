@@ -9,10 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveCompAPI", "DiveCompAPI\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveComp.Data", "DiveComp.Data\DiveComp.Data.csproj", "{6D2EC6D9-8094-458F-8B31-A43FACDC5D82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveCompMVC", "DiveCompMVC\DiveCompMVC.csproj", "{4CF088A9-221C-4621-8814-3659B8C134AC}"
-	ProjectSection(ProjectDependencies) = postProject
-		{786B7730-15DC-466A-AE44-D10EA1E71C91} = {786B7730-15DC-466A-AE44-D10EA1E71C91}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiveCompMVC", "DiveCompMVC\DiveCompMVC.csproj", "{4CF088A9-221C-4621-8814-3659B8C134AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

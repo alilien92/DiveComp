@@ -102,6 +102,31 @@ namespace DiveComp.Data.Helpers
                 }
             }
         }
+        public int spGetContestId(string name, string club) {
+
+            ContestModel cmodel = new ContestModel();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString)) {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand()) {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetContestId"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@contestname", name);
+                    cmd.Parameters.AddWithValue("@contestclub", club);
+                    
+                    using (var reader = cmd.ExecuteReader()) {
+                        while (reader.Read()) {
+                                cmodel.Id = (int)reader["Id"];    
+                        }
+                    }
+                    }
+                }
+            
+            return cmodel.Id;
+        }
+
 
 
     }

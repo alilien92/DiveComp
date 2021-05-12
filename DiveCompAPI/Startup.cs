@@ -39,8 +39,9 @@ namespace DiveCompAPI
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
             services.AddTransient<IEventsRepo , EventsDatabase>();
             services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
-
+            
             services.AddControllers();
+            
 
             var connection = "server=localhost;user id=root;database=DiveComp;password=1234";
 

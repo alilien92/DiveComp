@@ -36,7 +36,7 @@ namespace DiveComp.Data.Repository
             return false;
         }
         
-        public bool UpdateScore(int diverId, float newScore)
+        public void UpdateScore(int diverId, float newScore)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
             procedure.spUpdateScore(diverId, newScore);

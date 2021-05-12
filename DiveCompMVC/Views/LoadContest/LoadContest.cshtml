@@ -1,0 +1,43 @@
+﻿@model DiveCompMVC.Models.ViewModel
+
+@{
+    ViewData["Title"] = "LoadContest";
+}
+
+<h1>LoadContest</h1>
+
+<p>
+    <a asp-action="GetAllContests">Get All Contests</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Club
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.AllContests) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Club)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>
