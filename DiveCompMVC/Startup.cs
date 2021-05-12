@@ -33,6 +33,7 @@ namespace DiveCompMVC
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
             services.AddTransient<IEventsRepo, EventsDatabase>();
             services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
+            services.AddTransient<IEventTypeRepo, EventTypeDatabase>();
             services.AddControllersWithViews();
             
             //var connection = "password=1234; server=localhost;user id=root;database=DiveComp;";

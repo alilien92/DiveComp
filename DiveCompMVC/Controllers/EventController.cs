@@ -21,7 +21,9 @@ namespace DiveCompMVC.Controllers
         [HttpPost]
         public IActionResult AddEvent(ViewModel model) {
             
-            events.AddNewEvent(model.Events);
+            model.Events.Id = events.GetEventId(model.Events.Name, model.Events.ContestId);
+            
+                events.AddNewEvent(model.Events);
 
                 return View("InputView", model);
         }

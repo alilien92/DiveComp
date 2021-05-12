@@ -24,18 +24,16 @@ namespace DiveCompMVC.Controllers
             return View("NewContest");
         }
         
-        public IActionResult InputView(ViewModel model) {
-            return View(model);
-        }
+       
         
         [HttpPost]
-        public  void AddContest(ViewModel model) {
+        public IActionResult AddContest(ViewModel model) {
             
             
             contests.CreateNewContest(model.Contests);
             
             model.Contests.Id = contests.GetContestId(model.Contests.Name, model.Contests.Club);
-            InputView(model);
+            return View("InputView", model);
 
             }
 
@@ -52,18 +50,6 @@ namespace DiveCompMVC.Controllers
                 return View("InputView", model);
             }
         }
-    [HttpPost]
-    public async Task<ActionResult> AddDiver(ViewModel model) {
-
-        using (var client = new HttpClient()) {
-            client.BaseAddress = new Uri("https://localhost:44393/api/");
-
-            //HTTP POST
-            var postTask = await client.PostAsJsonAsync("diver", model.Divers);
-
-
-            return View("InputView", model);
-        }
-    }
+    
 }
 }

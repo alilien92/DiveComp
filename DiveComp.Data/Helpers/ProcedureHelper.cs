@@ -126,6 +126,30 @@ namespace DiveComp.Data.Helpers
             
             return cmodel.Id;
         }
+        public int spGetEventId(string name, int id) {
+
+            EventsModel emodel = new EventsModel();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString)) {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand()) {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetEventId"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@eventname", name);
+                    cmd.Parameters.AddWithValue("@cid", id);
+
+                    using (var reader = cmd.ExecuteReader()) {
+                        while (reader.Read()) {
+                            emodel.Id = (int)reader["Id"];
+                        }
+                    }
+                }
+            }
+
+            return emodel.Id;
+        }
 
 
 

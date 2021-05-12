@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using DiveComp.Data.Helpers;
 
 namespace DiveComp.Data.Repository
 {
@@ -17,15 +18,11 @@ namespace DiveComp.Data.Repository
             this.db = _db;
         }
 
-        public bool AddNewEvent(EventsModel evt)
+        public void AddNewEvent(EventsModel evt)
         {
             db.events.Add(evt);
             db.SaveChanges();
-            if(db.events.Contains(evt))
-            {
-                return true;
-            }
-            return false;
+            
         }
 
         public EventsModel GetEvent(int id)
@@ -36,6 +33,10 @@ namespace DiveComp.Data.Repository
                 return evt;
             }
             return null;
+        }
+        public int GetEventId(string name, int id) {
+            ProcedureHelper ph = new ProcedureHelper(db);
+            return ph.spGetEventId(name, id);
         }
     }
 }

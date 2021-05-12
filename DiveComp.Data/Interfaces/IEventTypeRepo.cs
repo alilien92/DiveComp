@@ -5,13 +5,16 @@ using System.Text;
 
 namespace DiveComp.Data.Interfaces
 {
-    public interface IEventsRepo
+    public interface IEventTypeRepo
     {
-        void AddNewEvent(EventsModel evt);
-
-        EventsModel GetEvent(int id);
         
-        int GetEventId(string name, int id);
+        void AddNewEventType(EventTypeModel type);
+
+        
+        List<EventTypeModel> GetAllEventTypes();
+
+
+        
 
     }
 }
