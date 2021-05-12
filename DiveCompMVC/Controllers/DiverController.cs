@@ -17,22 +17,19 @@ namespace DiveCompMVC.Controllers
         public DiverController(IDiverRepo _divers) {
             this.divers = _divers;
         }
-        public IActionResult Index() {
+        
+        public IActionResult AddDiver() {
             return View();
         }
         
         [HttpPost]
-        public async Task<ActionResult> AddDiver(DiverModel model) {
-
-            using (var client = new HttpClient()) {
-                client.BaseAddress = new Uri("https://localhost:44393/api/");
-
-                //HTTP POST
-                var postTask = await client.PostAsJsonAsync("diver", model.Divers);
-
-
-                return View("InputView", model);
+        public IActionResult AddDiver(DiverModel model) {
+            if (ModelState.IsValid) {
+                divers.CreateDiver(model);
+                return View();
+            }
+                return View();
             }
         }
     }
-}
+

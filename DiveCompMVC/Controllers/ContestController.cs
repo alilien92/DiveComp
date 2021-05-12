@@ -26,7 +26,7 @@ namespace DiveCompMVC.Controllers
         
         public IActionResult NewContest() {
        
-            return View("NewContest");
+            return View();
         }
 
         public IActionResult LoadContest()
@@ -63,23 +63,11 @@ namespace DiveCompMVC.Controllers
             contests.CreateNewContest(model.Contests);
             
             model.Contests.Id = contests.GetContestId(model.Contests.Name, model.Contests.Club);
-            return View("InputView", model);
+            return View(model);
 
             }
 
-        [HttpPost]
-        public async Task<ActionResult> AddJudge(ViewModel model) {
-
-            using (var client = new HttpClient()) {
-                client.BaseAddress = new Uri("https://localhost:44393/api/");
-
-                //HTTP POST
-                var postTask = await client.PostAsJsonAsync("judge", model.Judges);
-
-                
-                return View("InputView", model);
-            }
-        }
+        
     
 }
 }

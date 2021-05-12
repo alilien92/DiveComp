@@ -9,13 +9,13 @@ namespace DiveComp.Data.Models
     {
         public int Id { get; set; }
         
-        [Required (ErrorMessage="Error!")]
+        [Required (ErrorMessage="First Name is Required!")]
         public string FirstName { get; set; }
-
+        [Required(ErrorMessage = "Last Name is Required!")]
         public string LastName { get; set; }
-
+        [Required(ErrorMessage = "Name of Club is Required!")]
         public string Club { get; set; }
-
+        [Required(ErrorMessage = "Country of diver is Required!")]
         public string Country { get; set; }
 
     }
