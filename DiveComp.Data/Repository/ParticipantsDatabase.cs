@@ -36,7 +36,7 @@ namespace DiveComp.Data.Repository
             return false;
         }
         
-        public bool UpdateScore(int diverId, float newScore)
+        public void UpdateScore(int diverId, float newScore)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
             procedure.spUpdateScore(diverId, newScore);
@@ -66,6 +66,15 @@ namespace DiveComp.Data.Repository
             return true;
         }
 
-        
+        void IParticipantRepo.UpdateScore(int diverId, float newscore)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<LeaderBoardModel> GetContestResult(int contestid)
+        {
+            ProcedureHelper procedure = new ProcedureHelper(db);
+            return procedure.spGetContestResult(contestid);
+        }
     }
 }
