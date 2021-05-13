@@ -183,9 +183,33 @@ namespace DiveComp.Data.Helpers
             }
             return eventlist;
         }
+        public List<EventTypeModel> spGetAllEventTypes() {
+            List<EventTypeModel> eventTypeList = new List<EventTypeModel>();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString)) {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand()) {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetAllEventTypes"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+                    
+
+                    using (var reader = cmd.ExecuteReader()) {
+                        while (reader.Read()) {
+                            eventTypeList.Add(new EventTypeModel() {
+                                Id = (int)reader["Id"],
+                                Gender = reader["Gender"].ToString(),
+                                Type = reader["Type"].ToString(),
+                                Height = (float)reader["Height"]
+                            }); ;
+                        }
+                    }
+                }
+            }
+            return eventTypeList;
+        }
 
 
-       
 
         public List<LeaderBoardModel> spGetContestResult(int contestid)
         {

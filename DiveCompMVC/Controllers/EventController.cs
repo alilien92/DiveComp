@@ -22,7 +22,7 @@ namespace DiveCompMVC.Controllers
         public IActionResult AddEvent(ViewModel model) {
             
             model.Events.Id = events.GetEventId(model.Events.Name, model.Events.ContestId);
-            
+
                 events.AddNewEvent(model.Events);
 
                 return View("InputView", model);

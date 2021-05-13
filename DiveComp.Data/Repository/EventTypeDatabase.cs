@@ -25,7 +25,8 @@ namespace DiveComp.Data.Repository
 
         public List<EventTypeModel> GetAllEventTypes() {
             List<EventTypeModel> ETList = new List<EventTypeModel>();
-
+            ProcedureHelper ph = new ProcedureHelper(db);
+            ETList = ph.spGetAllEventTypes();
             return ETList;
           
         }

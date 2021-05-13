@@ -9,10 +9,13 @@ namespace DiveComp.Data.Models
     {
         public int Id { get; set; }
         
-        [Required(ErrorMessage = "A Name of Event is Required!")]
-        public string Name { get; set; }
+        [Required(ErrorMessage = "Is it Men or Women who will participate in the event?")]
+        public string Gender { get; set; }
+
+        [Required(ErrorMessage = "Is it Springboard or Platform?")]
+        public string Type { get; set; }
         
-        [Required(ErrorMessage="A Height is Required!")]
+        [Required(ErrorMessage="What Height will the Eventgroup jump from?")]
         public float Height { get; set; }
 
     }
