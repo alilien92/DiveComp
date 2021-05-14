@@ -1,5 +1,5 @@
 ﻿using DiveCompMVC.Models;
-using Microsoft.AspNetCore.Mvc;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using DiveCompMVC.Helpers;
 using DiveComp.Data.Interfaces;
 using DiveComp.Data.Models;
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace DiveCompMVC.Controllers
 {
@@ -31,5 +33,7 @@ namespace DiveCompMVC.Controllers
             }
             return View();
         }
+        
+        
     }
 }

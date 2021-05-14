@@ -1,5 +1,5 @@
 ﻿using DiveCompMVC.Models;
-using Microsoft.AspNetCore.Mvc;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using DiveCompMVC.Helpers;
 using DiveComp.Data.Interfaces;
 using DiveComp.Data.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DiveCompMVC.Controllers
 {
@@ -16,17 +17,22 @@ namespace DiveCompMVC.Controllers
         private IContestRepo contests;
         private IEventsRepo events;
         private IParticipantRepo participants;
+        private IEventTypeRepo eventTypes;
 
 
-        public ContestController(IContestRepo _contests, IEventsRepo _events, IParticipantRepo _participants) {
+        public ContestController(IContestRepo _contests, IEventsRepo _events, IParticipantRepo _participants, IEventTypeRepo _eventTypes) {
             this.contests = _contests;
             this.events = _events;
             this.participants = _participants;
+            this.eventTypes = _eventTypes;
         }
         
         public IActionResult NewContest() {
-       
-            return View();
+            ViewModel vm = new ViewModel();
+            vm.AllEventTypes = GetEventTypes(vm);
+
+
+            return View(vm);
         }
 
         public IActionResult LoadContest()
@@ -57,7 +63,7 @@ namespace DiveCompMVC.Controllers
        
         
         [HttpPost]
-        public IActionResult AddContest(ViewModel model) {
+        public ActionResult AddContest(ViewModel model) {
             
             
             contests.CreateNewContest(model.Contests);
@@ -66,8 +72,17 @@ namespace DiveCompMVC.Controllers
             return View(model);
 
             }
-
         
-    
-}
+        public List<EventTypeModel> GetEventTypes(ViewModel model) {
+
+            
+           model.AllEventTypes = eventTypes.GetAllEventTypes();
+            
+
+            return model.AllEventTypes;
+        }
+
+
+
+    }
 }

@@ -11,7 +11,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Type.Name) @Html.DisplayNameFor(model => model.Type.Height)
+                Event Type
             </th>
             <th></th>
         </tr>
@@ -21,7 +21,7 @@
         <tr>
 
             <td>
-                @Html.DisplayFor(modelItem => item.Type.Name) @Html.DisplayFor(modelItem => item.Type.Height)
+                @Html.DisplayNameFor(model => model.Type.Gender) @Html.DisplayNameFor(model => model.Type.Type) @Html.DisplayNameFor(model => model.Type.Height)
             </td>
             <td>
                 @Html.ActionLink("Leaderboard", "Leaderboard", new {  id=item.Id })
