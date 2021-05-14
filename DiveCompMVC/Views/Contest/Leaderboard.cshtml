@@ -22,13 +22,21 @@
             <th>
                 Score
             </th>
+            <th>
+                Pts. Behind
+            </th>
         </tr>
     </thead>
     <tbody>
         @{int i = 0;}
+        @{float leaderscore = 0;}
 @foreach (var item in Model)
 {
     i++;
+    if (i == 1)
+    {
+        leaderscore = Html.ViewData.Model.First().Score;
+    }
         <tr>
             <td>
                 @i
@@ -41,6 +49,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Score)
+            </td>
+            <td>
+                @leaderscore - @Html.DisplayFor(modelItem => item.Score)
             </td>
         </tr>
 }

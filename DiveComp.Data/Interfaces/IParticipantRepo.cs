@@ -15,7 +15,7 @@ namespace DiveComp.Data.Interfaces
 
         bool DeleteParticipant(int id);
 
-        List<LeaderBoardModel> GetContestResult(int contestid);
+        //List<LeaderBoardModel> GetContestResult(int contestid);
 
     }
 }

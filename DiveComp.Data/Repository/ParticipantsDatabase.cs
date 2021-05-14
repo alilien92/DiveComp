@@ -46,7 +46,7 @@ namespace DiveComp.Data.Repository
         public List<LeaderBoardModel> GetAllParticipants(int eventId)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
-            return procedure.spGetAllDivers(eventId);
+            return procedure.spGetLeaderboardByEvent(eventId);
 
         }
 
@@ -71,10 +71,12 @@ namespace DiveComp.Data.Repository
             throw new NotImplementedException();
         }
 
+        /*
         public List<LeaderBoardModel> GetContestResult(int contestid)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
             return procedure.spGetContestResult(contestid);
         }
+        */
     }
 }

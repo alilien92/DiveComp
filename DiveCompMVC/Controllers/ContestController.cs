@@ -37,7 +37,7 @@ namespace DiveCompMVC.Controllers
             return View(c);
         }
 
-        public IActionResult OpenContest(int id)
+        public IActionResult OpenEvents(int id)
         {
             List<EventsModel> evt;
             evt = events.GetAllEvents(id);
@@ -48,7 +48,7 @@ namespace DiveCompMVC.Controllers
         
         public IActionResult Leaderboard(int id)
         {
-            List<LeaderBoardModel> board = new List<LeaderBoardModel>();
+            List<LeaderBoardModel> board;
             board = participants.GetAllParticipants(id);
 
             return View(board);

@@ -20,7 +20,16 @@ namespace DiveComp.Data.Repository
             
             db.eventTypes.Add(evt);
             db.SaveChanges();
+        }
 
+        public EventTypeModel Get1Event(int id)
+        {
+            EventTypeModel ans = db.eventTypes.FirstOrDefault(x => x.Id == id);
+            if(ans != null)
+            {
+                return ans;
+            }
+            return null;
         }
 
         public List<EventTypeModel> GetAllEventTypes() {

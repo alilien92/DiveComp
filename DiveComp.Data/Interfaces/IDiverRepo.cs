@@ -12,6 +12,8 @@ namespace DiveComp.Data.Interfaces
 
         DiverModel Get1Diver(int id);
 
+        List<DiverModel> GetDiverListByEvent(int id);
+
 
     }
 }

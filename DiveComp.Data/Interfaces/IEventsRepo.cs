@@ -15,5 +15,7 @@ namespace DiveComp.Data.Interfaces
 
         List<EventsModel> GetAllEvents(int contestid);
 
+        List<ActiveEventModel> GetEventsForContest(int contestid);
+
     }
 }

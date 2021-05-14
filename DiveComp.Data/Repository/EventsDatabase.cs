@@ -22,6 +22,7 @@ namespace DiveComp.Data.Repository
         {
             EventsModel newevent = new EventsModel();
             newevent.Contest = evt.Contest;
+            newevent.Type = evt.Type;
             db.events.Add(newevent);
             db.SaveChanges();
             
@@ -45,6 +46,12 @@ namespace DiveComp.Data.Repository
         public int GetEventId(string name, int id) {
             ProcedureHelper ph = new ProcedureHelper(db);
             return ph.spGetEventId(name, id);
+        }
+
+        public List<ActiveEventModel> GetEventsForContest(int contestid)
+        {
+            ProcedureHelper entry = new ProcedureHelper(db);
+            return entry.spGetEventsForContest(contestid);
         }
     }
 }

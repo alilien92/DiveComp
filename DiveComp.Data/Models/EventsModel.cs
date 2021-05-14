@@ -10,10 +10,12 @@ namespace DiveComp.Data.Models
 
         public int ContestId { get; set; }
 
-        public string Name { get; set; }
+        public int TypeId { get; set; }
 
         //foreign key
         public virtual ContestModel Contest { get; set; }
+
+        public virtual EventTypeModel Type { get; set; }
 
     }
 }

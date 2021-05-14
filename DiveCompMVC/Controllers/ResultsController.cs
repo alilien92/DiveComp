@@ -26,10 +26,12 @@ namespace DiveCompMVC.Controllers
             return View("Results");
         }
 
+        /*
         public ActionResult Results()
         {
             List<LeaderBoardModel> result = participants.GetContestResult(1);
             return View(result);
         }
+        */
     }
 }
