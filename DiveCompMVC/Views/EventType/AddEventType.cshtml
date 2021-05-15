@@ -1,0 +1,50 @@
+﻿@model DiveComp.Data.Models.EventTypeModel
+
+<h3> Add New EventType </h3>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddEventType" asp-controller="EventType">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <select asp-for="Gender" class="form-control">
+
+                    <option value=1>Select Gender</option>
+                    <option value="Mens">Men</option>
+                    <option value="Womens">Women</option>
+
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="Type" class="form-control">
+
+                    <option value=0>Select Type</option>
+                    <option value="Springboard">Springboard</option>
+                    <option value="Platform">Platform</option>
+
+                </select>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="Height" class="form-control">
+
+                    <option>Select Height</option>
+                    <option value="1">1m</option>
+                    <option value="3">3m</option>
+                    <option value="5">5m</option>
+                    <option value="7.5">7.5m</option>
+                    <option value="10">10m</option>
+                </select>
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            @ViewBag.Message
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+        <button  type="button">
+            <a class="btn-link" asp-area="" asp-controller="Contest" asp-action="NewContest">Back</a>
+        </button>
+    </div>
+</div>

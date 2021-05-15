@@ -7,9 +7,15 @@ namespace DiveComp.Data.Interfaces
 {
     public interface IEventsRepo
     {
-        bool AddNewEvent(EventsModel evt);
+        void AddNewEvent(EventsModel evt);
 
         EventsModel GetEvent(int id);
+        
+        int GetEventId(string name, int id);
+
+        List<EventsModel> GetAllEvents(int contestid);
+
+        List<ActiveEventModel> GetEventsForContest(int contestid);
 
     }
 }

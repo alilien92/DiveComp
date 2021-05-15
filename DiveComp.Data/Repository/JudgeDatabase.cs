@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using DiveComp.Data.Helpers;
 
 namespace DiveComp.Data.Repository
 {
@@ -24,6 +25,14 @@ namespace DiveComp.Data.Repository
         public JudgeModel Get1Judge(int id)
         {
             return db.judges.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<JudgeModel> GetJudgesByContest(int contestid)
+        {
+            ProcedureHelper entry = new ProcedureHelper(db);
+            List<JudgeModel> judgelist = entry.spGetJudgeByContestId(contestid);
+
+            return judgelist;
         }
 
         public bool AddJudge(JudgeModel newJudge)

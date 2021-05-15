@@ -13,6 +13,8 @@ namespace DiveComp.Data.Interfaces
 
         bool AddJudge(JudgeModel newJudge);
 
+        List<JudgeModel> GetJudgesByContest(int contestid);
+
         bool RemoveJudge(int id);
 
     }

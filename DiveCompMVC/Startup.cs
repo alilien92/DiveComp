@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,7 @@ namespace DiveCompMVC
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
             services.AddTransient<IEventsRepo, EventsDatabase>();
             services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
+            services.AddTransient<IEventTypeRepo, EventTypeDatabase>();
             services.AddControllersWithViews();
             
             //var connection = "password=1234; server=localhost;user id=root;database=DiveComp;";

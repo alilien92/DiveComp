@@ -24,23 +24,9 @@ namespace DiveCompMVC.Controllers
             _logger = logger;
         }
 
-        public async Task<ActionResult> Index() {
-            List<FinaDifficultyModel> finaDifficulties = new List<FinaDifficultyModel>();
-            using (var client = new HttpClient()) {
-
-                var Res = await client.GetAsync("https://localhost:44339/api/FinaDifficulty/dives/3");
-
-                 
-                
-                    //Storing the response details recieved from web api   
-                    string FinaResponse = await Res.Content.ReadAsStringAsync();
-
-                    //Deserializing the response recieved from web api and storing into the Employee list  
-                    finaDifficulties = JsonConvert.DeserializeObject<List<FinaDifficultyModel>>(FinaResponse);
-
-                
-            }
-                return View(finaDifficulties);
+        public ActionResult Index() {
+            
+                return View();
         }
 
         public IActionResult Privacy() {

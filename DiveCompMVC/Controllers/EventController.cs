@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using DiveCompMVC.Helpers;
 using DiveComp.Data.Interfaces;
+using DiveComp.Data.Models;
+
 namespace DiveCompMVC.Controllers
 {
     public class EventController : Controller
@@ -19,11 +21,14 @@ namespace DiveCompMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEvent(ViewModel model) {
-            
-            events.AddNewEvent(model.Events);
+        public IActionResult AddEvent(int contestid, EventTypeModel evt) {
 
-                return View("InputView", model);
+            EventsModel new_evt = new EventsModel();
+            new_evt.ContestId = contestid;
+            new_evt.Type = evt;
+            events.AddNewEvent(new_evt);
+
+                return View("InputView", evt);
         }
     }
    

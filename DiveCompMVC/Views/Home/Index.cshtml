@@ -3,9 +3,27 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="split left">
+    <div class="centered">
+        <img src="~/tomDiveBild.jpg" />
+        <br /> <br /> <br />
+                      <button class="btn-outline-dark" name="create" type="button">
+                          <a class="btn-outline-dark" asp-area="" asp-controller="Contest" asp-action="NewContest">Create New Contest</a>
+                      </button>        
+    </div>
+
+</div>
+
+<div class="split right">
+    <div class="centered">
+        <img src="~/FylldDiveBild.jpg" />
+        <br /> <br /> <br />
+                      <button class="btn-outline-dark" name="load" type="button">
+                          <a class="btn-outline-dark" asp-area="" asp-controller="Contest" asp-action="LoadContest">Load Existing Contest</a>
+                      </button>
+    </div>
+
 </div>
 
 

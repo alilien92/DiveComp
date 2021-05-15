@@ -1,25 +1,28 @@
-﻿@model DiveCompMVC.Models.ViewModel
+﻿@model DiveCompMVC.Models.ViewModel 
+@{
+    Layout = "_Layout";
+}
 
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="AddContest" asp-controller="Contest">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="form-group">
-                <label asp-for="Contests.Name" class="control-label"></label>
-                <input asp-for="Contests.Name" class="form-control" placeholder="" />
-                <span asp-validation-for="Contests.Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contests.Club" class="control-label"></label>
-                <input asp-for="Contests.Club" class="form-control" />
-                <span asp-validation-for="Contests.Club" class="text-danger"></span>
-            </div>
-            
-            @ViewBag.Message
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+
+<body>
+
+    <button class="btn-outline-dark" type="button">
+        <a class="btn-link" asp-area="" asp-controller="Contest" asp-action="AddContest">Add New Contest</a>
+    </button>
+    <button class="btn-outline-dark" type="button">
+        <a class="btn-link" asp-area="" asp-controller="Diver" asp-action="AddDiver">Add New Diver</a>
+    </button>
+    <div class="form-control">
+       <select class="form-control">
+           @foreach (var item in Model.AllEventTypes) {
+                <option value="@item.Id">
+                    @item.Gender @item.Type @item.Height m
+                </option>
+            }
+       </select>
+        <button class="btn-outline-dark" type="button">
+            <a class="btn-link" asp-area="" asp-controller="EventType" asp-action="AddEventType">Add New EventType</a>
+        </button>
     </div>
-</div>
+</body>

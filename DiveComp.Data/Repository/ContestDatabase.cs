@@ -36,5 +36,10 @@ namespace DiveComp.Data.Repository
             ProcedureHelper ph = new ProcedureHelper(db);
             return ph.spGetContestId(name, club);
         }
+
+        public List<ContestModel> GetAllContests()
+        {
+            return db.contests.ToList();
+        }
     }
 }

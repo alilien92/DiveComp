@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using DiveComp.Data.Helpers;
 
 namespace DiveComp.Data.Repository
 {
@@ -31,6 +32,12 @@ namespace DiveComp.Data.Repository
         public DiverModel Get1Diver(int id)
         {
             return db.divers.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<DiverModel> GetDiverListByEvent(int id)
+        {
+            ProcedureHelper entry = new ProcedureHelper(db);
+            return entry.spGetDiverListByEvent(id);
         }
     }
 }
