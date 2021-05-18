@@ -59,19 +59,35 @@ namespace DiveCompMVC.Controllers
 
             return View(board);
         }
-        
-       
-        
-        [HttpPost]
-        public ActionResult AddContest(ViewModel model) {
-            
-            
-            contests.CreateNewContest(model.Contests);
-            
-            model.Contests.Id = contests.GetContestId(model.Contests.Name, model.Contests.Club);
-            return View(model);
 
+        [HttpGet]
+        public ActionResult AddContest()
+        {
+
+            return View();
+
+        }
+
+        [HttpPost, ActionName("AddContest")]
+        public ActionResult AddContestConfimed(ContestModel model) {
+
+
+            if (ModelState.IsValid)
+            {
+                contests.CreateNewContest(model);
+                EventList(model.Id);
             }
+            return View();
+
+        }
+
+        [HttpGet]
+        public ActionResult EventList(int contestId)
+        {
+            ViewModel vm = new ViewModel();
+            vm.AllEvents = GetEvents(vm, contestId);
+            return View(vm);
+        }
         
         public List<EventTypeModel> GetEventTypes(ViewModel model) {
 
@@ -82,7 +98,11 @@ namespace DiveCompMVC.Controllers
             return model.AllEventTypes;
         }
 
-
-
+        public List<EventsModel> GetEvents(ViewModel model, int contestId)
+        {
+            model.AllEvents = events.GetAllEvents(contestId);
+            return model.AllEvents;
+        }
     }
 }
+
