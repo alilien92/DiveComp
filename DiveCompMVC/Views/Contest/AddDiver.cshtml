@@ -1,0 +1,23 @@
+﻿@model DiveCompMVC.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Add Diver";
+}
+
+<h1>Confirm adding diver</h1>
+
+<div>
+    <h4>Diver</h4>
+    <hr />
+    <dl class="row">
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.AllDivers[0].FirstName)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AllDivers[0].LastName)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Confirm adding diver", "AddDiversToContest", "Contest", new { diverId = Model.AllDivers[0].Id, contestId = Model.AllContests[0].Id }, null)
+</div>

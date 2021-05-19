@@ -32,7 +32,6 @@ namespace DiveCompMVC
             services.AddTransient<IParticipantRepo, ParticipantsDatabase>();
             services.AddTransient<IJudgeRepo, JudgeDatabase>();
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
-            services.AddTransient<IEventsRepo, EventsDatabase>();
             services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
             services.AddTransient<IEventTypeRepo, EventTypeDatabase>();
             services.AddControllersWithViews();

@@ -12,9 +12,11 @@ namespace DiveComp.Data.Models
        
         [Required (ErrorMessage = "Name of Contest is required!")]
         public string Name { get; set; }
+
+        public int Nr_Jumps { get; set; }
         
-        [Required(ErrorMessage = "Club that owns the contest is required!")]
-        public string Club { get; set; }
+        public int TypeId { get; set; }
+        public virtual EventTypeModel Type { get; set; }
 
     }
 }

@@ -29,6 +29,11 @@ namespace DiveComp.Data.Repository
             return false;
         }
 
+        public List<DiverModel> GetAllDivers()
+        {
+            return db.divers.ToList();
+        }
+
         public DiverModel Get1Diver(int id)
         {
             return db.divers.FirstOrDefault(x => x.Id == id);
@@ -37,7 +42,7 @@ namespace DiveComp.Data.Repository
         public List<DiverModel> GetDiverListByEvent(int id)
         {
             ProcedureHelper entry = new ProcedureHelper(db);
-            return entry.spGetDiverListByEvent(id);
+            return entry.spGetDiverListByContest(id);
         }
     }
 }

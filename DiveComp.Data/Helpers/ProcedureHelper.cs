@@ -52,7 +52,7 @@ namespace DiveComp.Data.Helpers
             return diverlist;
         }
 
-        public List<DiverModel> spGetDiverListByEvent(int eventid) // XXXXXXXXXX
+        public List<DiverModel> spGetDiverListByContest(int contestId)
         {
             List<DiverModel> diverlist = new List<DiverModel>();
 
@@ -62,10 +62,10 @@ namespace DiveComp.Data.Helpers
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "GetDiverListByEvent"; // The name of the Stored Procedure
+                    cmd.CommandText = "GetDiverListByContest"; // The name of the Stored Procedure
                     cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@id", eventid);
+                    cmd.Parameters.AddWithValue("@id", contestId);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -160,30 +160,6 @@ namespace DiveComp.Data.Helpers
             
             return cmodel.Id;
         }
-        public int spGetEventId(string name, int id) { // XXXXX
-
-            EventsModel emodel = new EventsModel();
-
-            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString)) {
-                conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand()) {
-                    cmd.Connection = conn;
-                    cmd.CommandText = "GetEventId"; // The name of the Stored Procedure
-                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
-
-                    cmd.Parameters.AddWithValue("@eventname", name);
-                    cmd.Parameters.AddWithValue("@cid", id);
-
-                    using (var reader = cmd.ExecuteReader()) {
-                        while (reader.Read()) {
-                            emodel.Id = (int)reader["Id"];
-                        }
-                    }
-                }
-            }
-
-            return emodel.Id;
-        }
 
         public EventTypeModel spGetEventType(int id)
         {
@@ -216,7 +192,7 @@ namespace DiveComp.Data.Helpers
 
             return emodel;
         }
-
+        /*
         public List<EventsModel> spGetEvents(int contestid)
         {
             List<EventsModel> eventlist = new List<EventsModel>();
@@ -248,6 +224,8 @@ namespace DiveComp.Data.Helpers
             }
             return eventlist;
         }
+        */
+
         public List<EventTypeModel> spGetAllEventTypes() {
             List<EventTypeModel> eventTypeList = new List<EventTypeModel>();
 
@@ -289,7 +267,7 @@ namespace DiveComp.Data.Helpers
                     cmd.CommandText = "GetJudgeByContestId"; // The name of the Stored Procedure
                     cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@id", contestid);
+                    cmd.Parameters.AddWithValue("@cid", contestid);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -309,6 +287,7 @@ namespace DiveComp.Data.Helpers
             return resultlist;
         }
 
+        /*
         public List<ActiveEventModel> spGetEventsForContest(int contestid)
         {
             List<ActiveEventModel> resultlist = new List<ActiveEventModel>();
@@ -341,6 +320,7 @@ namespace DiveComp.Data.Helpers
             }
             return resultlist;
         }
+        */
 
     }
 }

@@ -1,0 +1,65 @@
+﻿@model DiveCompMVC.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Add judges test";
+}
+
+<h1>Add divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
+
+<h1>Added judges</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AllJudgesParticipants)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JudgeId)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h1>Add Judges</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AllJudges)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Add to contest", "AddJudge", "Contest", new { judgeId = item.Id, contestId = Model.AllContests[0].Id }, null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

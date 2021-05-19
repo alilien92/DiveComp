@@ -8,14 +8,16 @@ namespace DiveComp.Data.Models
     {
         public int Id { get; set; }
 
-        public int EventId { get; set; }
+        public int ContestId { get; set; }
 
         public int DiverId { get; set; }
 
         public float Score { get; set; }
 
+        public int HasJumped { get; set; }
+
         //foreign keys
-        public virtual EventsModel Event { get; set; } 
+        public virtual ContestModel Contest { get; set; } 
 
         public virtual DiverModel Diver { get; set; }
     }

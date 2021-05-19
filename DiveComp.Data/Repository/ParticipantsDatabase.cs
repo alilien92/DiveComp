@@ -21,12 +21,13 @@ namespace DiveComp.Data.Repository
         {
             this.db = _db;
         }
-        public bool CreateNewParticipant(EventsModel evt, DiverModel diver)
+        public bool CreateNewParticipant(ContestModel contest, DiverModel diver)
         {
             ParticipantsModel entry = new ParticipantsModel();
-            entry.Event = evt; //Foreign key
+            entry.Contest = contest; //Foreign key
             entry.Diver = diver;    //Foreign key
             entry.Score = 0;
+            entry.HasJumped = 0;
             db.participants.Add(entry);
             db.SaveChanges();
             if(db.participants.Contains(entry))

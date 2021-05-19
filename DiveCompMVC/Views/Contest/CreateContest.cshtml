@@ -1,0 +1,61 @@
+﻿@model DiveComp.Data.Models.ContestModel
+
+@{
+    ViewData["Title"] = "Create a new contest";
+}
+
+<h1>Create</h1>
+
+<h4>Contest</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddDiversToContest" asp-controller="Contest">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="Nr_Jumps" class="form-control">
+
+                    <option>Select number of jumps in the event</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <span asp-validation-for="Nr_Jumps" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="TypeId" class="form-control">
+
+                    <option>Select the type of event</option>
+                    <option value="1">Men 1m springboard</option>
+                    <option value="2">Women 1m springboard</option>
+                    <option value="3">Men 3m springboard</option>
+                    <option value="4">Women 3m springboard</option>
+                    <option value="5">Men 5m platform</option>
+                    <option value="6">Women 5m platform</option>
+                    <option value="7">Men 7.5m platform</option>
+                    <option value="8">Women 7.5m platform</option>
+                    <option value="9">Men 10m platform</option>
+                    <option value="10">Women 10m platform</option>
+                </select>
+                <span asp-validation-for="TypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create Contest" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Home" asp-action="Index">Back to home</a>
+</div>
