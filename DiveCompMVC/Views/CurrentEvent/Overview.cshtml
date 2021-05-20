@@ -75,10 +75,12 @@
                     }
                 </tbody>
             </table>
+  
             <div class="btn">
                 <button class="btn-outline-dark" name="start" type="button">
-                    <a class="btn-outline-dark" asp-area="" asp-controller="CurrentEvent" asp-action="StartContest">Start</a>
-                    <input type="hidden" value="@Model.contest.Id" asp-for="contest.Id" />
+                   
+                    @Html.ActionLink("Start", "StartContest", "CurrentEvent", new { id = @Model.contest.Id }, null)
+
                 </button>
             </div>
         </div>

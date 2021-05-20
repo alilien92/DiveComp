@@ -4,7 +4,7 @@
     ViewData["Title"] = "Add judges test";
 }
 
-@Html.ActionLink("Continue", "StartContest", "Contest", new { contestId = Model.AllContests[0].Id }, null)
+@Html.ActionLink("Continue", "Overview", "CurrentEvent", new { id = Model.AllContests[0].Id }, null)
 
 <h1>Add Judges to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
 

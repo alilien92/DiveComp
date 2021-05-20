@@ -72,7 +72,7 @@ namespace DiveCompMVC.Controllers
             float newscore = median * mod;
             participants.UpdateScore(model.contest.Id, model.diver.Id, newscore);
 
-            return RedirectToAction("StartContest", model.contest.Id);
+            return RedirectToAction("StartContest", new { id = model.contest.Id });
             
         }
         
