@@ -56,40 +56,35 @@ namespace DiveCompMVC.Controllers
         {
             participants.CreateNewParticipant(contests.Get1Contest(contestId), divers.Get1Diver(diverId));
             ViewModel vm = new ViewModel();
-            vm.AllDivers = divers.GetAllDivers();
+            vm.AllDivers = divers.GetDiverListByContest(contestId);
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
-            List<ParticipantsModel> participantsInContest = new List<ParticipantsModel>();
-
-            vm.AllParticipants = participantsInContest;
             return View("AddDiversToContest", vm);
         }
 
         [HttpPost]
         public IActionResult AddDiversToContest(ContestModel model)
-        //int contestId
         {
             if (ModelState.IsValid)
             {
                 contests.CreateNewContest(model);
                 ViewModel vm = new ViewModel();
-                vm.AllDivers = divers.GetAllDivers();
                 List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(model.Id) };
                 vm.AllContests = singleContest;
-                List<ParticipantsModel> participantsInContest = new List<ParticipantsModel>();
+                List<DiverModel> diversInContest = new List<DiverModel>();
 
-                vm.AllParticipants = participantsInContest;
+                vm.AllDivers = diversInContest;
                 return View(vm);
             }
-            return Index();
+            return View("CreateContest");
         }
 
         [HttpGet]
-        public IActionResult AddDiver(int diverId, int contestId)
+        public IActionResult AddDiver(int contestId)
         {
             ViewModel vm = new ViewModel();
-            List<DiverModel> singleDiver = new List<DiverModel>() { divers.Get1Diver(diverId) };
-            vm.AllDivers = singleDiver;
+            List<DiverModel> allDivers = new List<DiverModel>();
+            vm.AllDivers = divers.GetAllDivers();
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
             return View(vm);
@@ -103,12 +98,11 @@ namespace DiveCompMVC.Controllers
         public IActionResult ConfirmAddedDivers(int contestId)
         {
             ViewModel vm = new ViewModel();
-            vm.AllJudges = judges.GetAllJudges();
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
-            List<JudgeParticipantModel> judgeParticipantsInContest = new List<JudgeParticipantModel>();
+            List<JudgeModel> judgesInContest = new List<JudgeModel>();
 
-            vm.AllJudgesParticipants = judgeParticipantsInContest;
+            vm.AllJudges = judgesInContest;
             return View("AddJudgesToContest", vm);
         }
 
@@ -118,23 +112,20 @@ namespace DiveCompMVC.Controllers
         {
             judgeParticipants.CreateNewJudgeParticipant(contests.Get1Contest(contestId), judges.Get1Judge(judgeId));
             ViewModel vm = new ViewModel();
-            vm.AllJudges = judges.GetAllJudges();
+            vm.AllJudges = judges.GetJudgesByContest(contestId);
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
-            List<JudgeParticipantModel> judgeParticipantsInContest = new List<JudgeParticipantModel>();
-
-            vm.AllJudgesParticipants = judgeParticipantsInContest;
             return View("AddJudgesToContest", vm);
         }
 
 
 
         [HttpGet]
-        public IActionResult AddJudge(int judgeId, int contestId)
+        public IActionResult AddJudge(int contestId)
         {
             ViewModel vm = new ViewModel();
-            List<JudgeModel> singleJudge = new List<JudgeModel>() { judges.Get1Judge(judgeId) };
-            vm.AllJudges = singleJudge;
+            List<JudgeModel> singleJudge = new List<JudgeModel>();
+            vm.AllJudges = judges.GetAllJudges();
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
             return View(vm);

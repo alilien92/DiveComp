@@ -4,33 +4,13 @@
     ViewData["Title"] = "Add judges test";
 }
 
-<h1>Add divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
+@Html.ActionLink("Continue", "StartContest", "Contest", new { contestId = Model.AllContests[0].Id }, null)
 
-<h1>Added judges</h1>
+<h1>Add Judges to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Id
-            </th>
+@Html.ActionLink("Add judge to contest", "AddJudge", "Contest", new { contestId = Model.AllContests[0].Id }, null)
 
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.AllJudgesParticipants)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.JudgeId)
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-<h1>Add Judges</h1>
+<h1>Added Judges</h1>
 
 <table class="table">
     <thead>
@@ -57,7 +37,6 @@
                 </td>
 
                 <td>
-                    @Html.ActionLink("Add to contest", "AddJudge", "Contest", new { judgeId = item.Id, contestId = Model.AllContests[0].Id }, null)
                 </td>
             </tr>
         }

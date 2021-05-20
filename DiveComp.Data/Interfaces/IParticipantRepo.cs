@@ -17,5 +17,7 @@ namespace DiveComp.Data.Interfaces
 
         //List<LeaderBoardModel> GetContestResult(int contestid);
 
+
+        
     }
 }

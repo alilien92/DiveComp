@@ -4,35 +4,11 @@
     ViewData["Title"] = "Add divers test";
 }
 
+@Html.ActionLink("Continue", "ConfirmAddedDivers", "Contest", new { contestId = Model.AllContests[0].Id }, null)
+
 <h1>Add divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
 
-<h1>Added divers</h1>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Id
-            </th>
-
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.AllParticipants)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DiverId)
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-<div>
-    @Html.ActionLink("Done adding divers", "ConfirmAddedDivers", "Contest", new { contestId = Model.AllContests[0].Id }, null)
-</div>
+@Html.ActionLink("Add diver to contest", "AddDiver", "Contest", new { contestId = Model.AllContests[0].Id }, null)
 
 <h1>Added divers</h1>
 
@@ -67,7 +43,6 @@
                 </td>
 
                 <td>
-                    @Html.ActionLink("Add to contest", "AddDiver", "Contest", new { diverId = item.Id, contestId = Model.AllContests[0].Id }, null)
                 </td>
             </tr>
         }

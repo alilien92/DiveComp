@@ -72,6 +72,8 @@ namespace DiveComp.Data.Repository
             throw new NotImplementedException();
         }
 
+        
+
         /*
         public List<LeaderBoardModel> GetContestResult(int contestid)
         {

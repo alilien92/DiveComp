@@ -4,20 +4,40 @@
     ViewData["Title"] = "Add Diver";
 }
 
-<h1>Confirm adding diver</h1>
+<h1>Select which diver to add to @Model.AllContests[0].Name</h1>
 
-<div>
-    <h4>Diver</h4>
-    <hr />
-    <dl class="row">
-        <dd class="col-sm-2">
-            @Html.DisplayFor(model => model.AllDivers[0].FirstName)
-        </dd>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.AllDivers[0].LastName)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Confirm adding diver", "AddDiversToContest", "Contest", new { diverId = Model.AllDivers[0].Id, contestId = Model.AllContests[0].Id }, null)
-</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Club
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AllDivers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Club)
+                </td>
+                <td>
+                    @Html.ActionLink("Add diver", "AddDiversToContest", "Contest", new { diverId = @item.Id, contestId = Model.AllContests[0].Id }, null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

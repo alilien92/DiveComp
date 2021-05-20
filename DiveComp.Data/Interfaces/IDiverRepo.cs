@@ -14,7 +14,7 @@ namespace DiveComp.Data.Interfaces
 
         List<DiverModel> GetAllDivers();
 
-        List<DiverModel> GetDiverListByEvent(int id);
+        List<DiverModel> GetDiverListByContest(int id);
 
 
     }
