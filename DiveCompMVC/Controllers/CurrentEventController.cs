@@ -64,7 +64,11 @@ namespace DiveCompMVC.Controllers
             RepoHelper repo = new RepoHelper(fina, contests);
             float median = repo.CalculateMedian(model.score1, model.score2, model.score3);
             float mod = fina.DetermineDiveType(model.divepos, model.contest.Type.Height, model.currentDiffMod.DiveCodeNumber);
-            
+            if(mod == 0)
+            {
+                mod = 1.5F;
+            }
+
             float newscore = median * mod;
             participants.UpdateScore(model.contest.Id, model.diver.Id, newscore);
 
