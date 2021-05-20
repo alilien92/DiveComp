@@ -14,7 +14,7 @@ namespace DiveComp.Data.Models
 
         public float Score { get; set; }
 
-        public int hasJumped { get; set; }
+        public int HasJumped { get; set; }
 
         //foreign keys
         public virtual ContestModel Contest { get; set; } 

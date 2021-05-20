@@ -54,7 +54,7 @@ namespace DiveComp.Data.Helpers
             return diverlist;
         }
 
-        public List<DiverModel> spGetDiverListByContest(int contestid)
+        public List<DiverModel> spGetDiverListByContest(int contestId)
         {
             List<DiverModel> diverlist = new List<DiverModel>();
 
@@ -67,7 +67,7 @@ namespace DiveComp.Data.Helpers
                     cmd.CommandText = "GetDiverListByContest"; // The name of the Stored Procedure
                     cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@id", contestid);
+                    cmd.Parameters.AddWithValue("@id", contestId);
 
                     using (var reader = cmd.ExecuteReader())
                     {

@@ -11,11 +11,13 @@ namespace DiveComp.Data.Interfaces
 
         void UpdateScore(int contestid,int diverId, float newscore);
 
-        List<LeaderBoardModel> GetAllParticipants(int eventId);
+        List<LeaderBoardModel> GetAllParticipants(int contestId);
 
         bool DeleteParticipant(int id);
 
         //List<LeaderBoardModel> GetContestResult(int contestid);
 
+
+        
     }
 }

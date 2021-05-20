@@ -14,6 +14,7 @@ namespace DiveCompMVC.Models
 
         public ContestModel Contests { get; set; }
         public DiverModel Divers { get; set; }
+
         public EventTypeModel EventTypes { get; set; }
         
         public JudgeModel Judges { get; set; }

@@ -27,7 +27,7 @@ namespace DiveComp.Data.Repository
             entry.Contest = contest; //Foreign key
             entry.Diver = diver;    //Foreign key
             entry.Score = 0;
-            entry.hasJumped = 0;
+            entry.HasJumped = 0;
             db.participants.Add(entry);
             db.SaveChanges();
             if(db.participants.Contains(entry))
@@ -67,6 +67,8 @@ namespace DiveComp.Data.Repository
             return true;
         }
 
+
+        
 
         /*
         public List<LeaderBoardModel> GetContestResult(int contestid)

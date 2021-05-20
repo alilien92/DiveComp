@@ -12,11 +12,11 @@ namespace DiveComp.Data.Models
        
         [Required (ErrorMessage = "Name of Contest is required!")]
         public string Name { get; set; }
-
+        [Range(1, 8)]
+        [Required(ErrorMessage = "Number of jumps is required!")]
         public int Nr_Jumps { get; set; }
-
-        //public bool National { get; set; }
-        
+        [Range(1, 10)]
+        [Required(ErrorMessage = "Type of contest is required!")]
         public int TypeId { get; set; }
         public virtual EventTypeModel Type { get; set; }
 

@@ -1,0 +1,50 @@
+﻿@model DiveCompMVC.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Add divers test";
+}
+
+@Html.ActionLink("Continue", "ConfirmAddedDivers", "Contest", new { contestId = Model.AllContests[0].Id }, null)
+
+<h1>Add divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
+
+@Html.ActionLink("Add diver to contest", "AddDiver", "Contest", new { contestId = Model.AllContests[0].Id }, null)
+
+<h1>Added divers</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Club
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AllDivers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Club)
+                </td>
+
+                <td>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

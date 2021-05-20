@@ -29,6 +29,11 @@ namespace DiveComp.Data.Repository
             return false;
         }
 
+        public List<DiverModel> GetAllDivers()
+        {
+            return db.divers.ToList();
+        }
+
         public DiverModel Get1Diver(int id)
         {
             return db.divers.FirstOrDefault(x => x.Id == id);
