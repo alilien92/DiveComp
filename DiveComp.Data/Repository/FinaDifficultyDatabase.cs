@@ -38,7 +38,7 @@ namespace DiveComp.Data.Repository
             return true;
         }
 
-        public bool InsertFinaTable()
+        public void InsertFinaTable()
         {
             var finaList = new List<FinaDifficultyModel>();
 
@@ -52,7 +52,28 @@ namespace DiveComp.Data.Repository
                 db.Add(diveobject);
 
             db.SaveChanges();
-            return true;
+        }
+
+        public float DetermineDiveType(string type, float height, int dcn)
+        {
+            ProcedureHelper entry = new ProcedureHelper(db);
+            if (type == "STR")
+            {
+                return entry.spGetDiffModSTR(height, dcn);
+            }
+            if (type == "Pike")
+            {
+                return entry.spGetDiffModPike(height, dcn);
+            }
+            if (type == "Tuck")
+            {
+                return entry.spGetDiffModTuck(height, dcn);
+            }
+            if (type == "Free")
+            {
+                return entry.spGetDiffModFree(height, dcn);
+            }
+            return height;
         }
     }
 }

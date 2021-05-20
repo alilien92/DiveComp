@@ -1,105 +1,90 @@
-﻿@model DiveCompMVC.Models.ActiveContestModel
+﻿@model DiveCompMVC.Models.ActiveContestVM
 
 
+<h1>Overview</h1>
 
+<body>
 
-<div>
-    <h4>@Model.contest.Name</h4>
-    <hr />
-    <dl class="row">
-    </dl>
-
-</div>
-
-<div class="split left">
-    <div class="centered">
-        <h5> Judges </h5>
-        <table class="table table-striped">
-
-            <thead>
-                <tr>
-                    <th>
-                        Name
-                    </th>
-                    <th>
-                        Org
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item1 in Model.judge)
-                {
-                    <tr>
-                        <td>
-                            @item1.FirstName @item1.LastName
-                        </td>
-                        <td>
-                            @item1.Org
-                        </td>
-
-                    </tr>
-                }
-            </tbody>
-        </table>
+    <div class="thead-dark">
+        <h4>@Model.contest.Name @Model.contest.Type.Gender @Model.contest.Type.Type @Model.contest.Type.Height m</h4>
+        <hr />
     </div>
-</div>
 
-<div class="split right">
-    <div class="centered">
-        <h5> Events </h5>
-        <table class="table table-striped">
-
-            <thead>
-                <tr>
-                    <th>
-                        Name
-                    </th>
-
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.events)
-                {
-                    <tr>
-                        <td>
-                            @item.Type.Gender @item.Type.Type @item.Type.Height
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
-
-
-
-<div class="centered">
-            <table class="table table-bordered table-striped table-hover">
+    <div class="split left">
+        <div class="centered">
+            <h5>Judges</h5>
+            <table class="table-striped">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Club</th>
-                        <th>Country</th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Org
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.events)
+                    @foreach (var item in Model.judges)
                     {
-
-                     @foreach (var item2 in item.diverlist)
-                     {
-
                         <tr>
-                            <td>@item2.FirstName @item2.LastName</td>
-                            <td>@item2.Club</td>
-                            <td>@item2.Country</td>
+                            <td>
+                                @item.FirstName @item.LastName
+                            </td>
+                            <td>
+                                @item.Org
+                            </td>
                         </tr>
-                     }
-                     }
-
-
+                    }
                 </tbody>
             </table>
-</div>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <h5>Divers</h5>
+            <table class="table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Club
+                        </th>
+                        <th>
+                            Country
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.divers)
+                    {
+                        <tr>
+                            <td>
+                                @item.FirstName @item.LastName
+                            </td>
+                            <td>
+                                @item.Club
+                            </td>
+                            <td>
+                                @item.Country
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="btn">
+                <button class="btn-outline-dark" name="start" type="button">
+                    <a class="btn-outline-dark" asp-area="" asp-controller="CurrentEvent" asp-action="StartContest">Start</a>
+                    <input type="hidden" value="@Model.contest.Id" asp-for="contest.Id" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
 
 
+</body>

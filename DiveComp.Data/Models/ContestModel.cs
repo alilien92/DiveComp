@@ -14,6 +14,8 @@ namespace DiveComp.Data.Models
         public string Name { get; set; }
 
         public int Nr_Jumps { get; set; }
+
+        //public bool National { get; set; }
         
         public int TypeId { get; set; }
         public virtual EventTypeModel Type { get; set; }

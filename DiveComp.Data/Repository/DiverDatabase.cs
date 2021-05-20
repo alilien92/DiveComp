@@ -34,10 +34,10 @@ namespace DiveComp.Data.Repository
             return db.divers.FirstOrDefault(x => x.Id == id);
         }
 
-        public List<DiverModel> GetDiverListByEvent(int id)
+        public List<DiverModel> GetDiverListByContest(int id)
         {
             ProcedureHelper entry = new ProcedureHelper(db);
-            return entry.spGetDiverListByEvent(id);
+            return entry.spGetDiverListByContest(id);
         }
     }
 }

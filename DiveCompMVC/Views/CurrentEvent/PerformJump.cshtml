@@ -1,0 +1,135 @@
+﻿@model DiveCompMVC.Models.ActiveContestVM
+
+
+
+<h3> Submit Score </h3>
+<h4> @Model.diver.FirstName @Model.diver.LastName</h4>
+<div class="row">
+    <div class="col-md-4">
+        
+        <form asp-action="SubmitScore" asp-controller="CurrentEvent">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+            <div class="form-group">
+                <select asp-for="score1" class="form-control">
+
+                    <option>Score:</option>
+                    <option value="0.0">0.0</option>
+                    <option value="0.5">0.5</option>
+                    <option value="1.0">1.0</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.0">2.0</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.0">3.0</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4.0">4.0</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5.0">5.0</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6.0">6.0</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7.0">7.0</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8.0">8.0</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9.0">9.0</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10.0">10.0</option>
+                </select>
+                <span asp-validation-for="score1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="score2" class="form-control">
+
+                    <option>Score:</option>
+                    <option value="0.0">0.0</option>
+                    <option value="0.5">0.5</option>
+                    <option value="1.0">1.0</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.0">2.0</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.0">3.0</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4.0">4.0</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5.0">5.0</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6.0">6.0</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7.0">7.0</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8.0">8.0</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9.0">9.0</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10.0">10.0</option>
+                </select>
+                <span asp-validation-for="score2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="score3" class="form-control">
+
+                    <option>Score:</option>
+                    <option value="0.0">0.0</option>
+                    <option value="0.5">0.5</option>
+                    <option value="1.0">1.0</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.0">2.0</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.0">3.0</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4.0">4.0</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5.0">5.0</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6.0">6.0</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7.0">7.0</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8.0">8.0</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9.0">9.0</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10.0">10.0</option>
+                </select>
+                <span asp-validation-for="score3" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <select asp-for="currentDiffMod.DiveCodeNumber" class="form-control">
+                    <option>Dive variation:</option>
+                    @foreach (var item in Model.diffmods)
+                    {
+
+                        <option value=@item.DiveCodeNumber>@item.DiveVariation</option>
+                    }
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <select asp-for="divepos" class="form-control">
+
+                    <option>Dive position:</option>
+                    <option value="STR">Straight</option>
+                    <option value="Pike">Pike</option>
+                    <option value="Tuck">Tuck</option>
+                    <option value="Free">Free</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <input type="hidden" value="@Model.diver.Id" asp-for="diver.Id" />
+                <input type="hidden" value="@Model.contest.Id" asp-for="contest.Id" />
+                <input type="hidden" value="@Model.contest.Type.Height" asp-for="contest.Type.Height" />
+            </div>
+            @ViewBag.Message
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

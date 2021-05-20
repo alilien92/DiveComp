@@ -13,7 +13,9 @@ namespace DiveComp.Data.Interfaces
 
         bool AddFinaDifficulty(FinaDifficultyModel newDifficulty);
 
-        bool InsertFinaTable();
+        float DetermineDiveType(string type, float height, int dcn);
+
+        void InsertFinaTable();
 
     }
 }

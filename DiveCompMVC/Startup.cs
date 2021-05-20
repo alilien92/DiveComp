@@ -32,7 +32,6 @@ namespace DiveCompMVC
             services.AddTransient<IParticipantRepo, ParticipantsDatabase>();
             services.AddTransient<IJudgeRepo, JudgeDatabase>();
             services.AddTransient<IJudgeParticipantRepo, JudgeParticipantDatabase>();
-            services.AddTransient<IEventsRepo, EventsDatabase>();
             services.AddTransient<IFinaDifficultyRepo, FinaDifficultyDatabase>();
             services.AddTransient<IEventTypeRepo, EventTypeDatabase>();
             services.AddControllersWithViews();
@@ -70,7 +69,7 @@ namespace DiveCompMVC
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=CurrentEvent}/{action=Overview}/{id=1}");
             });
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope()) {
                 var context = serviceScope.ServiceProvider.GetRequiredService<ModelContext>();

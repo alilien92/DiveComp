@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DiveCompMVC.Models
+namespace DiveComp.Data.Models
 {
     public class ActiveContest
     {
-        public int ID { get; set; }
+        public ContestModel contest { get; set; }
         
+        public List<JudgeModel> judges { get; set; }
         public List<DiverModel> divers { get; set; }
+
+        public List<LeaderBoardModel> leaderboard { get; set; }
     }
 }

@@ -15,25 +15,23 @@ namespace DiveCompMVC.Controllers
     public class ContestController : Controller
     {
         private IContestRepo contests;
-        private IEventsRepo events;
         private IParticipantRepo participants;
         private IEventTypeRepo eventTypes;
 
 
-        public ContestController(IContestRepo _contests, IEventsRepo _events, IParticipantRepo _participants, IEventTypeRepo _eventTypes) {
+        public ContestController(IContestRepo _contests, IParticipantRepo _participants, IEventTypeRepo _eventTypes) {
             this.contests = _contests;
-            this.events = _events;
             this.participants = _participants;
             this.eventTypes = _eventTypes;
         }
         
         public IActionResult NewContest() {
-            ViewModel vm = new ViewModel();
-            vm.AllEventTypes = GetEventTypes(vm);
+            
 
 
-            return View(vm);
+            return View();
         }
+        
 
         public IActionResult LoadContest()
         {
@@ -41,14 +39,6 @@ namespace DiveCompMVC.Controllers
             c = contests.GetAllContests();
 
             return View(c);
-        }
-
-        public IActionResult OpenEvents(int id)
-        {
-            List<EventsModel> evt;
-            evt = events.GetAllEvents(id);
-
-            return View(evt);
         }
 
         
@@ -61,7 +51,7 @@ namespace DiveCompMVC.Controllers
         }
         
        
-        
+       /* 
         [HttpPost]
         public ActionResult AddContest(ViewModel model) {
             
@@ -72,6 +62,7 @@ namespace DiveCompMVC.Controllers
             return View(model);
 
             }
+       */
         
         public List<EventTypeModel> GetEventTypes(ViewModel model) {
 

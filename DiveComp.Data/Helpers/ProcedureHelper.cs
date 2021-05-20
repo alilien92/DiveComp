@@ -19,7 +19,7 @@ namespace DiveComp.Data.Helpers
         }
 
         //GetCurrentDiverList procedure, returns a list of all divers and their score with given contest id.
-        public List<LeaderBoardModel> spGetLeaderboardByEvent(int eventid)
+        public List<LeaderBoardModel> spGetLeaderboardByContest(int contestid)
         {
             List<LeaderBoardModel> diverlist = new List<LeaderBoardModel>();
 
@@ -29,10 +29,10 @@ namespace DiveComp.Data.Helpers
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "GetLeaderboardByEvent"; // The name of the Stored Procedure
+                    cmd.CommandText = "GetLeaderboardByContest"; // The name of the Stored Procedure
                     cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@Id", eventid);
+                    cmd.Parameters.AddWithValue("@Id", contestid);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -40,10 +40,12 @@ namespace DiveComp.Data.Helpers
                         {
                             diverlist.Add(new LeaderBoardModel()
                             {
+                                Id = (int)reader["DiverId"],
                                 FirstName = reader["FirstName"].ToString(),
                                 LastName = reader["LastName"].ToString(),
                                 Club = reader["Club"].ToString(),
-                                Score = (float)reader["Score"]
+                                Score = (float)reader["Score"],
+                                hasJumped = (int)reader["hasJumped"]
                             }); ;
                         }
                     }
@@ -52,7 +54,7 @@ namespace DiveComp.Data.Helpers
             return diverlist;
         }
 
-        public List<DiverModel> spGetDiverListByEvent(int eventid)
+        public List<DiverModel> spGetDiverListByContest(int contestid)
         {
             List<DiverModel> diverlist = new List<DiverModel>();
 
@@ -62,10 +64,10 @@ namespace DiveComp.Data.Helpers
                 using (MySqlCommand cmd = new MySqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "GetDiverListByEvent"; // The name of the Stored Procedure
+                    cmd.CommandText = "GetDiverListByContest"; // The name of the Stored Procedure
                     cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@id", eventid);
+                    cmd.Parameters.AddWithValue("@id", contestid);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -117,7 +119,118 @@ namespace DiveComp.Data.Helpers
             return difficultylist;
         }
 
-        public void spUpdateScore(int diverid, float newscore)
+        public float spGetDiffModSTR(float height, int dcn)
+        {
+            float value = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetDiffModSTR"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@H", height);
+                    cmd.Parameters.AddWithValue("@dcn", dcn);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            value = (float)reader["STR"];
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        public float spGetDiffModPike(float height, int dcn)
+        {
+            float value = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetDiffModPike"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@H", height);
+                    cmd.Parameters.AddWithValue("@dcn", dcn);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            value = (float)reader["Pike"];
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        public float spGetDiffModTuck(float height, int dcn)
+        {
+            float value = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetDiffModTuck"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@H", height);
+                    cmd.Parameters.AddWithValue("@dcn", dcn);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            value = (float)reader["Tuck"];
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+        public float spGetDiffModFree(float height, int dcn)
+        {
+            float value = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetDiffModFree"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@H", height);
+                    cmd.Parameters.AddWithValue("@dcn", dcn);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            value = (float)reader["Free"];
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        public void spUpdateScore(int contestid, int diverid, float newscore)
         {
 
             using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
@@ -129,7 +242,8 @@ namespace DiveComp.Data.Helpers
                     cmd.CommandText = "UpdateScore"; // The name of the Stored Procedure
                     cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
 
-                    cmd.Parameters.AddWithValue("@id", diverid);
+                    cmd.Parameters.AddWithValue("@contestid", contestid);
+                    cmd.Parameters.AddWithValue("@diverid", diverid);
                     cmd.Parameters.AddWithValue("@newscore", newscore);
 
                     cmd.ExecuteNonQuery();
@@ -160,30 +274,7 @@ namespace DiveComp.Data.Helpers
             
             return cmodel.Id;
         }
-        public int spGetEventId(string name, int id) { // XXXXX
-
-            EventsModel emodel = new EventsModel();
-
-            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString)) {
-                conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand()) {
-                    cmd.Connection = conn;
-                    cmd.CommandText = "GetEventId"; // The name of the Stored Procedure
-                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
-
-                    cmd.Parameters.AddWithValue("@eventname", name);
-                    cmd.Parameters.AddWithValue("@cid", id);
-
-                    using (var reader = cmd.ExecuteReader()) {
-                        while (reader.Read()) {
-                            emodel.Id = (int)reader["Id"];
-                        }
-                    }
-                }
-            }
-
-            return emodel.Id;
-        }
+      
 
         public EventTypeModel spGetEventType(int id)
         {
@@ -217,37 +308,7 @@ namespace DiveComp.Data.Helpers
             return emodel;
         }
 
-        public List<EventsModel> spGetEvents(int contestid)
-        {
-            List<EventsModel> eventlist = new List<EventsModel>();
-
-            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
-            {
-                conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    cmd.Connection = conn;
-                    cmd.CommandText = "GetEvents"; // The name of the Stored Procedure
-                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
-
-                    cmd.Parameters.AddWithValue("@cid", contestid);
-
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            eventlist.Add(new EventsModel()
-                            {
-                                Id = (int)reader["Id"],
-                                ContestId = (int)reader["ContestId"],
-                                Type = spGetEventType((int)reader["TypeId"])
-                            }); ;
-                        }
-                    }
-                }
-            }
-            return eventlist;
-        }
+        
         public List<EventTypeModel> spGetAllEventTypes() {
             List<EventTypeModel> eventTypeList = new List<EventTypeModel>();
 
@@ -309,38 +370,7 @@ namespace DiveComp.Data.Helpers
             return resultlist;
         }
 
-        public List<ActiveEventModel> spGetEventsForContest(int contestid)
-        {
-            List<ActiveEventModel> resultlist = new List<ActiveEventModel>();
-
-            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
-            {
-                conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    cmd.Connection = conn;
-                    cmd.CommandText = "GetEventsForContest"; // The name of the Stored Procedure
-                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
-
-                    cmd.Parameters.AddWithValue("@id", contestid);
-
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            resultlist.Add(new ActiveEventModel()
-                            {
-                                Id = (int)reader["Id"],
-                                Type = spGetEventType((int)reader["TypeId"]),
-                                diverlist = spGetDiverListByEvent((int)reader["Id"]),
-                                leaderboard = spGetLeaderboardByEvent((int)reader["Id"])
-                            }) ; ;
-                        }
-                    }
-                }
-            }
-            return resultlist;
-        }
+        
 
     }
 }

@@ -1,0 +1,44 @@
+﻿@model DiveCompMVC.Models.ActiveContestVM
+    
+
+<div class="centered">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+
+                <th>
+                    Name
+                </th>
+                <th>
+                    Score 1
+                </th>
+                <th>
+                    Score 2
+                </th>
+                <th>
+                    Score 3
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    @Model.diver.FirstName @Model.diver.LastName
+                </td>
+                <td>
+                    @Model.score1
+                </td>
+                <td>
+                    @Model.score2
+                </td>
+                <td>
+                    @Model.score3
+                </td>
+                <td>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

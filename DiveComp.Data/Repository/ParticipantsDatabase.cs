@@ -37,17 +37,17 @@ namespace DiveComp.Data.Repository
             return false;
         }
         
-        public void UpdateScore(int diverId, float newScore)
+        public void UpdateScore(int contestid, int diverId, float newScore)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
-            procedure.spUpdateScore(diverId, newScore);
+            procedure.spUpdateScore(contestid, diverId, newScore);
         }
         
 
-        public List<LeaderBoardModel> GetAllParticipants(int eventId)
+        public List<LeaderBoardModel> GetAllParticipants(int contestId)
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
-            return procedure.spGetLeaderboardByEvent(eventId);
+            return procedure.spGetLeaderboardByContest(contestId);
 
         }
 
@@ -67,10 +67,6 @@ namespace DiveComp.Data.Repository
             return true;
         }
 
-        void IParticipantRepo.UpdateScore(int diverId, float newscore)
-        {
-            throw new NotImplementedException();
-        }
 
         /*
         public List<LeaderBoardModel> GetContestResult(int contestid)

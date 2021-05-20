@@ -1,0 +1,56 @@
+﻿@model DiveCompMVC.Models.ActiveContestVM
+
+
+
+<table class="table table-striped">
+    <h5>Leaderboard</h5>
+    <thead>
+        <tr>
+            <th>
+                Rank
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Club
+            </th>
+            <th>
+                Score
+            </th>
+            <th>
+                Dives performed
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{var i = 0; }
+        @foreach (var item in Model.leaderboard)
+        {
+            i++;
+            <tr>
+                <td>
+                    @i
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Club)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Score)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.hasJumped)
+                </td>
+                <td>
+                    @Html.ActionLink("Register Score", "PerformJump", new { diverid = item.Id, contestid = Model.contest.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

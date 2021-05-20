@@ -14,7 +14,6 @@ namespace DiveCompMVC.Models
 
         public ContestModel Contests { get; set; }
         public DiverModel Divers { get; set; }
-        public EventsModel Events { get; set; }
         public EventTypeModel EventTypes { get; set; }
         
         public JudgeModel Judges { get; set; }
@@ -32,7 +31,6 @@ namespace DiveCompMVC.Models
 
         public List<DiverModel> AllDivers { get; set; }
 
-        public List<EventsModel> AllEvents { get; set; }
         public List<EventTypeModel> AllEventTypes { get; set; }
 
         public List<JudgeModel> AllJudges { get; set; }
