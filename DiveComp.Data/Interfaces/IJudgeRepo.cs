@@ -17,5 +17,7 @@ namespace DiveComp.Data.Interfaces
 
         bool RemoveJudge(int id);
 
+        public List<JudgeModel> GetJudgesNotInContest(int contestId);
+
     }
 }

@@ -29,9 +29,11 @@
                     @Html.DisplayFor(modelItem => item.LastName)
                 </td>
                 <td>
-                    @Html.ActionLink("Add judge", "AddJudgesToContest", "Contest", new { judgeId = @item.Id, contestId = Model.AllContests[0].Id }, null)
+                    @Html.ActionLink("Add judge", "AddJudgeConfirmed", "Contest", new { judgeId = @item.Id, contestId = Model.AllContests[0].Id }, null)
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+@Html.ActionLink("Return to Added Judges", "AddJudgesToContest", "Contest", new { contestId = Model.AllContests[0].Id }, null)

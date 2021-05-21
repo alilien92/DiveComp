@@ -370,7 +370,73 @@ namespace DiveComp.Data.Helpers
             return resultlist;
         }
 
-        
+        public List<DiverModel> spGetDiversNotInContest(int contestId)
+        {
+            List<DiverModel> diverlist = new List<DiverModel>();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetDiversNotInContest"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@id", contestId);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            diverlist.Add(new DiverModel()
+                            {
+                                Id = (int)reader["Id"],
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString(),
+                                Club = reader["Club"].ToString(),
+                                Country = reader["Country"].ToString()
+                            }); ;
+                        }
+                    }
+                }
+            }
+            return diverlist;
+        }
+
+        public List<JudgeModel> spGetJudgesNotInContest(int contestId)
+        {
+            List<JudgeModel> judgelist = new List<JudgeModel>();
+
+            using (MySqlConnection conn = new MySqlConnection(db.Database.GetDbConnection().ConnectionString))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = "GetJudgesNotInContest"; // The name of the Stored Procedure
+                    cmd.CommandType = CommandType.StoredProcedure; // It is a Stored Procedure
+
+                    cmd.Parameters.AddWithValue("@id", contestId);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            judgelist.Add(new JudgeModel()
+                            {
+                                Id = (int)reader["Id"],
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString(),
+                                Org = reader["Org"].ToString()
+                            }); ;
+                        }
+                    }
+                }
+            }
+            return judgelist;
+        }
+
 
     }
 }

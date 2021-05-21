@@ -53,5 +53,13 @@ namespace DiveComp.Data.Repository
             db.SaveChanges();
             return true;
         }
+
+        public List<JudgeModel> GetJudgesNotInContest(int contestId)
+        {
+            ProcedureHelper entry = new ProcedureHelper(db);
+            List<JudgeModel> judgelist = entry.spGetJudgesNotInContest(contestId);
+
+            return judgelist;
+        }
     }
 }

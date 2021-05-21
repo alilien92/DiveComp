@@ -1,10 +1,10 @@
 ﻿@model DiveCompMVC.Models.ViewModel
 
 @{
-    ViewData["Title"] = "Add divers test";
+    ViewData["Title"] = "Add divers";
 }
 
-@Html.ActionLink("Continue", "ConfirmAddedDivers", "Contest", new { contestId = Model.AllContests[0].Id }, null)
+@Html.ActionLink("Continue", "AddJudgesToContest", "Contest", new { contestId = Model.AllContests[0].Id }, null)
 
 <h1>Add divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
 

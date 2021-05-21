@@ -44,5 +44,11 @@ namespace DiveComp.Data.Repository
             ProcedureHelper entry = new ProcedureHelper(db);
             return entry.spGetDiverListByContest(id);
         }
+
+        public List<DiverModel> GetDiversNotInContest(int id)
+        {
+            ProcedureHelper entry = new ProcedureHelper(db);
+            return entry.spGetDiversNotInContest(id);
+        }
     }
 }

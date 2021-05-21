@@ -46,71 +46,45 @@ namespace DiveCompMVC.Controllers
             if (ModelState.IsValid)
             {
                 contests.CreateNewContest(model);
-                return View();
-                //model.Id
-            }
-            return Index();
-        }
-
-        public IActionResult AddDiversToContest(int diverId, int contestId)
-        {
-            participants.CreateNewParticipant(contests.Get1Contest(contestId), divers.Get1Diver(diverId));
-            ViewModel vm = new ViewModel();
-            vm.AllDivers = divers.GetDiverListByContest(contestId);
-            List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
-            vm.AllContests = singleContest;
-            return View("AddDiversToContest", vm);
-        }
-
-        [HttpPost]
-        public IActionResult AddDiversToContest(ContestModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                contests.CreateNewContest(model);
-                ViewModel vm = new ViewModel();
-                List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(model.Id) };
-                vm.AllContests = singleContest;
-                List<DiverModel> diversInContest = new List<DiverModel>();
-
-                vm.AllDivers = diversInContest;
-                return View(vm);
+                return RedirectToAction("AddDiversToContest", new { contestId = model.Id });
             }
             return View("CreateContest");
         }
+
+
+        [HttpGet]
+        public IActionResult AddDiversToContest(int contestId)
+        {
+            ViewModel vm = new ViewModel();
+            List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
+            vm.AllContests = singleContest;
+            vm.AllDivers = divers.GetDiverListByContest(contestId);
+            return View(vm);
+        }
+
 
         [HttpGet]
         public IActionResult AddDiver(int contestId)
         {
             ViewModel vm = new ViewModel();
             List<DiverModel> allDivers = new List<DiverModel>();
-            vm.AllDivers = divers.GetAllDivers();
+            vm.AllDivers = divers.GetDiversNotInContest(contestId);
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
             return View(vm);
         }
 
-
-
-
-
-
-        public IActionResult ConfirmAddedDivers(int contestId)
+        public IActionResult AddDiverConfirmed(int diverId, int contestId)
         {
-            ViewModel vm = new ViewModel();
-            List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
-            vm.AllContests = singleContest;
-            List<JudgeModel> judgesInContest = new List<JudgeModel>();
-
-            vm.AllJudges = judgesInContest;
-            return View("AddJudgesToContest", vm);
+            participants.CreateNewParticipant(contests.Get1Contest(contestId), divers.Get1Diver(diverId));
+            return RedirectToAction("AddDiversToContest", new { contestId = contestId });
         }
 
 
 
-        public IActionResult AddJudgesToContest(int judgeId, int contestId)
+        [HttpGet]
+        public IActionResult AddJudgesToContest(int contestId)
         {
-            judgeParticipants.CreateNewJudgeParticipant(contests.Get1Contest(contestId), judges.Get1Judge(judgeId));
             ViewModel vm = new ViewModel();
             vm.AllJudges = judges.GetJudgesByContest(contestId);
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
@@ -119,16 +93,20 @@ namespace DiveCompMVC.Controllers
         }
 
 
-
         [HttpGet]
         public IActionResult AddJudge(int contestId)
         {
             ViewModel vm = new ViewModel();
-            List<JudgeModel> singleJudge = new List<JudgeModel>();
-            vm.AllJudges = judges.GetAllJudges();
+            vm.AllJudges = judges.GetJudgesNotInContest(contestId);
             List<ContestModel> singleContest = new List<ContestModel>() { contests.Get1Contest(contestId) };
             vm.AllContests = singleContest;
             return View(vm);
+        }
+
+        public IActionResult AddJudgeConfirmed(int judgeId, int contestId)
+        {
+            judgeParticipants.CreateNewJudgeParticipant(contests.Get1Contest(contestId), judges.Get1Judge(judgeId));
+            return RedirectToAction("AddJudgesToContest", new { contestId = contestId });
         }
 
 
