@@ -52,7 +52,14 @@ namespace DiveComp.Data.Repository
 
         public List<ContestModel> GetAllContests()
         {
-            return db.contests.ToList();
+            ProcedureHelper entry = new ProcedureHelper(db);
+            List<ContestModel> existingContests = db.contests.ToList();
+            foreach(var item in existingContests)
+            {
+                item.Type = entry.spGetEventType(item.TypeId);
+            }
+
+            return existingContests;
         }
     }
 }

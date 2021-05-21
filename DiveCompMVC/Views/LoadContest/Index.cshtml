@@ -1,0 +1,42 @@
+﻿@model IEnumerable<DiveComp.Data.Models.ContestModel>
+
+
+<div class="col-md-10">
+    <table class="table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Nr. of Jumps
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Type.Gender @item.Type.Type @item.Type.Height
+                    </td>
+                    <td>
+                        @item.Nr_Jumps
+                    </td>
+                    <td>
+                        @Html.ActionLink(">>", "SelectedContest", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

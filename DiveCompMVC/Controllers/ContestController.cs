@@ -110,36 +110,6 @@ namespace DiveCompMVC.Controllers
         }
 
 
-
-
-
-
-
-        public IActionResult LoadContest()
-        {
-            List<ContestModel> c;
-            c = contests.GetAllContests();
-
-            return View(c);
-        }
-
-        
-        public IActionResult Leaderboard(int id)
-        {
-            List<LeaderBoardModel> board;
-            board = participants.GetAllParticipants(id);
-
-            return View(board);
-        }
-        
-        public List<EventTypeModel> GetEventTypes(ViewModel model) {
-
-            
-           model.AllEventTypes = eventTypes.GetAllEventTypes();
-            
-
-            return model.AllEventTypes;
-        }
     }
 }
 

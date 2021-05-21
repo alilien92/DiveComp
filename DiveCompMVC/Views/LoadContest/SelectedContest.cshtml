@@ -1,0 +1,114 @@
+﻿@model DiveCompMVC.Models.ActiveContestVM
+
+    <head>
+        <style>
+            .all-tables {
+                margin: 0;
+                padding: 5px;
+                background-color: lightgrey;
+            }
+
+                .all-tables > h1, .FixedSizedTable {
+                    margin: 15px;
+                    padding: 15px;
+                }
+
+            .FixedSizedTable {
+                padding: 2px;
+                background: white;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                .FixedSizedTable > h2, p {
+                    margin: 8px;
+                    font-size: 90%;
+                }
+        </style>
+    </head>
+
+<body>
+
+    <div class="thead-dark">
+        <h4>@Model.contest.Name @Model.contest.Type.Gender @Model.contest.Type.Type @Model.contest.Type.Height m</h4>
+        <hr />
+    </div>
+    <div class="all-tables">
+
+        <div class="FixedSizedTable">
+            <h5>Judges</h5>
+            <table class="table-striped FixedSizedTable" width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Org
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.judges)
+                    {
+                        <tr>
+                            <td>
+                                @item.FirstName @item.LastName
+                            </td>
+                            <td>
+                                @item.Org
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="FixedSizedTable">
+            <h5>Divers</h5>
+            <table class="table-striped FixedSizedTable" width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            Rank
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Club
+                        </th>
+                        <th>
+                            Score
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ var i = 0;}
+                    @foreach (var item in Model.leaderboard)
+                    {
+                        i++;
+                        <tr>
+                            <td>
+                                @i
+                            </td>
+                            <td>
+                                @item.FirstName @item.LastName
+                            </td>
+                            <td>
+                                @item.Club
+                            </td>
+                            <td>
+                                @item.Score
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+</body>
