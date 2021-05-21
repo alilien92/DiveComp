@@ -37,7 +37,7 @@ namespace DiveCompMVC.Controllers
 
         public IActionResult StartContest(int id)
         {
-
+           
             RepoHelper repo = new RepoHelper(fina, contests);
             ActiveContestVM contest = repo.RetrieveActiveContest(id);
 
@@ -74,6 +74,12 @@ namespace DiveCompMVC.Controllers
 
             return RedirectToAction("StartContest", new { id = model.contest.Id });
             
+        }
+        public IActionResult FinalScreen(int id) {
+
+            RepoHelper repo = new RepoHelper(fina, contests);
+            ActiveContestVM contest = repo.RetrieveActiveContest(id);
+            return View(contest);
         }
         
     }
