@@ -42,7 +42,7 @@ namespace DiveComp.Data.Repository
         {
             var finaList = new List<FinaDifficultyModel>();
 
-            using (StreamReader r = new StreamReader(@"C:\Users\pontu\Desktop\SoP\DiveComp\DiveComp.Data\Helpers\FinaTable.json"))
+            using (StreamReader r = new StreamReader(@"C:\Users\adaml\source\repos\DiveComp\DiveComp.Data\Helpers\FinaTable.json"))
             {
                 string json = r.ReadToEnd();
                 finaList = JsonConvert.DeserializeObject<List<FinaDifficultyModel>>(json);

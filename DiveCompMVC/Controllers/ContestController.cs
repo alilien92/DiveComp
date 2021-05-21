@@ -42,6 +42,7 @@ namespace DiveCompMVC.Controllers
         [HttpPost]
         public IActionResult CreateContest(ContestModel model)
         {
+            model.Date = DateTime.Now;
             if (ModelState.IsValid)
             {
                 contests.CreateNewContest(model);
