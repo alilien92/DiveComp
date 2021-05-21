@@ -20,6 +20,7 @@ namespace DiveComp.Data.Models
         public int TypeId { get; set; }
         
         public string City { get; set; }
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         public virtual EventTypeModel Type { get; set; }
 

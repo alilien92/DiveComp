@@ -53,9 +53,11 @@ namespace DiveComp.Data.Repository
         public List<ContestModel> GetAllContests()
         {
             ProcedureHelper entry = new ProcedureHelper(db);
-            List<ContestModel> existingContests = db.contests.ToList();
+            List<ContestModel> existingContests = db.contests.OrderBy(x => x.Date).ToList();
+            
             foreach(var item in existingContests)
             {
+               
                 item.Type = entry.spGetEventType(item.TypeId);
             }
 

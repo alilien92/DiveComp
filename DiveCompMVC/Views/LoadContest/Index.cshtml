@@ -15,6 +15,9 @@
                     Nr. of Jumps
                 </th>
                 <th>
+                    Date
+                </th>
+                <th>
 
                 </th>
             </tr>
@@ -27,10 +30,13 @@
                         @item.Name
                     </td>
                     <td>
-                        @item.Type.Gender @item.Type.Type @item.Type.Height
+                        @item.Type.Gender @item.Type.Type @item.Type.Height m
                     </td>
                     <td>
                         @item.Nr_Jumps
+                    </td>
+                    <td>
+                        @item.Date.ToShortDateString()
                     </td>
                     <td>
                         @Html.ActionLink(">>", "SelectedContest", new { id = item.Id })
