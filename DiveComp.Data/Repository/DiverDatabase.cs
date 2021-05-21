@@ -29,6 +29,18 @@ namespace DiveComp.Data.Repository
             return false;
         }
 
+        public bool RemoveDiver(int id)
+        {
+            var diver = Get1Diver(id);
+            if (diver == null)
+            {
+                return false;
+            }
+            db.divers.Remove(diver);
+            db.SaveChanges();
+            return true;
+        }
+
         public List<DiverModel> GetAllDivers()
         {
             return db.divers.ToList();

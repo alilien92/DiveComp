@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using DiveCompMVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,23 +14,34 @@ namespace DiveCompMVC.Controllers
     {
         private IDiverRepo divers;
 
+        
 
         public DiverController(IDiverRepo _divers) {
             this.divers = _divers;
         }
-        
-        public IActionResult AddDiver() {
+
+        public IActionResult Index()
+        {
+            ViewModel vm = new ViewModel();
+            vm.AllDivers = divers.GetAllDivers();
+            return View(vm);
+        }
+
+        public IActionResult Create() 
+        {
             return View();
         }
-        
+
         [HttpPost]
-        public IActionResult AddDiver(DiverModel model) {
-            if (ModelState.IsValid) {
+        public IActionResult Create(DiverModel model) 
+        {
+            if (ModelState.IsValid) 
+            {
                 divers.CreateDiver(model);
-                return View();
+                return RedirectToAction("Index");
             }
-                return View();
-            }
+            return View();
         }
     }
+}
 

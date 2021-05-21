@@ -4,14 +4,13 @@
     ViewData["Title"] = "Add divers";
 }
 
-@Html.ActionLink("Continue", "AddJudgesToContest", "Contest", new { contestId = Model.AllContests[0].Id }, null)
-
-<h1>Add divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
-
-@Html.ActionLink("Add diver to contest", "AddDiver", "Contest", new { contestId = Model.AllContests[0].Id }, null)
-
-<h1>Added divers</h1>
-
+<h2>Added divers to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h2>
+<nav>
+    @Html.ActionLink("Add diver to contest", "AddDiver", "Contest", new { contestId = Model.AllContests[0].Id }, null)
+</nav>
+<section>
+    <p></p>
+</section>
 <table class="table">
     <thead>
         <tr>
@@ -24,7 +23,6 @@
             <th>
                 Club
             </th>
-
             <th></th>
         </tr>
     </thead>
@@ -41,10 +39,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Club)
                 </td>
-
-                <td>
-                </td>
+                <td></td>
             </tr>
         }
     </tbody>
 </table>
+
+@Html.ActionLink("Continue", "AddJudgesToContest", "Contest", new { contestId = Model.AllContests[0].Id }, null)
