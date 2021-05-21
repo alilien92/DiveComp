@@ -1,16 +1,11 @@
 ﻿@model DiveCompMVC.Models.ViewModel
 
+
 @{
-    ViewData["Title"] = "Add judges";
+    ViewData["Title"] = "Registered Judges";
 }
 
-@Html.ActionLink("Continue", "Overview", "CurrentEvent", new { id = Model.AllContests[0].Id }, null)
-
-<h1>Add Judges to @Html.DisplayFor(modelItem => Model.AllContests[0].Name)</h1>
-
-@Html.ActionLink("Add judge to contest", "AddJudge", "Contest", new { contestId = Model.AllContests[0].Id }, null)
-
-<h1>Added Judges</h1>
+@Html.ActionLink("Create new judge", "Create", "Judge", null, null)
 
 <table class="table">
     <thead>
@@ -21,7 +16,9 @@
             <th>
                 Last Name
             </th>
-
+            <th>
+                Organization
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -35,9 +32,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.LastName)
                 </td>
-
                 <td>
+                    @Html.DisplayFor(modelItem => item.Org)
                 </td>
+                <td></td>
             </tr>
         }
     </tbody>

@@ -12,7 +12,10 @@ namespace DiveComp.Data.Interfaces
 
         DiverModel Get1Diver(int id);
 
+        bool RemoveDiver(int id);
+
         List<DiverModel> GetDiverListByContest(int id);
+
         List<DiverModel> GetAllDivers();
 
         List<DiverModel> GetDiversNotInContest(int id);
