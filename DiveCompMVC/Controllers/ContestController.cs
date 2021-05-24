@@ -19,14 +19,16 @@ namespace DiveCompMVC.Controllers
         private IDiverRepo divers;
         private IJudgeRepo judges;
         private IJudgeParticipantRepo judgeParticipants;
+        private IFinaDifficultyRepo fina;
 
-        public ContestController(IContestRepo _contests, IParticipantRepo _participants, IEventTypeRepo _eventTypes, IDiverRepo _divers, IJudgeRepo _judges, IJudgeParticipantRepo _judgeParticipants) {
+        public ContestController(IContestRepo _contests, IParticipantRepo _participants, IEventTypeRepo _eventTypes, IDiverRepo _divers, IJudgeRepo _judges, IJudgeParticipantRepo _judgeParticipants, IFinaDifficultyRepo _fina) {
             this.contests = _contests;
             this.participants = _participants;
             this.eventTypes = _eventTypes;
             this.divers = _divers;
             this.judges = _judges;
             this.judgeParticipants = _judgeParticipants;
+            this.fina = _fina;
         }
 
         public IActionResult Index()
@@ -36,6 +38,7 @@ namespace DiveCompMVC.Controllers
 
         public IActionResult CreateContest()
         {
+            
             return View();
         }
 

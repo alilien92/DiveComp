@@ -1,77 +1,109 @@
 ﻿@model DiveCompMVC.Models.ActiveContestVM
 
 
+    <head>
+        <style>
+            .all-tables {
+                margin: 0;
+                padding: 5px;
+                background-color: whitesmoke;
+            }
 
-<table class="table table-striped">
-    <h5>Final Result</h5>
-    <thead>
-        <tr>
-            <th>
-                Final Position
-            </th>
-            <th>
-                Name
-            </th>
-            <th>
-                Club
-            </th>
-            <th>
-                Total Score
-            </th>
+                .all-tables > h1, .FixedSizedTable {
+                    margin: 15px;
+                    padding: 15px;
+                }
+
+            .FixedSizedTable {
+                padding: 2px;
+                background: white;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                .FixedSizedTable > h2, p {
+                    margin: 8px;
+                    font-size: 90%;
+                }
+        </style>
+    </head>
+
+    <div class="all-tables">
+        <table class="table table-striped FixedSizedTable">
+            <h5>Final Result</h5>
+            <thead>
+                <tr>
+                    <th>
+                        Final Position
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Club
+                    </th>
+                    <th>
+                        Total Score
+                    </th>
 
 
-        </tr>
-    </thead>
-    <tbody>
-        @{var i = 0; }
-        @foreach (var item in Model.leaderboard) {
-            i++;
-            <tr>
-                <td>
-                    @i
-                </td>
-                <td id="@i">
-                    @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Club)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Score)
-                </td>
+                </tr>
+            </thead>
+            <tbody>
+                @{var i = 0; }
+                @foreach (var item in Model.leaderboard)
+                {
+                    i++;
+                    <tr>
+                        <td>
+                            @i
+                        </td>
+                        <td id="@i">
+                            @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Club)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Score)
+                        </td>
 
 
-            </tr>
-        }
-    </tbody>
-</table>
-<table class="table-striped">
-    <h5>Judges for Contest</h5>
-    <thead>
-        <tr>
-            <th>
-                Name
-            </th>
-            <th>
-                Org
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.judges) {
-            <tr>
-                <td>
-                    @item.FirstName @item.LastName
-                </td>
-                <td>
-                    @item.Org
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <table class="table table-striped FixedSizedTable">
+            <h5>Judges for Contest</h5>
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Org
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.judges)
+                {
+                    <tr>
+                        <td>
+                            @item.FirstName @item.LastName
+                        </td>
+                        <td>
+                            @item.Org
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+</div>
+
 
 <div>
     @Html.ActionLink("End Contest", "Index", "Home")
     @Html.ActionLink("Back", "StartContest", new { id = @Model.contest.Id })
-</div> 
+</div>

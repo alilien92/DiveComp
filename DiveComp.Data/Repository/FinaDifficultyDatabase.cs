@@ -20,10 +20,6 @@ namespace DiveComp.Data.Repository
             this.db = _db;
         }
 
-        public FinaDifficultyModel Get1Difficulty(int id) {
-            //Kalla lagrad procedur
-            throw new NotImplementedException();
-        }
         
         public List<FinaDifficultyModel> GetHeightDifficulty(float height) {
             var pHelper = new ProcedureHelper(db);
@@ -42,7 +38,7 @@ namespace DiveComp.Data.Repository
         {
             var finaList = new List<FinaDifficultyModel>();
 
-            using (StreamReader r = new StreamReader(@"C:\Users\adaml\source\repos\DiveComp\DiveComp.Data\Helpers\FinaTable.json"))
+            using (StreamReader r = new StreamReader(@"C:\Users\pontu\Desktop\SoP\DiveComp\DiveComp.Data\Helpers\FinaTable.json"))
             {
                 string json = r.ReadToEnd();
                 finaList = JsonConvert.DeserializeObject<List<FinaDifficultyModel>>(json);

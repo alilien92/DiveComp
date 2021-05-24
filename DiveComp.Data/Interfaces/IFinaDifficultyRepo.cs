@@ -7,7 +7,6 @@ namespace DiveComp.Data.Interfaces
 {
     public interface IFinaDifficultyRepo
     {
-        FinaDifficultyModel Get1Difficulty(int id);
         
         List<FinaDifficultyModel> GetHeightDifficulty(float height);
 

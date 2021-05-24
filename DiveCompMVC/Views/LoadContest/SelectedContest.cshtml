@@ -27,90 +27,94 @@
         </style>
     </head>
 
-<body>
+    <body>
 
-    <div class="thead-dark">
-        <h4>@Model.contest.Name @Model.contest.Type.Gender @Model.contest.Type.Type @Model.contest.Type.Height m</h4>
-        <br />
-        <h4>@Model.contest.City @Model.contest.Date.ToShortDateString()</h4>
-        <hr />
-    </div>
-    <div class="all-tables">
+        <div class="thead-dark">
+            <h4>@Model.contest.Name @Model.contest.Type.Gender @Model.contest.Type.Type @Model.contest.Type.Height m</h4>
+            <br />
+            <h4>@Model.contest.City @Model.contest.Date.ToShortDateString()</h4>
+            <hr />
+        </div>
+        <div class="all-tables">
 
-        <div class="FixedSizedTable">
-            <h5>Judges</h5>
-            <table class="table-striped FixedSizedTable" width="100%">
-                <thead>
-                    <tr>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Org
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.judges)
-                    {
+            <div class="FixedSizedTable">
+                <h5>Judges</h5>
+                <table class="table-striped FixedSizedTable" width="100%">
+                    <thead>
                         <tr>
-                            <td>
-                                @item.FirstName @item.LastName
-                            </td>
-                            <td>
-                                @item.Org
-                            </td>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Org
+                            </th>
                         </tr>
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.judges)
+                        {
+                            <tr>
+                                <td>
+                                    @item.FirstName @item.LastName
+                                </td>
+                                <td>
+                                    @item.Org
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="FixedSizedTable">
+                <h5>Divers</h5>
+                <table class="table-striped FixedSizedTable" width="100%">
+                    <thead>
+                        <tr>
+                            <th>
+                                Rank
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Club
+                            </th>
+                            <th>
+                                Score
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var i = 0;}
+                        @foreach (var item in Model.leaderboard)
+                        {
+                            i++;
+                            <tr>
+                                <td>
+                                    @i
+                                </td>
+                                <td>
+                                    @item.FirstName @item.LastName
+                                </td>
+                                <td>
+                                    @item.Club
+                                </td>
+                                <td>
+                                    @item.Score
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+        <div>
+            @Html.ActionLink("Back", "Index")
         </div>
 
-        <div class="FixedSizedTable">
-            <h5>Divers</h5>
-            <table class="table-striped FixedSizedTable" width="100%">
-                <thead>
-                    <tr>
-                        <th>
-                            Rank
-                        </th>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Club
-                        </th>
-                        <th>
-                            Score
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @{ var i = 0;}
-                    @foreach (var item in Model.leaderboard)
-                    {
-                        i++;
-                        <tr>
-                            <td>
-                                @i
-                            </td>
-                            <td>
-                                @item.FirstName @item.LastName
-                            </td>
-                            <td>
-                                @item.Club
-                            </td>
-                            <td>
-                                @item.Score
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
 
-        </div>
-
-    </div>
-
-
-</body>
+    </body>

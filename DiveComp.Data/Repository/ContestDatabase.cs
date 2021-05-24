@@ -18,7 +18,6 @@ namespace DiveComp.Data.Repository
         }
         public bool CreateNewContest(ContestModel contest)
         {
-            
             db.contests.Add(contest);
             db.SaveChanges();
             if (db.contests.Contains(contest))
