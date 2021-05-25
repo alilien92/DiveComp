@@ -47,13 +47,13 @@
                 <td>
                     @Html.DisplayFor(modelitem => item.hasJumped)
                 </td>
+                @if (item.hasJumped != Model.contest.Nr_Jumps) {
                 <td>
                     @Html.ActionLink("Register Score", "PerformJump", new { diverid = item.Id, contestid = Model.contest.Id })
                 </td>
+                }
             </tr>
         }
     </tbody>
 </table>
-<div>
-    @Html.ActionLink("Summary", "FinalScreen", new { id = Model.contest.Id })
-</div> 
+

@@ -60,18 +60,24 @@ namespace DiveCompMVC.Controllers
         [HttpPost]
         public IActionResult SubmitScore(ActiveContestVM model)
         {
-
+            
             RepoHelper repo = new RepoHelper(fina, contests);
+            
+            
             float median = repo.CalculateMedian(model.score1, model.score2, model.score3);
             float mod = fina.DetermineDiveType(model.divepos, model.contest.Type.Height, model.currentDiffMod.DiveCodeNumber);
             if(mod == 0)
             {
                 mod = 1.5F;
             }
-
             float newscore = median * mod;
             participants.UpdateScore(model.contest.Id, model.diver.Id, newscore);
-
+            
+            ActiveContestVM contest = repo.RetrieveActiveContest(model.contest.Id);
+            if (contest.leaderboard.All(x => x.hasJumped == contest.contest.Nr_Jumps)) {
+                return RedirectToAction("FinalScreen", new { id = model.contest.Id });
+            }
+            
             return RedirectToAction("StartContest", new { id = model.contest.Id });
             
         }

@@ -41,6 +41,7 @@ namespace DiveComp.Data.Repository
         {
             ProcedureHelper procedure = new ProcedureHelper(db);
             procedure.spUpdateScore(contestid, diverId, newScore);
+            db.SaveChanges();
         }
         
 

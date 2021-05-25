@@ -1,29 +1,31 @@
 ﻿
-@{
-    ViewData["Title"] = "Home Page";
-}
 
 
-<div class="split left">
-    <div class="centered">
-        <img src="~/tomDiveBild.jpg" />
-        <br /> <br /> <br />
-                      <button class="btn-outline-dark" name="create" type="button">
-                          <a class="btn-outline-dark" asp-area="" asp-controller="Contest" asp-action="CreateContest">Create New Contest</a>
-                      </button>        
+
+<body>
+    
+    <div class="container">
+        <div class="split left">
+            <div class="centered">
+                <img src="~/tomDiveBild.jpg" />
+                <br /> <br /> <br />
+                <input type="button" value="Add New Judges" onclick="@("window.location.href='" + @Url.Action("Index", "Judge") + "'");" />
+                <input type="button" value="Add New Divers" onclick="@("window.location.href='" + @Url.Action("Index", "Diver") + "'");" />
+                <input type="button" value="Create New Contest" onclick="@("window.location.href='" + @Url.Action("CreateContest", "Contest") + "'");" />
+            </div>
+
+        </div>
+
+        <div class="split right">
+            <div class="centered">
+                <img src="~/FylldDiveBild.jpg" />
+                <br /> <br /> <br />
+                <input type="button" value="Load Existing Contest" onclick="@("window.location.href='" + @Url.Action("Index", "LoadContest") + "'");" />
+
+
+            </div>
+
+        </div>
     </div>
-
-</div>
-
-<div class="split right">
-    <div class="centered">
-        <img src="~/FylldDiveBild.jpg" />
-        <br /> <br /> <br />
-                      <button class="btn-outline-dark" name="load" type="button">
-                          <a class="btn-outline-dark" asp-area="" asp-controller="LoadContest" asp-action="Index">Load Existing Contest</a>
-                      </button>
-    </div>
-
-</div>
-
+</body>
 

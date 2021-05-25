@@ -69,7 +69,7 @@ namespace DiveCompMVC
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=CurrentEvent}/{action=Overview}/{id=11}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope()) {
                 var context = serviceScope.ServiceProvider.GetRequiredService<ModelContext>();
